@@ -1,0 +1,57 @@
+@import 'normalize.css';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  font-family: 'Marmelad', sans-serif;
+}
+h1,
+h2,
+h3 {
+  color: #555;
+  margin: 0;
+}
+h1 span,
+h2 span {
+  color: #ff5400;
+}
+.styled__H1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #ff5400;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+h2 {
+  font-size: 1.75rem;
+  margin: 40px 0;
+  padding: 0;
+  text-align: center;
+}
+h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  color: #ff5400;
+  font-size: 1.5rem;
+  margin: 30px 0 20px;
+  padding: 0 0 5px;
+}
+a {
+  color: #e1e1e1;
+  fill: #e1e1e1;
+  transition: color 0.5s ease-out, fill 0.5s ease-out;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff5400;
+  fill: #ff5400;
+}
+p {
+  margin: 0;
+}

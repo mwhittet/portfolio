@@ -1,0 +1,57 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "description": "My portfolio",
+  "version": "0.1.0",
+  "author": "Michael Whittet",
+  "dependencies": {
+    "@types/react-helmet": "^5.0.14",
+    "@types/styled-components": "^4.4.0",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.18.6",
+    "gatsby-image": "^2.2.30",
+    "gatsby-plugin-manifest": "^2.2.25",
+    "gatsby-plugin-offline": "^3.0.17",
+    "gatsby-plugin-react-helmet": "^3.1.13",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "^2.2.34",
+    "gatsby-plugin-sitemap": "^2.2.22",
+    "gatsby-plugin-styled-components": "^3.1.11",
+    "gatsby-plugin-svgr-loader": "^0.1.0",
+    "gatsby-plugin-typescript": "^2.1.15",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.1.38",
+    "gatsby-transformer-json": "^2.2.19",
+    "gatsby-transformer-sharp": "^2.3.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^3.8.0",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.1",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

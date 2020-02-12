@@ -1,0 +1,293 @@
+[
+  {
+    "title": "Royal Opera House",
+    "slug": "royal-opera-house",
+    "intro": "Initially I was the first Front End Developer to join the digital development team that was to work on the website redesign project. It wasn’t just a simple redesign or rebuild, we were building the new website from scratch using React that would hook into the new and improved API’s provided by the back end team. I was involved in all aspects of the project such as wire framing, UI design, UX requirements & feedback and I also helped build an initial proof of concept which would be the basis of the new front end. I worked alongside the growing development team following Agile best practices to build various components and pages but to also share/learn from others. We pair programmed, completed code reviews, followed TDD & BDD approaches and had a nice CI setup. I worked very closely with the in house designer and was given the flexibility to implement responsive strategies for tablet and mobile when needed.",
+    "skills": [
+      "HTML 5",
+      "CSS 3",
+      "BEM",
+      "JavaScript",
+      "JSON",
+      "React",
+      "Redux",
+      "redux-saga",
+      "react-helmet",
+      "React Router",
+      "Babel",
+      "ESLint",
+      "TypeScript",
+      "Flow",
+      "Webpack",
+      "styled-components",
+      "Storybook",
+      "Enzyme",
+      "Jest",
+      "Sinon",
+      "Cypress",
+      "BitBucket",
+      "Jenkins",
+      "Jira",
+      "Trello",
+      "RWD",
+      "AWS"
+    ],
+    "projects": [
+      {
+        "name": "Royal Opera House",
+        "url": "https://www.roh.org.uk/",
+        "image": "../images/projects/roh.jpg"
+      },
+      {
+        "name": "ROH | Eat and drink",
+        "url": "https://www.roh.org.uk/eat-and-drink",
+        "image": "../images/projects/roh-eat.jpg"
+      },
+      {
+        "name": "ROH | Tickets and events",
+        "url": "https://www.roh.org.uk/tickets-and-events",
+        "image": "../images/projects/roh-tickets.jpg"
+      },
+      {
+        "name": "ROH | Visit US",
+        "url": "https://www.roh.org.uk/visit-us",
+        "image": "../images/projects/roh-visit.jpg"
+      }
+    ]
+  },
+  {
+    "title": "French Connection",
+    "slug": "french-connection",
+    "intro": "French Connection is a UK-based global retailer and wholesaler of fashion clothing, accessories and homeware. I was responsible for delivering and maintaining all development projects for the French Connection group which included several websites for FCUK, FCUS, FCCA and Great Plains. This was especially challenging when deploying updates for the American and Canadian teams which required structured co-ordination to minimize disruption. I mentored a few junior front end developers whilst working there and worked very closely with the content, design and SEO teams. Some of the biggest projects I worked on included the checkout redesign, redeveloping each site for each fashion season and also the redesign of the product and product detail pages.",
+    "skills": [
+      "CSS 3",
+      "HTML 5",
+      "JavaScript",
+      "React",
+      "SASS",
+      "Git",
+      "AJAX",
+      "jQuery",
+      "Babel",
+      "ES6",
+      "Grunt",
+      "Gulp",
+      "Webpack",
+      "JSON",
+      "XML",
+      "Photoshop",
+      "WordPress"
+    ],
+    "projects": [
+      {
+        "name": "French Connection | FCUK",
+        "url": "https://www.frenchconnection.com/",
+        "image": "../images/projects/fcuk.jpg"
+      },
+      {
+        "name": "French Connection | FCUS",
+        "url": "https://usa.frenchconnection.com/",
+        "image": "../images/projects/fcus.jpg"
+      },
+      {
+        "name": "Great Plains",
+        "url": "https://www.greatplains.co.uk/",
+        "image": "../images/projects/greatplains.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Schawk! & Anthem",
+    "slug": "schawk-and-anthem",
+    "intro": "Schawk! is a Global Cross-Media Production Agency whilst Anthem dealt with package design. I was split between two teams, one looked after web development and the other email production. I introduced Agile Methodology, worked very closely with the creative team, implemented responsive strategies across multiple devices for spa’s/websites, worked on large Facebook campaigns and provided extensive documentation on past and present projects.",
+    "skills": [
+      "HTML 5",
+      "XHTML",
+      "Bootstrap",
+      "Skeleton",
+      "CSS 3",
+      "Compass",
+      "SASS",
+      "Git",
+      "JavaScript",
+      "jQuery",
+      "JSON",
+      "AJAX",
+      "Grunt",
+      "Umbraco"
+    ],
+    "projects": [
+      {
+        "name": "Your Christmas No1",
+        "url": "http://xmasno1mob.schawkdigital.com/",
+        "image": "../images/projects/xmasno1.jpg"
+      },
+      {
+        "name": "American Express | Live The World",
+        "url": "https://livetheworld.americanexpress.com/en-GB",
+        "image": "../images/projects/livetheworld.jpg"
+      },
+      {
+        "name": "Vier Diamanten",
+        "url": "https://www.vierdiamanten.com/",
+        "image": "../images/projects/vierdiamanten.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Powa Technologies",
+    "slug": "powa-technologies",
+    "intro": "Powa was a start up with an ambitious dream, really great people to work with and with three office moves under my belt, I was an office mover pro. I developed and maintained a variety of ecommerce websites ranging from very small stores to ones with hundreds of thousands of products. I attended daily stand-ups and scrums, followed the Agile Methodology, liaised with project managers, back end developers, researched new technologies and helped to mentor the junior members.",
+    "skills": [
+      "Bootstrap",
+      "Bower",
+      "CSS 3",
+      "HTML 5",
+      "LESS",
+      "SASS",
+      "Git",
+      "Grunt",
+      "Gulp",
+      "JavaScript",
+      "AJAX",
+      "JSON",
+      "Backbone",
+      "RWD strategies",
+      "Yeoman",
+      "Handlebars",
+      "Mustache",
+      "Jira"
+    ],
+    "projects": [
+      {
+        "name": "AEG",
+        "url": "https://shop.aeg.co.uk/",
+        "image": "../images/projects/aeg.jpg"
+      },
+      {
+        "name": "Electrolux",
+        "url": "https://shop.electrolux.co.uk/",
+        "image": "../images/projects/electrolux.jpg"
+      },
+      {
+        "name": "Zanussi",
+        "url": "https://shop.zanussi.co.uk/",
+        "image": "../images/projects/zanussi.jpg"
+      },
+      {
+        "name": "Tolkien",
+        "url": "https://www.tolkien.co.uk/",
+        "image": "../images/projects/tolkien.jpg"
+      },
+      {
+        "name": "Robbie Williams",
+        "url": "https://shop.robbiewilliams.com/",
+        "image": "../images/projects/robbiewilliams.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Virgin Media",
+    "slug": "virgin-media",
+    "intro": "In the heart of Covent Garden, I started working on the Virgin Media and Mobile websites. I developed new features and pages whilst maintaining existing content and I also became the lead Maxymiser developer that implemented AB/MVT tests across the two sites. I also created Facebook campaigns, completed BAU tasks, trained new starters, was responsible for a junior developer and involved in multiple big projects during my time there.",
+    "skills": [
+      "CSS",
+      "SASS",
+      "HTML",
+      "BitBucket",
+      "jQuery",
+      "JavaScript",
+      "Photoshop",
+      "RWD",
+      "Fiddler",
+      "Maxymiser",
+      "CQ5",
+      "Team Site"
+    ],
+    "projects": [
+      {
+        "name": "Virgin Media",
+        "url": "https://my.virginmedia.com/home/index",
+        "image": "../images/projects/virginmedia.jpg"
+      },
+      {
+        "name": "Virgin Mobile",
+        "url": "https://www.virginmedia.com/mobile",
+        "image": "../images/projects/virginmobile.jpg"
+      }
+    ]
+  },
+  {
+    "title": "GForces",
+    "slug": "gforces",
+    "intro": "Based in Kent, GForces delivers leading class automotive ecommerce solutions and intelligent digital infrastructures to automotive retailers and manufacturers. Whilst I was there, I created pixel perfect websites and small to large Facebook campaigns via an in house ticketing process. I worked with project managers and the QA team to ensure projects were completed on time and bug free. I also assisted other members of the team, fixed issues in IE 6-7 (jeez that's old!) and used the new in house custom CMS to create dealership websites quickly.",
+    "skills": [
+      "CSS",
+      "HTML",
+      "jQuery",
+      "JavaScript",
+      "Photoshop",
+      "TortoiseSVN"
+    ],
+    "projects": [
+      {
+        "name": "Allams of Epsom",
+        "url": "https://www.allams.com/",
+        "image": "../images/projects/allams.jpg"
+      },
+      {
+        "name": "Doubleday",
+        "url": "https://www.doubledaygroup.co.uk/",
+        "image": "../images/projects/doubleday.jpg"
+      },
+      {
+        "name": "Cotswold Motor Group",
+        "url": "https://www.cotswoldgroup.com/",
+        "image": "../images/projects/cotswold.jpg"
+      },
+      {
+        "name": "Johnsons Cars",
+        "url": "https://www.johnsonscars.co.uk/",
+        "image": "../images/projects/johnsons.jpg"
+      },
+      {
+        "name": "Mackie Motors",
+        "url": "https://www.mackiemotors.com/",
+        "image": "../images/projects/mackie.jpg"
+      },
+      {
+        "name": "Martins Group",
+        "url": "https://www.martins.uk.com/",
+        "image": "../images/projects/martins.jpg"
+      },
+      {
+        "name": "Tates",
+        "url": "https://www.tatescars.co.uk/",
+        "image": "../images/projects/tates.jpg"
+      },
+      {
+        "name": "Truro used car centre",
+        "url": "https://www.trurousedcarcentre.co.uk/",
+        "image": "../images/projects/truro.jpg"
+      }
+    ]
+  },
+  {
+    "title": "Xanda",
+    "slug": "xanda",
+    "intro": "Xanda are a leading London based website design and digital media agency. Even though I didn't get the permanent role that I applied for after finishing university, I was offered a months’ worth of valuable work experience which I gladly took while the successful applicant worked his notice period. Whilst I was there, I sliced up PSD files which were then hand coded into HTML/XHTML and styled using CSS for a variety of projects ranging from small companies to large ones e.g. Vodafone.",
+    "skills": ["CSS", "HTML", "XHTML", "Photoshop", "WordPress"],
+    "projects": [
+      {
+        "name": "Seascope",
+        "url": "https://www.seascopesa.com/",
+        "image": "../images/projects/seascope.jpg"
+      },
+      {
+        "name": "Wallman Pubs",
+        "url": "http://www.wallmanpubs.co.uk/",
+        "image": "../images/projects/wallman.jpg"
+      }
+    ]
+  }
+]
