@@ -2,4 +2,9 @@
 
 Still a work in progress but proudly built using React, Gatsby, GraphQL, TypeScript, styled-components
 
-## More to be added
+## TODO/Ideas
+
+- Auto day/night cycle & toggle button for changing
+- Full test integration
+- Accessibility testing
+- ... more ideas to come
