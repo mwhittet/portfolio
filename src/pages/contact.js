@@ -9,15 +9,10 @@ const Contact = () => (
   <Layout>
     <SEO title="Contact" />
     <PageTitle>Contact</PageTitle>
+    <p>Contact form coming soon!</p>
     <p>
       If you wish to contact me about a freelance project or just fancy a chat,
-      feel free to use the email address below or reach out via one of the
-      social hubs:
-    </p>
-    <p>
-      <a href="mailto:mw@michaelwhittet.co.uk?Subject=Hello%20Mike!">
-        mw@michaelwhittet.co.uk
-      </a>
+      feel free to reach out via one of the social hubs:
     </p>
 
     <Social alternative />
