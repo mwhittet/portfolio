@@ -13,7 +13,7 @@ export const MainWrapper = styled.main`
   position: relative;
   width: 960px;
 
-  @media (max-width: 959px) {
+  @media (max-width: 977px) {
     margin: 0 auto;
     padding: 5% 2.5%;
     width: 95%;
