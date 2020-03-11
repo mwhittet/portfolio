@@ -10,7 +10,7 @@ const Title = styled.h1`
   margin-bottom: 20px;
   text-align: center;
 
-  @media (max-width: 959px) {
+  @media (max-width: 977px) {
     font-size: 1.5rem;
   }
 `;

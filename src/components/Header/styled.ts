@@ -11,7 +11,7 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   padding: 5px 50px;
 
-  @media (max-width: 959px) {
+  @media (max-width: 977px) {
     padding: 5px 2.5%;
   }
 `;
@@ -53,7 +53,7 @@ export const LinkWrapper = styled.span`
       width: 0;
     }
 
-    @media (max-width: 959px) {
+    @media (max-width: 977px) {
       font-size: 1rem;
     }
   }

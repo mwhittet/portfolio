@@ -94,7 +94,7 @@ export const StyledImg = styled(Img)`
   margin: 0 auto 50px;
   width: 209px;
 
-  @media (max-width: 959px) {
+  @media (max-width: 977px) {
     margin: 0 auto 20px;
   }
 `;
