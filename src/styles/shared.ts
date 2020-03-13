@@ -10,6 +10,14 @@ export const Container = styled.div`
   text-align: center;
 `;
 
+export const Intro = styled.h1`
+  text-align: center;
+
+  @media (max-width: 977px) {
+    font-size: 1.5rem;
+  }
+`;
+
 export const Title = styled.div`
   font-size: 1.5rem;
   opacity: 0;
