@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import colors from '../../styles/colors';
 
 export const FormWrapper = styled.form`
-  margin: 40px 0;
   width: 50%;
 
   @media (max-width: 959px) {

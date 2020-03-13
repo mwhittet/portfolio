@@ -10,7 +10,7 @@ export const FooterWrapper = styled.footer`
   text-align: center;
 
   @media (max-width: 977px) {
-    padding: 5% 2.5%;
+    padding: 5%;
   }
 
   p {

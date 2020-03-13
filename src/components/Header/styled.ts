@@ -1,6 +1,21 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
 import { colors } from '../../styles';
+
+const shake = keyframes`
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+`;
 
 export const HeaderWrapper = styled.header`
   align-items: center;
@@ -12,11 +27,18 @@ export const HeaderWrapper = styled.header`
   padding: 5px 50px;
 
   @media (max-width: 977px) {
-    padding: 5px 2.5%;
+    padding: 5px 5% 5px 3%;
   }
 `;
 
-export const Title = styled(Link)``;
+export const Title = styled(Link)`
+  &:hover {
+    animation: ${shake} 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: translate3d(0, 0, 0);
+  }
+`;
 
 export const Navigation = styled.nav``;
 
@@ -54,7 +76,7 @@ export const LinkWrapper = styled.span`
     }
 
     @media (max-width: 977px) {
-      font-size: 1rem;
+      font-size: 1.15rem;
     }
   }
 
