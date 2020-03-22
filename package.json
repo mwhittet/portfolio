@@ -30,9 +30,18 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/jest": "^25.1.4",
     "@types/node": "^13.1.1",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
+    "babel-jest": "^25.1.0",
+    "babel-preset-gatsby": "^0.2.36",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -46,7 +55,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
