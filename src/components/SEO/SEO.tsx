@@ -19,12 +19,12 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: Props) => {
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
-        },
-        {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
         },
         {
           property: `og:type`,
@@ -39,12 +39,12 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: Props) => {
           content: siteMetadata.author,
         },
         {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
         },
       ].concat(meta)}
       title={title}
