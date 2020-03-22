@@ -13,7 +13,6 @@ describe('<Footer />', () => {
     const component = shallow(<Footer />);
 
     expect(component.find('Social')).toHaveLength(1);
-
     expect(component.find('p')).toHaveLength(2);
   });
 });

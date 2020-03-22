@@ -13,15 +13,20 @@ jest.mock('./styled', () => ({
   NavWrapper: 'NavWrapper',
 }));
 
+const github = '[aria-label="Visit my Github profile"]';
 const linkedIn = '[aria-label="Visit my LinkedIn profile"]';
 const twitter = '[aria-label="Visit my Twitter profile"]';
-const github = '[aria-label="Visit my Github profile"]';
 
 describe('<Social />', () => {
   it('renders correctly', () => {
     const component = shallow(<Social />);
 
     expect(component.prop('alternative')).toBe(undefined);
+
+    expect(component.find(github)).toHaveLength(1);
+    expect(component.find(github).prop('href')).toEqual(
+      'https://github.com/mwhittet'
+    );
 
     expect(component.find(linkedIn)).toHaveLength(1);
     expect(component.find(linkedIn).prop('href')).toEqual(
@@ -31,11 +36,6 @@ describe('<Social />', () => {
     expect(component.find(twitter)).toHaveLength(1);
     expect(component.find(twitter).prop('href')).toEqual(
       'https://twitter.com/michaelwhittet'
-    );
-
-    expect(component.find(github)).toHaveLength(1);
-    expect(component.find(github).prop('href')).toEqual(
-      'https://github.com/mwhittet'
     );
   });
 

@@ -16,8 +16,8 @@ const defaultProps = {
 };
 
 const navAbout = '[data-testing="nav-about"]';
-const navPortfolio = '[data-testing="nav-portfolio"]';
 const navContact = '[data-testing="nav-contact"]';
+const navPortfolio = '[data-testing="nav-portfolio"]';
 
 describe('<Header />', () => {
   it('renders correctly', () => {
@@ -34,10 +34,10 @@ describe('<Header />', () => {
     expect(component.find(navAbout)).toHaveLength(1);
     expect(component.find(navAbout).prop('to')).toBe('/about');
 
-    expect(component.find(navPortfolio)).toHaveLength(1);
-    expect(component.find(navPortfolio).prop('to')).toBe('/portfolio');
-
     expect(component.find(navContact)).toHaveLength(1);
     expect(component.find(navContact).prop('to')).toBe('/contact');
+
+    expect(component.find(navPortfolio)).toHaveLength(1);
+    expect(component.find(navPortfolio).prop('to')).toBe('/portfolio');
   });
 });

@@ -15,8 +15,8 @@ export const FormWrapper = styled.form`
 
 export const InputTextarea = css`
   background-clip: padding-box;
-  border: 1px solid ${colors.mercury};
   border-radius: 0.25rem;
+  border: 1px solid ${colors.mercury};
   display: block;
   font-size: 1rem;
   font-weight: 400;
@@ -49,8 +49,8 @@ export const Textarea = styled.textarea`
 
 export const Button = styled.button`
   background-color: ${colors.internationalOrange};
-  border: 1px solid transparent;
   border-radius: 0.25rem;
+  border: 1px solid transparent;
   color: ${colors.white};
   cursor: pointer;
   font-size: 1rem;

@@ -68,10 +68,10 @@ export const LinkWrapper = styled.span`
       height: 2px;
       left: 0;
       margin: 5px 0 0;
-      position: absolute;
       opacity: 0;
-      transition: all 0.2s ease-in-out;
+      position: absolute;
       transition-duration: 0.5s;
+      transition: all 0.2s ease-in-out;
       width: 0;
     }
 
