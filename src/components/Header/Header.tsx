@@ -12,17 +12,22 @@ const Header = ({ siteTitle }: Props): React.ReactElement => (
 
     <Navigation>
       <LinkWrapper>
-        <Link to="/about" activeClassName="active">
+        <Link to="/about" activeClassName="active" data-testing="nav-about">
           About
         </Link>
       </LinkWrapper>
       <LinkWrapper>
-        <Link to="/portfolio" activeClassName="active" partiallyActive={true}>
+        <Link
+          to="/portfolio"
+          activeClassName="active"
+          partiallyActive={true}
+          data-testing="nav-portfolio"
+        >
           Portfolio
         </Link>
       </LinkWrapper>
       <LinkWrapper>
-        <Link to="/contact" activeClassName="active">
+        <Link to="/contact" activeClassName="active" data-testing="nav-contact">
           Contact
         </Link>
       </LinkWrapper>
