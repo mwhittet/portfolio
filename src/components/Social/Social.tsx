@@ -9,24 +9,24 @@ const Social = ({ alternative }: Props): React.ReactElement => (
     <IconContext.Provider value={{ size: '2rem' }}>
       <Link
         alternative={alternative}
-        href="https://www.linkedin.com/in/michaelwhittet/"
         aria-label="Visit my LinkedIn profile"
+        href="https://www.linkedin.com/in/michaelwhittet"
         rel="nofollow noreferrer"
         target="_blank"
       >
         <FaLinkedin />
       </Link>
       <Link
-        href="https://twitter.com/michaelwhittet"
         aria-label="Visit my Twitter profile"
+        href="https://twitter.com/michaelwhittet"
         rel="nofollow noreferrer"
         target="_blank"
       >
         <FaTwitter />
       </Link>
       <Link
-        href="https://github.com/mwhittet"
         aria-label="Visit my Github profile"
+        href="https://github.com/mwhittet"
         rel="nofollow noreferrer"
         target="_blank"
       >

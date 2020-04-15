@@ -6,23 +6,28 @@ import { HeaderWrapper, LinkWrapper, Navigation, Title } from './styled';
 
 const Header = ({ siteTitle }: Props): React.ReactElement => (
   <HeaderWrapper>
-    <Title to="/" title={siteTitle}>
+    <Title title={siteTitle} to="/">
       <Logo height="48" width="48" />
     </Title>
 
     <Navigation>
       <LinkWrapper>
-        <Link to="/about" activeClassName="active">
+        <Link activeClassName="active" data-testing="nav-about" to="/about">
           About
         </Link>
       </LinkWrapper>
       <LinkWrapper>
-        <Link to="/portfolio" activeClassName="active" partiallyActive={true}>
+        <Link
+          activeClassName="active"
+          data-testing="nav-portfolio"
+          partiallyActive={true}
+          to="/portfolio"
+        >
           Portfolio
         </Link>
       </LinkWrapper>
       <LinkWrapper>
-        <Link to="/contact" activeClassName="active">
+        <Link activeClassName="active" data-testing="nav-contact" to="/contact">
           Contact
         </Link>
       </LinkWrapper>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 // @ts-ignore
-import { useSiteMetadata } from '../../hooks/use-site-metadata';
+import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import { Props } from '.';
 
 const SEO = ({ description = '', lang = 'en', meta = [], title }: Props) => {
@@ -13,20 +13,18 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: Props) => {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`${siteMetadata.title} | %s`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
-          property: `og:title`,
-          content: title,
-        },
-        {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:title`,
+          content: title,
         },
         {
           property: `og:type`,
@@ -41,14 +39,16 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: Props) => {
           content: siteMetadata.author,
         },
         {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
       ].concat(meta)}
+      title={title}
+      titleTemplate={`${siteMetadata.title} | %s`}
     />
   );
 };

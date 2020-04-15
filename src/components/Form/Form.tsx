@@ -5,44 +5,65 @@ const Form = (): React.ReactElement => (
   <>
     <FormWrapper
       action="/success"
-      name="contact"
-      method="post"
-      data-netlify="true"
       data-netlify-honeypot="bot-field"
+      data-netlify="true"
+      method="post"
+      name="contact"
     >
       <Input
         className="hidden"
-        type="hidden"
+        data-test="input-form-name"
         name="form-name"
+        type="hidden"
         value="contact"
       />
-      <Input className="hidden" type="hidden" name="bot-field" />
+      <Input
+        className="hidden"
+        data-test="input-bot-field"
+        name="form-name"
+        type="hidden"
+      />
       <p>
-        <Label htmlFor="name">Your Name:</Label>
+        <Label data-test="label-name" htmlFor="name">
+          Your Name:
+        </Label>
         <Input
-          type="text"
-          name="name"
-          id="name"
           autoComplete="nickname"
+          data-test="input-name"
+          id="name"
+          name="name"
           required
+          type="text"
         />
       </p>
       <p>
-        <Label htmlFor="email">Your Email:</Label>
+        <Label data-test="label-email" htmlFor="email">
+          Your Email:
+        </Label>
         <Input
-          type="email"
-          name="email"
-          id="email"
           autoComplete="email"
+          data-test="input-email"
+          id="email"
+          name="email"
+          required
+          type="email"
+        />
+      </p>
+      <p>
+        <Label data-test="label-message" htmlFor="message">
+          Message:
+        </Label>
+        <Textarea
+          data-test="textarea-message"
+          id="message"
+          name="message"
           required
         />
       </p>
       <p>
-        <Label htmlFor="message">Message:</Label>
-        <Textarea name="message" id="message" required />
-      </p>
-      <p>
-        <Button type="submit">Send message</Button>
+        <Button data-test="button-submit" type="submit">
+          Send message
+        </Button>
       </p>
     </FormWrapper>
   </>

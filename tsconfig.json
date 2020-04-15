@@ -2,16 +2,16 @@
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "baseUrl": "src/",
-    "noImplicitAny": true,
+    "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
+    "noImplicitAny": true,
     "pretty": true,
-    "target": "esnext",
-    "jsx": "preserve",
     "skipLibCheck": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "target": "esnext"
   },
-  "include": ["src"],
-  "files": ["custom.d.ts"]
+  "files": ["custom.d.ts"],
+  "include": ["src"]
 }

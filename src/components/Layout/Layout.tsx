@@ -9,7 +9,7 @@ import '../../styles/layout.css';
 
 const Layout = ({ children }: Props): React.ReactElement => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query {
       site {
         siteMetadata {
           title
