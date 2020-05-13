@@ -20,7 +20,7 @@ const Form = (): React.ReactElement => (
       <Input
         className="hidden"
         data-test="input-bot-field"
-        name="form-name"
+        name="bot-field"
         type="hidden"
       />
       <p>
