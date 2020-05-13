@@ -1,5 +1,5 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 // @ts-ignore
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import { Props } from '.';

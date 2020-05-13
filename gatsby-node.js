@@ -26,7 +26,7 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
     return;
   }
 
-  results.data.allPortfolioJson.edges.forEach(edge => {
+  results.data.allPortfolioJson.edges.forEach((edge) => {
     const portfolio = edge.node;
 
     createPage({

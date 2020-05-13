@@ -37,13 +37,13 @@ const portfolio = ({ data }) => {
       <p>{portfolio.intro}</p>
       <h3>Software, skills & technology</h3>
       <SkillList>
-        {portfolio.skills.map(skill => (
+        {portfolio.skills.map((skill) => (
           <Skill key={skill}>{skill}</Skill>
         ))}
       </SkillList>
       <h3>Websites worked on & built</h3>
       <Container>
-        {portfolio.projects.map(project => (
+        {portfolio.projects.map((project) => (
           <Project project={project} key={project.name} />
         ))}
       </Container>

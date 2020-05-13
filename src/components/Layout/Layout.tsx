@@ -7,7 +7,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import '../../styles/layout.css';
 
-const Layout = ({ children }: Props): React.ReactElement => {
+const Layout = ({ children, className }: Props): React.ReactElement => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -21,7 +21,7 @@ const Layout = ({ children }: Props): React.ReactElement => {
   return (
     <Container>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <MainWrapper>{children}</MainWrapper>
+      <MainWrapper className={className}>{children}</MainWrapper>
       <Footer />
     </Container>
   );

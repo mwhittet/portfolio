@@ -8,10 +8,16 @@ export const Container = styled.div`
 `;
 
 export const MainWrapper = styled.main`
+  display: flex;
   flex: 1;
+  flex-direction: column;
   margin: 50px auto;
   position: relative;
   width: 960px;
+
+  &.home {
+    flex-direction: initial;
+  }
 
   @media (max-width: 977px) {
     margin: 0 auto;

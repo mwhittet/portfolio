@@ -36,6 +36,12 @@ export const PageTitle = styled.h1`
   padding-bottom: 5px;
 `;
 
+export const HomeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
 export const Wrapper = styled.div`
   margin-bottom: 4%;
   overflow: hidden;
