@@ -21,7 +21,7 @@ module.exports = {
       options: {
         name: `Michael Whittet Portfolio`,
         short_name: `MW Portfolio`,
-        start_url: `https://www.michaelwhittet.co.uk/`,
+        start_url: `/`,
         background_color: `#000000`,
         theme_color: `#000000`,
         display: `standalone`,
