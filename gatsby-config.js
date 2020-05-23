@@ -36,10 +36,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-web-font-loader',
+      resolve: `gatsby-plugin-webfonts`,
       options: {
-        google: {
-          families: ['Marmelad'],
+        fonts: {
+          google: [
+            {
+              family: 'Marmelad',
+            },
+          ],
         },
       },
     },
