@@ -5,21 +5,25 @@ import Logo from '../../images/logo.svg';
 import { HeaderWrapper, LinkWrapper, Navigation, Title } from './styled';
 
 const Header = ({ siteTitle }: Props): React.ReactElement => (
-  <HeaderWrapper>
-    <Title title={siteTitle} to="/">
-      <Logo height="48" width="48" />
+  <HeaderWrapper data-testid="header">
+    <Title data-testid="header-title" title={siteTitle} to="/">
+      <Logo data-testid="header-logo" height="48" width="48" />
     </Title>
 
-    <Navigation>
+    <Navigation data-testid="header-nav">
       <LinkWrapper>
-        <Link activeClassName="active" data-testing="nav-about" to="/about">
+        <Link
+          activeClassName="active"
+          data-testid="header-nav-about"
+          to="/about"
+        >
           About
         </Link>
       </LinkWrapper>
       <LinkWrapper>
         <Link
           activeClassName="active"
-          data-testing="nav-portfolio"
+          data-testid="header-nav-portfolio"
           partiallyActive={true}
           to="/portfolio"
         >
@@ -27,7 +31,11 @@ const Header = ({ siteTitle }: Props): React.ReactElement => (
         </Link>
       </LinkWrapper>
       <LinkWrapper>
-        <Link activeClassName="active" data-testing="nav-contact" to="/contact">
+        <Link
+          activeClassName="active"
+          data-testid="header-nav-contact"
+          to="/contact"
+        >
           Contact
         </Link>
       </LinkWrapper>

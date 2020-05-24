@@ -1,43 +1,120 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import '@testing-library/jest-dom';
+import { getByTestId, render, RenderResult } from '@testing-library/react';
 
 import Header from './Header';
-
-jest.mock('../../images/logo.svg', () => 'Logo');
-jest.mock('./styled', () => ({
-  HeaderWrapper: 'HeaderWrapper',
-  LinkWrapper: 'LinkWrapper',
-  Navigation: 'Navigation',
-  Title: 'Title',
-}));
 
 const defaultProps = {
   siteTitle: 'Michael Whittet',
 };
 
-const navAbout = '[data-testing="nav-about"]';
-const navContact = '[data-testing="nav-contact"]';
-const navPortfolio = '[data-testing="nav-portfolio"]';
+const renderComponent = (): RenderResult =>
+  render(<Header {...defaultProps} />);
 
-describe('<Header />', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Header {...defaultProps} />);
+describe('<Header /> component', () => {
+  it('should render', () => {
+    const { container } = renderComponent();
+    const header = getByTestId(container, 'header');
 
-    expect(component.find('Title')).toHaveLength(1);
-    expect(component.find('Title').prop('title')).toBe(defaultProps.siteTitle);
-    expect(component.find('Title').prop('to')).toBe('/');
+    expect(header).toBeInTheDocument();
+  });
 
-    expect(component.find('Logo')).toHaveLength(1);
+  it('should render the title link with the correct href', () => {
+    const { container } = renderComponent();
+    const title = getByTestId(container, 'header-title');
 
-    expect(component.find('Navigation')).toHaveLength(1);
+    expect(title).toHaveAttribute('href', '/');
+  });
 
-    expect(component.find(navAbout)).toHaveLength(1);
-    expect(component.find(navAbout).prop('to')).toBe('/about');
+  it('should render the title link with the correct text', () => {
+    const { container } = renderComponent();
+    const title = getByTestId(container, 'header-title');
 
-    expect(component.find(navContact)).toHaveLength(1);
-    expect(component.find(navContact).prop('to')).toBe('/contact');
+    expect(title).toHaveAttribute('title', defaultProps.siteTitle);
+  });
 
-    expect(component.find(navPortfolio)).toHaveLength(1);
-    expect(component.find(navPortfolio).prop('to')).toBe('/portfolio');
+  it('should render the title with a logo', () => {
+    const { container } = renderComponent();
+    const title = getByTestId(container, 'header-title');
+    const logo = getByTestId(container, 'header-logo');
+
+    expect(title).toContainElement(logo);
+  });
+
+  it('should render the navigation element', () => {
+    const { container } = renderComponent();
+    const headerNav = getByTestId(container, 'header-nav');
+
+    expect(headerNav).toBeInTheDocument();
+  });
+
+  it('should render the navigation element with three links', () => {
+    const { container } = renderComponent();
+    const headerNav = getByTestId(container, 'header-nav');
+
+    expect(headerNav.childElementCount).toBe(3);
+  });
+
+  it('should render the About page link with the correct href', () => {
+    const { container } = renderComponent();
+    const about = getByTestId(container, 'header-nav-about');
+
+    expect(about).toHaveAttribute('href', '/about');
+  });
+
+  it('should render the About page link with the correct text', () => {
+    const { container } = renderComponent();
+    const about = getByTestId(container, 'header-nav-about');
+
+    expect(about).toHaveTextContent('About');
+  });
+
+  it('should render the About page link without the active class', () => {
+    const { container } = renderComponent();
+    const about = getByTestId(container, 'header-nav-about');
+
+    expect(about).not.toHaveClass('active');
+  });
+
+  it('should render the Portfolio page link with the correct href', () => {
+    const { container } = renderComponent();
+    const portfolio = getByTestId(container, 'header-nav-portfolio');
+
+    expect(portfolio).toHaveAttribute('href', '/portfolio');
+  });
+
+  it('should render the Portfolio page link with the correct text', () => {
+    const { container } = renderComponent();
+    const portfolio = getByTestId(container, 'header-nav-portfolio');
+
+    expect(portfolio).toHaveTextContent('Portfolio');
+  });
+
+  it('should render the Portfolio page link without the active class', () => {
+    const { container } = renderComponent();
+    const portfolio = getByTestId(container, 'header-nav-portfolio');
+
+    expect(portfolio).not.toHaveClass('active');
+  });
+
+  it('should render the Contact page link with the correct href', () => {
+    const { container } = renderComponent();
+    const contact = getByTestId(container, 'header-nav-contact');
+
+    expect(contact).toHaveAttribute('href', '/contact');
+  });
+
+  it('should render the Contact page link with the correct text', () => {
+    const { container } = renderComponent();
+    const contact = getByTestId(container, 'header-nav-contact');
+
+    expect(contact).toHaveTextContent('Contact');
+  });
+
+  it('should render the Contact page link without the active class', () => {
+    const { container } = renderComponent();
+    const contact = getByTestId(container, 'header-nav-contact');
+
+    expect(contact).not.toHaveClass('active');
   });
 });
