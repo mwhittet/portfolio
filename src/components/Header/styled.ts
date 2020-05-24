@@ -24,10 +24,10 @@ export const HeaderWrapper = styled.header`
   color: ${colors.mercury};
   display: flex;
   justify-content: space-between;
-  padding: 5px 50px;
+  padding: 5px 5% 5px 3%;
 
-  @media (max-width: 977px) {
-    padding: 5px 5% 5px 3%;
+  @media (min-width: 992px) {
+    padding: 5px 50px;
   }
 `;
 
@@ -46,9 +46,13 @@ export const LinkWrapper = styled.span`
   margin-right: 20px;
 
   a {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     position: relative;
     transition: all 0.2s ease-in-out;
+
+    @media (min-width: 992px) {
+      font-size: 1.25rem;
+    }
 
     &.active {
       color: ${colors.internationalOrange};
@@ -74,15 +78,9 @@ export const LinkWrapper = styled.span`
       transition: all 0.2s ease-in-out;
       width: 0;
     }
-
-    @media (max-width: 977px) {
-      font-size: 1.15rem;
-    }
   }
 
   &:hover {
-    cursor: pointer;
-
     a {
       &:before,
       &:after {

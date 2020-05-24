@@ -4,7 +4,6 @@ import { PageTitle } from '../styles/shared';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Form from '../components/Form';
-import Social from '../components/Social';
 
 const Contact = () => (
   <Layout>
@@ -13,7 +12,7 @@ const Contact = () => (
     <p>
       If you wish to contact me about a freelance project or just fancy a chat,
       feel free to fill out the contact form below or reach out via one of the
-      social hubs:
+      social hubs found in the footer:
     </p>
     <Form />
     <h2>

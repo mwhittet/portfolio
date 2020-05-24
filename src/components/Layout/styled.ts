@@ -11,18 +11,19 @@ export const MainWrapper = styled.main`
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 0 auto;
+  padding: 5% 2.5%;
   position: relative;
-  width: 960px;
+  width: 95%;
+
+  @media (min-width: 992px) {
+    margin: 50px auto;
+    padding: 0;
+    width: 960px;
+  }
 
   &.home {
     flex-direction: initial;
-  }
-
-  @media (max-width: 977px) {
-    margin: 0 auto;
-    padding: 5% 2.5%;
-    width: 95%;
   }
 
   p {
