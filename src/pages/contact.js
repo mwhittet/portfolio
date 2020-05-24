@@ -15,11 +15,7 @@ const Contact = () => (
       feel free to fill out the contact form below or reach out via one of the
       social hubs:
     </p>
-
     <Form />
-
-    <Social alternative />
-
     <h2>
       <span>"</span>Creativity is contagious. Pass it on.<span>"</span> -{' '}
       <span>Albert Einstein</span>
