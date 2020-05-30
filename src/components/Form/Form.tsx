@@ -6,6 +6,7 @@ const Form = (): React.ReactElement => (
     action="/success"
     data-netlify-honeypot="bot-field"
     data-netlify="true"
+    data-netlify-recaptcha="true"
     data-testid="form"
     method="post"
     name="contact"
@@ -59,6 +60,9 @@ const Form = (): React.ReactElement => (
         name="message"
         required
       />
+    </p>
+    <p>
+      <div data-netlify-recaptcha="true"></div>
     </p>
     <p>
       <Button data-testid="button-submit" type="submit">
