@@ -2,10 +2,11 @@ import styled, { css } from 'styled-components';
 import colors from '../../styles/colors';
 
 export const FormWrapper = styled.form`
-  width: 50%;
+  margin: 25px auto 0;
+  width: 100%;
 
-  @media (max-width: 959px) {
-    width: 100%;
+  @media (min-width: 992px) {
+    width: 50%;
   }
 
   .hidden {

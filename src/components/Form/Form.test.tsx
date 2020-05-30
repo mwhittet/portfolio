@@ -1,47 +1,108 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { getByTestId, render, RenderResult } from '@testing-library/react';
 
 import Form from './Form';
 
-jest.mock('./styled', () => ({
-  Button: 'Button',
-  FormWrapper: 'FormWrapper',
-  Input: 'Input',
-  Label: 'Label',
-  Textarea: 'Textarea',
-}));
+const renderComponent = (): RenderResult => render(<Form />);
 
-describe('<Form />', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Form />);
+describe('<Form /> component', () => {
+  it('should render', () => {
+    const { container } = renderComponent();
+    const form = getByTestId(container, 'form');
 
-    expect(component.find('FormWrapper')).toHaveLength(1);
-    expect(component.find('FormWrapper').prop('action')).toEqual('/success');
-    expect(component.find('FormWrapper').prop('method')).toEqual('post');
-    expect(component.find('FormWrapper').prop('name')).toEqual('contact');
-
-    expect(component.find('[data-test="input-form-name"]')).toHaveLength(1);
-    expect(component.find('[data-test="input-bot-field"]')).toHaveLength(1);
-
-    expect(component.find('[data-test="label-name"]')).toHaveLength(1);
-    expect(component.find('[data-test="input-name"]')).toHaveLength(1);
-
-    expect(component.find('[data-test="label-email"]')).toHaveLength(1);
-    expect(component.find('[data-test="input-email"]')).toHaveLength(1);
-
-    expect(component.find('[data-test="label-message"]')).toHaveLength(1);
-    expect(component.find('[data-test="textarea-message"]')).toHaveLength(1);
-
-    expect(component.find('[data-test="button-submit"]')).toHaveLength(1);
+    expect(form).toBeInTheDocument();
   });
 
-  it('renders with correct netlify attributes', () => {
-    const component = shallow(<Form />);
+  it('should render the form element with the correct action', () => {
+    const { container } = renderComponent();
+    const form = getByTestId(container, 'form');
 
-    expect(component.find('FormWrapper')).toHaveLength(1);
-    expect(component.find('FormWrapper').prop('data-netlify')).toEqual('true');
-    expect(component.find('FormWrapper').prop('data-netlify-honeypot')).toEqual(
-      'bot-field'
-    );
+    expect(form).toHaveAttribute('action', '/success');
+  });
+
+  it('should render the form element with the data-netlify attribute', () => {
+    const { container } = renderComponent();
+    const form = getByTestId(container, 'form');
+
+    expect(form).toHaveAttribute('data-netlify', 'true');
+  });
+
+  it('should render the form element with the data-netlify-honeypot attribute', () => {
+    const { container } = renderComponent();
+    const form = getByTestId(container, 'form');
+
+    expect(form).toHaveAttribute('data-netlify-honeypot', 'bot-field');
+  });
+
+  it('should render the form element with the correct method', () => {
+    const { container } = renderComponent();
+    const form = getByTestId(container, 'form');
+
+    expect(form).toHaveAttribute('method', 'post');
+  });
+
+  it('should render the form element with the correct name', () => {
+    const { container } = renderComponent();
+    const form = getByTestId(container, 'form');
+
+    expect(form).toHaveAttribute('name', 'contact');
+  });
+
+  it('should render the hidden netlify input', () => {
+    const { container } = renderComponent();
+    const inputFormName = getByTestId(container, 'input-form-name');
+
+    expect(inputFormName).toHaveClass('hidden');
+    expect(inputFormName).toHaveAttribute('name', 'form-name');
+    expect(inputFormName).toHaveAttribute('type', 'hidden');
+    expect(inputFormName).toHaveAttribute('value', 'contact');
+  });
+
+  it('should render the hidden netlify bot input', () => {
+    const { container } = renderComponent();
+    const inputBotField = getByTestId(container, 'input-bot-field');
+
+    expect(inputBotField).toHaveClass('hidden');
+    expect(inputBotField).toHaveAttribute('name', 'bot-field');
+    expect(inputBotField).toHaveAttribute('type', 'hidden');
+  });
+
+  it('should render the correct name label and input elements', () => {
+    const { container } = renderComponent();
+    const labelName = getByTestId(container, 'label-name');
+    const inputName = getByTestId(container, 'input-name');
+
+    expect(labelName).toHaveTextContent('Your Name:');
+    expect(inputName).toHaveAttribute('autoComplete', 'nickname');
+    expect(inputName).toHaveAttribute('name', 'name');
+    expect(inputName).toHaveAttribute('type', 'text');
+  });
+
+  it('should render the correct email label and input elements', () => {
+    const { container } = renderComponent();
+    const labelEmail = getByTestId(container, 'label-email');
+    const inputEmail = getByTestId(container, 'input-email');
+
+    expect(labelEmail).toHaveTextContent('Your Email:');
+    expect(inputEmail).toHaveAttribute('autoComplete', 'email');
+    expect(inputEmail).toHaveAttribute('name', 'email');
+    expect(inputEmail).toHaveAttribute('type', 'email');
+  });
+
+  it('should render the correct message label and textarea elements', () => {
+    const { container } = renderComponent();
+    const labelMessage = getByTestId(container, 'label-message');
+    const textareaMessage = getByTestId(container, 'textarea-message');
+
+    expect(labelMessage).toHaveTextContent('Message:');
+    expect(textareaMessage).toHaveAttribute('name', 'message');
+  });
+
+  it('should render the form submit button', () => {
+    const { container } = renderComponent();
+    const buttonSubmit = getByTestId(container, 'button-submit');
+
+    expect(buttonSubmit).toHaveAttribute('type', 'submit');
+    expect(buttonSubmit).toHaveTextContent('Send message');
   });
 });

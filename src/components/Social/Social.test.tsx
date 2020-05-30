@@ -1,48 +1,70 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { getByTestId, render, RenderResult } from '@testing-library/react';
 
 import Social from './Social';
 
-jest.mock('react-icons/fa', () => ({
-  FaGithub: 'FaGithub',
-  FaLinkedin: 'FaLinkedin',
-  FaTwitter: 'FaTwitter',
-}));
-jest.mock('./styled', () => ({
-  Link: 'Link',
-  NavWrapper: 'NavWrapper',
-}));
+const renderComponent = (): RenderResult => render(<Social />);
 
-const github = '[aria-label="Visit my Github profile"]';
-const linkedIn = '[aria-label="Visit my LinkedIn profile"]';
-const twitter = '[aria-label="Visit my Twitter profile"]';
+describe('<Social /> component', () => {
+  it('should render', () => {
+    const { container } = renderComponent();
+    const social = getByTestId(container, 'social');
 
-describe('<Social />', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Social />);
+    expect(social).toBeInTheDocument();
+  });
 
-    expect(component.prop('alternative')).toBe(undefined);
+  it('should render with three links', () => {
+    const { container } = renderComponent();
+    const social = getByTestId(container, 'social');
 
-    expect(component.find(github)).toHaveLength(1);
-    expect(component.find(github).prop('href')).toEqual(
-      'https://github.com/mwhittet'
-    );
+    expect(social.childElementCount).toBe(3);
+  });
 
-    expect(component.find(linkedIn)).toHaveLength(1);
-    expect(component.find(linkedIn).prop('href')).toEqual(
+  it('should render the Github link with the aria-label', () => {
+    const { container } = renderComponent();
+    const github = getByTestId(container, 'social-github');
+
+    expect(github).toHaveAttribute('aria-label', 'Visit my Github profile');
+  });
+
+  it('should render the Github link with the correct href', () => {
+    const { container } = renderComponent();
+    const github = getByTestId(container, 'social-github');
+
+    expect(github).toHaveAttribute('href', 'https://github.com/mwhittet');
+  });
+
+  it('should render the LinkedIn link with the aria-label', () => {
+    const { container } = renderComponent();
+    const linkedin = getByTestId(container, 'social-linkedin');
+
+    expect(linkedin).toHaveAttribute('aria-label', 'Visit my LinkedIn profile');
+  });
+
+  it('should render the LinkedIn link with the correct href', () => {
+    const { container } = renderComponent();
+    const linkedin = getByTestId(container, 'social-linkedin');
+
+    expect(linkedin).toHaveAttribute(
+      'href',
       'https://www.linkedin.com/in/michaelwhittet'
-    );
-
-    expect(component.find(twitter)).toHaveLength(1);
-    expect(component.find(twitter).prop('href')).toEqual(
-      'https://twitter.com/michaelwhittet'
     );
   });
 
-  it('renders correctly with the alternative prop', () => {
-    const component = shallow(<Social alternative />);
+  it('should render the Twitter link with the aria-label', () => {
+    const { container } = renderComponent();
+    const twitter = getByTestId(container, 'social-twitter');
 
-    expect(component.prop('alternative')).toBe(true);
-    expect(component.find(linkedIn).prop('alternative')).toBe(true);
+    expect(twitter).toHaveAttribute('aria-label', 'Visit my Twitter profile');
+  });
+
+  it('should render the Twitter link with the correct href', () => {
+    const { container } = renderComponent();
+    const twitter = getByTestId(container, 'social-twitter');
+
+    expect(twitter).toHaveAttribute(
+      'href',
+      'https://twitter.com/michaelwhittet'
+    );
   });
 });
