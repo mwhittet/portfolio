@@ -2,6 +2,8 @@ import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Button, FormWrapper, Input, Label, Textarea } from './styled';
 
+const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
+
 const Form = (): React.ReactElement => (
   <FormWrapper
     action="/success"
@@ -62,10 +64,9 @@ const Form = (): React.ReactElement => (
         required
       />
     </p>
-    <ReCAPTCHA
-      data-testid="reCAPTCHA"
-      sitekey={process.env.GATSBY_RECAPTCHA_KEY || ''}
-    />
+    {RECAPTCHA_KEY && (
+      <ReCAPTCHA data-testid="reCAPTCHA" sitekey={RECAPTCHA_KEY} />
+    )}
     <p>
       <Button data-testid="button-submit" type="submit">
         Send message
