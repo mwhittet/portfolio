@@ -1,11 +1,15 @@
 import React from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { Button, FormWrapper, Input, Label, Textarea } from './styled';
+
+const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
 
 const Form = (): React.ReactElement => (
   <FormWrapper
     action="/success"
     data-netlify-honeypot="bot-field"
     data-netlify="true"
+    data-netlify-recaptcha="true"
     data-testid="form"
     method="post"
     name="contact"
@@ -60,6 +64,9 @@ const Form = (): React.ReactElement => (
         required
       />
     </p>
+    {RECAPTCHA_KEY && (
+      <ReCAPTCHA data-testid="reCAPTCHA" sitekey={RECAPTCHA_KEY} />
+    )}
     <p>
       <Button data-testid="button-submit" type="submit">
         Send message

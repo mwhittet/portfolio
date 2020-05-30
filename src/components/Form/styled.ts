@@ -57,6 +57,7 @@ export const Button = styled.button`
   font-size: 1rem;
   height: 2.5rem;
   line-height: 1.5;
+  margin-top: 15px;
   padding: 0.375rem 0.75rem;
   transition: width 0.5s ease;
   user-select: none;
