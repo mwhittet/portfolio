@@ -34,6 +34,13 @@ describe('<Form /> component', () => {
     expect(form).toHaveAttribute('data-netlify-honeypot', 'bot-field');
   });
 
+  it('should render the form element with the data-netlify-recaptcha attribute', () => {
+    const { container } = renderComponent();
+    const form = getByTestId(container, 'form');
+
+    expect(form).toHaveAttribute('data-netlify-recaptcha', 'true');
+  });
+
   it('should render the form element with the correct method', () => {
     const { container } = renderComponent();
     const form = getByTestId(container, 'form');
@@ -96,6 +103,13 @@ describe('<Form /> component', () => {
 
     expect(labelMessage).toHaveTextContent('Message:');
     expect(textareaMessage).toHaveAttribute('name', 'message');
+  });
+
+  it('should render the ReCAPTCHA component', () => {
+    const { container } = renderComponent();
+    const reCAPTCHA = getByTestId(container, 'reCAPTCHA');
+
+    expect(reCAPTCHA).toBeInTheDocument();
   });
 
   it('should render the form submit button', () => {

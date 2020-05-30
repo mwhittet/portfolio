@@ -1,4 +1,5 @@
 import React from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { Button, FormWrapper, Input, Label, Textarea } from './styled';
 
 const Form = (): React.ReactElement => (
@@ -61,9 +62,10 @@ const Form = (): React.ReactElement => (
         required
       />
     </p>
-    <p>
-      <div data-netlify-recaptcha="true"></div>
-    </p>
+    <ReCAPTCHA
+      data-testid="reCAPTCHA"
+      sitekey={process.env.GATSBY_RECAPTCHA_KEY || ''}
+    />
     <p>
       <Button data-testid="button-submit" type="submit">
         Send message
