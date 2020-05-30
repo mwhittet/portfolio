@@ -1,17 +1,9 @@
 import React from 'react';
 import * as Gatsby from 'gatsby';
-import { shallow } from 'enzyme';
+import '@testing-library/jest-dom';
+import { render, waitFor, waitForDomChange } from '@testing-library/react';
 
-import SEO from './seo';
-
-const isMeta = (
-  name: string
-): ((m: JSX.IntrinsicElements['meta']) => boolean) => {
-  return (m: JSX.IntrinsicElements['meta']) =>
-    m.name === name || m.property === name;
-};
-
-const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
+import SEO from './SEO';
 
 const author = '@michaelwhittet';
 const description =
@@ -20,50 +12,114 @@ const title = 'Portfolio page';
 const siteTitle = 'site title';
 const siteDescription = 'site description';
 
-describe('<Header />', () => {
-  it('renders with given title & description, default language', () => {
-    useStaticQuery.mockImplementation(() => ({
-      site: {
-        siteMetadata: {
-          author,
-          description: siteDescription,
-          title: siteTitle,
-        },
-      },
-    }));
+const getMeta = (metaName: string) => {
+  const metas = document.getElementsByTagName('meta');
 
-    const component = shallow(<SEO description={description} title={title} />);
-    const meta = component.prop('meta');
+  for (let value of metas) {
+    if (
+      value.getAttribute('name') === metaName ||
+      value.getAttribute('property') === metaName
+    ) {
+      return value.getAttribute('content');
+    }
+  }
+  return '';
+};
 
-    expect(component.exists()).toBeTruthy();
+const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
 
-    expect(component.prop('htmlAttributes').lang).toBe('en');
+useStaticQuery.mockImplementation(() => ({
+  site: {
+    siteMetadata: {
+      author,
+      description: siteDescription,
+      title: siteTitle,
+    },
+  },
+}));
 
-    expect(meta.find(isMeta('description')).content).toBe(description);
-    expect(meta.find(isMeta('og:description')).content).toBe(description);
-    expect(meta.find(isMeta('og:title')).content).toBe(title);
-    expect(meta.find(isMeta('og:type')).content).toBe('website');
-    expect(meta.find(isMeta('twitter:card')).content).toBe('summary');
-    expect(meta.find(isMeta('twitter:creator')).content).toBe(author);
-    expect(meta.find(isMeta('twitter:description')).content).toBe(description);
-    expect(meta.find(isMeta('twitter:title')).content).toBe(title);
+describe('<SEO /> component', () => {
+  it('should render the title tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
 
-    expect(component.prop('title')).toBe(title);
-    expect(component.prop('titleTemplate')).toContain(siteTitle);
+    await waitFor(() =>
+      expect(document.querySelector('title')).toHaveTextContent(
+        `${siteTitle} | ${title}`
+      )
+    );
   });
 
-  it('renders with site description', () => {
-    useStaticQuery.mockImplementation(() => ({
-      site: {
-        siteMetadata: { description: siteDescription },
-      },
-    }));
+  it('should render the description tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
 
-    const component = shallow(<SEO title={title} />);
-    const meta = component.prop('meta');
+    await waitFor(() => expect(getMeta('description')).toEqual(description));
+  });
 
-    expect(component.exists()).toBeTruthy();
+  it('should render the description tag with the default text', async () => {
+    render(<SEO title={title} />);
 
-    expect(meta.find(isMeta('description')).content).toBe(siteDescription);
+    await waitFor(() =>
+      expect(getMeta('description')).toEqual(siteDescription)
+    );
+  });
+
+  it('should render the og:description tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
+
+    await waitFor(() => expect(getMeta('og:description')).toEqual(description));
+  });
+
+  it('should render the og:description tag with the default text', async () => {
+    render(<SEO title={title} />);
+
+    await waitFor(() =>
+      expect(getMeta('og:description')).toEqual(siteDescription)
+    );
+  });
+
+  it('should render the og:title tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
+
+    await waitFor(() => expect(getMeta('og:title')).toEqual(title));
+  });
+
+  it('should render the og:type tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
+
+    await waitFor(() => expect(getMeta('og:type')).toEqual('website'));
+  });
+
+  it('should render the twitter:card tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
+
+    await waitFor(() => expect(getMeta('twitter:card')).toEqual('summary'));
+  });
+
+  it('should render the twitter:creator tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
+
+    await waitFor(() => expect(getMeta('twitter:creator')).toEqual(author));
+  });
+
+  it('should render the twitter:description tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
+
+    await waitFor(() =>
+      expect(getMeta('twitter:description')).toEqual(description)
+    );
+  });
+
+  it('should render the twitter:description tag with the default text', async () => {
+    render(<SEO title={title} />);
+
+    await waitFor(() =>
+      expect(getMeta('twitter:description')).toEqual(siteDescription)
+    );
+  });
+
+  it('should render the twitter:title tag with the correct text', async () => {
+    render(<SEO description={description} title={title} />);
+
+    await waitFor(() => expect(getMeta('twitter:title')).toEqual(title));
   });
 });
