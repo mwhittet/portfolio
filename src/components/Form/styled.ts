@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import colors from '../../styles/colors';
 
 export const FormWrapper = styled.form`
+  margin: 25px auto 0;
   width: 100%;
 
   @media (min-width: 992px) {

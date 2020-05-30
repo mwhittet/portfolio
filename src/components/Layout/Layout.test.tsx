@@ -1,17 +1,8 @@
 import React from 'react';
 import * as Gatsby from 'gatsby';
-import { shallow } from 'enzyme';
+import { getByTestId, render, RenderResult } from '@testing-library/react';
 
 import Layout from './Layout';
-
-jest.mock('./styled', () => ({
-  Container: 'Container',
-  MainWrapper: 'MainWrapper',
-}));
-
-jest.mock('../Header', () => 'Header');
-jest.mock('../Footer', () => 'Footer');
-jest.mock('../../styles/layout.css');
 
 const siteTitle = 'Michael Whittet';
 const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
@@ -24,17 +15,30 @@ useStaticQuery.mockImplementation(() => ({
   },
 }));
 
-describe('<Layout />', () => {
-  it('renders correctly', () => {
-    const component = shallow(<Layout>Render child here</Layout>);
+const renderComponent = (): RenderResult =>
+  render(<Layout>Render child here</Layout>);
 
-    expect(component.find('Container')).toHaveLength(1);
+describe('<Layout /> component', () => {
+  it('should render', () => {
+    const { container } = renderComponent();
+    const layout = getByTestId(container, 'layout');
 
-    expect(component.find('Header')).toHaveLength(1);
-    expect(component.find('Header').prop('siteTitle')).toEqual(siteTitle);
+    expect(layout).toBeInTheDocument();
+  });
 
-    expect(component.find('MainWrapper').text()).toMatch('Render child here');
+  it('should render with the header component', () => {
+    const { container } = renderComponent();
+    const layout = getByTestId(container, 'layout');
+    const header = getByTestId(container, 'header');
 
-    expect(component.find('Footer')).toHaveLength(1);
+    expect(layout).toContainElement(header);
+  });
+
+  it('should render with the footer component', () => {
+    const { container } = renderComponent();
+    const layout = getByTestId(container, 'layout');
+    const footer = getByTestId(container, 'footer');
+
+    expect(layout).toContainElement(footer);
   });
 });

@@ -91,7 +91,7 @@ export const Skill = styled.li`
   display: inline;
   font-size: 1.1rem;
   margin: 0 10px 10px 0;
-  padding: 10px;
+  padding: 7px;
   transition: color 1s ease-out, background 1s ease-out;
 
   &:hover {

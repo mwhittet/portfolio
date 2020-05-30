@@ -19,7 +19,7 @@ const Layout = ({ children, className }: Props): React.ReactElement => {
   `);
 
   return (
-    <Container>
+    <Container data-testid="layout">
       <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
       <MainWrapper className={className}>{children}</MainWrapper>
