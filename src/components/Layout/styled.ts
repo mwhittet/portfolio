@@ -22,6 +22,10 @@ export const MainWrapper = styled.main`
     width: 960px;
   }
 
+  @media (min-width: 1432px) {
+    width: 1400px;
+  }
+
   &.home {
     flex-direction: initial;
   }
