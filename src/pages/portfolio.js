@@ -4,7 +4,7 @@ import { Container, PageTitle } from '../styles/shared';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Company from '../components/Company';
+import PortfolioItem from '../components/PortfolioItem';
 
 export const companyQuery = graphql`
   query {
@@ -12,8 +12,8 @@ export const companyQuery = graphql`
       edges {
         node {
           id
-          title
-          href
+          name
+          url
           image {
             childImageSharp {
               fluid(maxWidth: 1200) {
@@ -37,7 +37,12 @@ const Portfolio = ({ data }) => (
     </p>
     <Container>
       {data.allCompanyJson.edges.map(({ node }) => (
-        <Company key={node.id} companyInfo={node} />
+        <PortfolioItem
+          key={node.id}
+          url={node.url}
+          name={node.name}
+          image={node.image}
+        />
       ))}
     </Container>
   </Layout>

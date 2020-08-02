@@ -12,6 +12,5 @@
     "strictNullChecks": true,
     "target": "esnext"
   },
-  "files": ["custom.d.ts"],
-  "include": ["src"]
+  "include": ["custom.d.ts", "src/*"]
 }

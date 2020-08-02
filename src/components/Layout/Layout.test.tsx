@@ -1,7 +1,6 @@
 import React from 'react';
 import * as Gatsby from 'gatsby';
-import { getByTestId, render, RenderResult } from '@testing-library/react';
-
+import { render, RenderResult, screen } from '@testing-library/react';
 import Layout from './Layout';
 
 const siteTitle = 'Michael Whittet';
@@ -20,25 +19,21 @@ const renderComponent = (): RenderResult =>
 
 describe('<Layout /> component', () => {
   it('should render', () => {
-    const { container } = renderComponent();
-    const layout = getByTestId(container, 'layout');
-
-    expect(layout).toBeInTheDocument();
+    renderComponent();
+    expect(screen.getByTestId('layout')).toBeInTheDocument();
   });
 
   it('should render with the header component', () => {
-    const { container } = renderComponent();
-    const layout = getByTestId(container, 'layout');
-    const header = getByTestId(container, 'header');
-
-    expect(layout).toContainElement(header);
+    renderComponent();
+    expect(screen.getByTestId('layout')).toContainElement(
+      screen.getByTestId('header')
+    );
   });
 
   it('should render with the footer component', () => {
-    const { container } = renderComponent();
-    const layout = getByTestId(container, 'layout');
-    const footer = getByTestId(container, 'footer');
-
-    expect(layout).toContainElement(footer);
+    renderComponent();
+    expect(screen.getByTestId('layout')).toContainElement(
+      screen.getByTestId('footer')
+    );
   });
 });
