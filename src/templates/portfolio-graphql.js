@@ -4,7 +4,7 @@ import { Container, PageTitle, SkillList, Skill } from '../styles/shared';
 
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Project from '../components/Project';
+import PortfolioItem from '../components/PortfolioItem';
 
 export const query = graphql`
   query($slug: String!) {
@@ -13,6 +13,7 @@ export const query = graphql`
       intro
       skills
       projects {
+        id
         name
         url
         image {
@@ -44,7 +45,12 @@ const portfolio = ({ data }) => {
       <h3>Websites worked on & built</h3>
       <Container>
         {portfolio.projects.map((project) => (
-          <Project project={project} key={project.name} />
+          <PortfolioItem
+            key={project.id}
+            url={project.url}
+            name={project.name}
+            image={project.image}
+          />
         ))}
       </Container>
     </Layout>

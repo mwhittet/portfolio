@@ -5,6 +5,8 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import Form from '../components/Form';
 
+const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
+
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
@@ -14,7 +16,7 @@ const Contact = () => (
       feel free to fill out the contact form below or reach out via one of the
       social hubs found in the footer:
     </p>
-    <Form />
+    <Form recaptcha={RECAPTCHA_KEY} />
     <h2>
       <span>"</span>Creativity is contagious. Pass it on.<span>"</span> -{' '}
       <span>Albert Einstein</span>

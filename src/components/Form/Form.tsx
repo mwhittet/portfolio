@@ -1,16 +1,14 @@
 import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { Props } from '.';
 import { Button, FormWrapper, Input, Label, Textarea } from './styled';
 
-const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
-
-const Form = (): React.ReactElement => (
+const Form = ({ recaptcha }: Props): React.ReactElement => (
   <FormWrapper
     action="/success"
     data-netlify-honeypot="bot-field"
     data-netlify="true"
     data-netlify-recaptcha="true"
-    data-testid="form"
     method="post"
     name="contact"
   >
@@ -28,9 +26,7 @@ const Form = (): React.ReactElement => (
       type="hidden"
     />
     <p>
-      <Label data-testid="label-name" htmlFor="name">
-        Your Name:
-      </Label>
+      <Label htmlFor="name">Your Name:</Label>
       <Input
         autoComplete="nickname"
         data-testid="input-name"
@@ -41,9 +37,7 @@ const Form = (): React.ReactElement => (
       />
     </p>
     <p>
-      <Label data-testid="label-email" htmlFor="email">
-        Your Email:
-      </Label>
+      <Label htmlFor="email">Your Email:</Label>
       <Input
         autoComplete="email"
         data-testid="input-email"
@@ -54,9 +48,7 @@ const Form = (): React.ReactElement => (
       />
     </p>
     <p>
-      <Label data-testid="label-message" htmlFor="message">
-        Message:
-      </Label>
+      <Label htmlFor="message">Message:</Label>
       <Textarea
         data-testid="textarea-message"
         id="message"
@@ -64,13 +56,9 @@ const Form = (): React.ReactElement => (
         required
       />
     </p>
-    {RECAPTCHA_KEY && (
-      <ReCAPTCHA data-testid="reCAPTCHA" sitekey={RECAPTCHA_KEY} />
-    )}
+    {recaptcha && <ReCAPTCHA data-testid="recaptcha" sitekey={recaptcha} />}
     <p>
-      <Button data-testid="button-submit" type="submit">
-        Send message
-      </Button>
+      <Button type="submit">Send message</Button>
     </p>
   </FormWrapper>
 );
