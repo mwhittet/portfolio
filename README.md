@@ -10,8 +10,6 @@
 </p>
 
 <p align="center">
-  <img alt="David" src="https://img.shields.io/david/mwhittet/portfolio" />
-  <img alt="David" src="https://img.shields.io/david/dev/mwhittet/portfolio" />
   <img alt="npm type definitions" src="https://img.shields.io/npm/types/typescript" />
   <img alt="Website" src="https://img.shields.io/website?down_message=portfolio%20is%20down&up_message=portfolio%20is%20up&url=https%3A%2F%2Fwww.michaelwhittet.co.uk%2F" />
   <a href="https://app.netlify.com/sites/romantic-thompson-461e61/deploys">
