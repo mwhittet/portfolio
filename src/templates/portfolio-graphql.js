@@ -36,13 +36,13 @@ const portfolio = ({ data }) => {
       <SEO title={`Portfolio | ${portfolio.title}`} />
       <PageTitle>{portfolio.title}</PageTitle>
       <p>{portfolio.intro}</p>
-      <h3>Software, skills & technology</h3>
+      <h3>Software, skills & technology I used</h3>
       <SkillList>
         {portfolio.skills.map((skill) => (
           <Skill key={skill}>{skill}</Skill>
         ))}
       </SkillList>
-      <h3>Websites worked on & built</h3>
+      <h3>What I worked on</h3>
       <Container>
         {portfolio.projects.map((project) => (
           <PortfolioItem
