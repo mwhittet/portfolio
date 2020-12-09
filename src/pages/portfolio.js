@@ -32,7 +32,7 @@ const Portfolio = ({ data }) => (
     <SEO title="Portfolio" />
     <PageTitle>Portfolio</PageTitle>
     <p>
-      I've worked with various companies from small startups, agencys and
+      I've worked with various companies from small start-ups, agencies and
       enterprises:
     </p>
     <Container>
