@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import Img from 'gatsby-image';
+import styled from 'styled-components';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { colors } from '.';
 
 export const Container = styled.div`
@@ -100,7 +100,7 @@ export const Skill = styled.li`
   }
 `;
 
-export const StyledImg = styled(Img)`
+export const StyledImg = styled(GatsbyImage)`
   border-radius: 50%;
   display: block;
   height: 225px;

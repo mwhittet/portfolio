@@ -3,6 +3,9 @@ require('dotenv').config({
 });
 
 module.exports = {
+  flags: {
+    DEV_SSR: false,
+  },
   siteMetadata: {
     title: `Michael Whittet`,
     description: `Portfolio of Michael Whittet, a Front End Developer based just outside of London in Essex`,
@@ -18,6 +21,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

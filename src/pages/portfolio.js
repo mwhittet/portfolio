@@ -1,13 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Container, PageTitle } from '../styles/shared';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
 import PortfolioItem from '../components/PortfolioItem';
+import SEO from '../components/SEO';
 
-export const companyQuery = graphql`
-  query {
+export const query = graphql`
+  {
     allCompanyJson {
       edges {
         node {
@@ -16,9 +17,7 @@ export const companyQuery = graphql`
           url
           image {
             childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
             }
           }
         }
@@ -41,7 +40,7 @@ const Portfolio = ({ data }) => (
           key={node.id}
           url={node.url}
           name={node.name}
-          image={node.image}
+          image={getImage(node.image)}
         />
       ))}
     </Container>

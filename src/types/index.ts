@@ -1,30 +1,12 @@
-export interface FluidObject {
-  aspectRatio: number;
-  base64?: string;
-  media?: string;
-  sizes: string;
-  src: string;
-  srcSet: string;
-  srcSetWebp?: string;
-  srcWebp?: string;
-  tracedSVG?: string;
-}
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
 export interface LinkBox {
+  image: IGatsbyImageData;
   name: string;
   url: string;
-  image: {
-    childImageSharp: {
-      fluid: FluidObject | Array<FluidObject> | undefined;
-    };
-  };
 }
 
 export interface ContentItem {
-  image: {
-    childImageSharp: {
-      fluid: FluidObject | Array<FluidObject> | undefined;
-    };
-  };
+  image: IGatsbyImageData;
   name: string;
 }

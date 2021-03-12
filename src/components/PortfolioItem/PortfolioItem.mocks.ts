@@ -1,17 +1,48 @@
-export const defaultProps = {
-  url: 'https://www.michaelwhittet.co.uk',
-  name: 'Michael Whittet',
+import { ContentItem } from '../../types';
+
+export const portfolioItemDefaultProps = {
   image: {
-    childImageSharp: {
-      fluid: {
-        aspectRatio: 2,
-        base64:
-          'data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHQvokaUIC//8QAGhABAAMAAwAAAAAAAAAAAAAAAgABAwQFFP/aAAgBAQABBQLsBbHEyR3mhpVga9E//8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQMBAT8Bp//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABwQAQABBAMAA...',
-        sizes: '(max-width: 1200px) 100vw, 1200px',
-        src: '/static/f2291be24049472839268fd3aaf375bc/47498/roh.jpg',
-        srcSet:
-          '/static/f2291be24049472839268fd3aaf375bc/9dc27/roh.jpg 300w,\n/static/f2291be24049472839268fd3aaf375bc/4fe8c/roh.jpg 600w,\n/static/f2291be24049472839268fd3aaf375bc/47498/roh.jpg 1200w,\n/static/f2291be24049472839268fd3aaf375bc/52258/roh.jpg 1800w',
+    layout: 'fixed',
+    images: {
+      fallback: {
+        src: '/static/0551d06f3e50c98c39147875342b95c4/aaff5/me.png',
+        srcSet: '/static/0551d06f3e50c98c39147875342b95c4/aaff5/me.png 209w',
+        sizes: '100vw',
       },
+      sources: [
+        {
+          srcSet: '/static/0551d06f3e50c98c39147875342b95c4/8356d/me.webp 209w',
+          type: 'image/webp',
+          sizes: '100vw',
+        },
+      ],
     },
+    width: 1,
+    height: 1.076555023923445,
   },
+  name: 'Michael Whittet',
+  url: 'https://www.michaelwhittet.co.uk',
+};
+
+export const contentDefaultProps: ContentItem = {
+  image: {
+    layout: 'fixed',
+    images: {
+      fallback: {
+        src: '/static/0551d06f3e50c98c39147875342b95c4/aaff5/me.png',
+        srcSet: '/static/0551d06f3e50c98c39147875342b95c4/aaff5/me.png 209w',
+        sizes: '100vw',
+      },
+      sources: [
+        {
+          srcSet: '/static/0551d06f3e50c98c39147875342b95c4/8356d/me.webp 209w',
+          type: 'image/webp',
+          sizes: '100vw',
+        },
+      ],
+    },
+    width: 1,
+    height: 1.076555023923445,
+  },
+  name: 'Michael Whittet',
 };

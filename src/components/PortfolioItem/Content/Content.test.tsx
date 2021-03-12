@@ -1,14 +1,14 @@
 import React from 'react';
 import { render, RenderResult, screen } from '@testing-library/react';
 import Content from './Content';
-import { defaultProps } from '../PortfolioItem.mocks';
+import { contentDefaultProps } from '../PortfolioItem.mocks';
 
 const renderComponent = (): RenderResult =>
-  render(<Content {...defaultProps} />);
+  render(<Content {...contentDefaultProps} />);
 
 describe('<Content /> component', () => {
   it('should render', () => {
     renderComponent();
-    expect(screen.getByText(defaultProps.name)).toBeInTheDocument();
+    expect(screen.getByText(contentDefaultProps.name)).toBeInTheDocument();
   });
 });
