@@ -8,8 +8,10 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
   });
 };
 
-exports.createPages = async ({ actions: { createPage }, graphql }) => {
-  const results = await graphql(`
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
+
+  return graphql(`
     {
       allPortfolioJson {
         edges {
@@ -19,22 +21,15 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
         }
       }
     }
-  `);
-
-  if (results.error) {
-    console.log('Something went wrong!');
-    return;
-  }
-
-  results.data.allPortfolioJson.edges.forEach((edge) => {
-    const portfolio = edge.node;
-
-    createPage({
-      path: `/portfolio/${portfolio.slug}`,
-      component: require.resolve('./src/templates/portfolio-graphql.js'),
-      context: {
-        slug: portfolio.slug,
-      },
+  `).then((result) => {
+    result.data.allPortfolioJson.edges.forEach(({ node }) => {
+      createPage({
+        path: `/portfolio/${node.slug}`,
+        component: path.resolve('./src/templates/portfolio-graphql.js'),
+        context: {
+          slug: node.slug,
+        },
+      });
     });
   });
 };

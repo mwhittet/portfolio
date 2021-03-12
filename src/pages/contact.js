@@ -1,9 +1,9 @@
 import React from 'react';
 import { PageTitle } from '../styles/shared';
 
+import Form from '../components/Form';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
-import Form from '../components/Form';
 
 const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
 

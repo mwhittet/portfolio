@@ -1,11 +1,11 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Title } from '../../../styles/shared';
 import { ContentItem } from '../../../types';
 
-const Content = ({ name, image }: ContentItem): React.ReactElement => (
+const Content = ({ image, name }: ContentItem): React.ReactElement => (
   <>
-    <Img fluid={image.childImageSharp.fluid} />
+    <GatsbyImage alt={name} image={getImage(image)} />
     <Title>{name}</Title>
   </>
 );
