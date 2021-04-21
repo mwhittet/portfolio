@@ -1,4 +1,4 @@
-import SEO from './SEO';
+import Seo from './Seo';
 
 export interface Props {
   description?: string;
@@ -10,4 +10,4 @@ export interface Props {
   title: string;
 }
 
-export default SEO;
+export default Seo;

@@ -4,7 +4,7 @@ import { getImage } from 'gatsby-plugin-image';
 import { PageTitle, StyledImg } from '../styles/shared';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 export const query = graphql`
   {
@@ -21,7 +21,7 @@ const NotFoundPage = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="404: Not found" />
+      <Seo title="404: Not found" />
       <PageTitle>404: Not found</PageTitle>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       <StyledImg alt="Michael Whittet" image={image} />

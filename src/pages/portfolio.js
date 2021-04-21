@@ -5,7 +5,7 @@ import { Container, PageTitle } from '../styles/shared';
 
 import Layout from '../components/Layout';
 import PortfolioItem from '../components/PortfolioItem';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 export const query = graphql`
   {
@@ -28,7 +28,7 @@ export const query = graphql`
 
 const Portfolio = ({ data }) => (
   <Layout>
-    <SEO title="Portfolio" />
+    <Seo title="Portfolio" />
     <PageTitle>Portfolio</PageTitle>
     <p>
       I've worked with various companies from small start-ups, agencies and
