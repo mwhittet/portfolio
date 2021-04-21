@@ -4,7 +4,7 @@ import { getImage } from 'gatsby-plugin-image';
 import { HomeWrapper, Intro, StyledImg } from '../styles/shared';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 export const query = graphql`
   {
@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout className="home">
-      <SEO title="Front End Developer" />
+      <Seo title="Front End Developer" />
       <HomeWrapper>
         <StyledImg alt="Michael Whittet" image={image} />
         <Intro>

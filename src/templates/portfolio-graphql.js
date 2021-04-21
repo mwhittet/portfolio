@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { Container, PageTitle, SkillList, Skill } from '../styles/shared';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 import PortfolioItem from '../components/PortfolioItem';
 
 export const query = graphql`
@@ -31,7 +31,7 @@ const portfolio = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={`Portfolio | ${portfolio.title}`} />
+      <Seo title={`Portfolio | ${portfolio.title}`} />
       <PageTitle>{portfolio.title}</PageTitle>
       <p>{portfolio.intro}</p>
       <h3>Software, skills & technology I used</h3>

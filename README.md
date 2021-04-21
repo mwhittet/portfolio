@@ -6,7 +6,7 @@
   My Portfolio
 </h1>
 <p>
-  Still a work in progress but proudly built using React, Gatsby, GraphQL, TypeScript, styled-components and hosted on Netlify.
+  Proudly built using React, Gatsby, GraphQL, TypeScript, styled-components and hosted on Netlify.
 </p>
 
 <p align="center">
@@ -17,9 +17,9 @@
   </a>
 </p>
 
-## TODO/Ideas
+## Future ideas
 
 - Auto day/night cycle & toggle button for changing
 - Full test integration
 - Accessibility testing
-- ... more ideas to come
+- more to come...

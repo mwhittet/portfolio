@@ -3,11 +3,11 @@ import { Link } from 'gatsby';
 import { PageTitle } from '../styles/shared';
 
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 const About = () => (
   <Layout>
-    <SEO title="About" />
+    <Seo title="About" />
     <PageTitle>About</PageTitle>
     <p>
       I really love what I do and consider it a creative passion. It's helped me

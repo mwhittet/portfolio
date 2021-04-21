@@ -3,13 +3,13 @@ import { PageTitle } from '../styles/shared';
 
 import Form from '../components/Form';
 import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Seo from '../components/Seo';
 
 const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
 
 const Contact = () => (
   <Layout>
-    <SEO title="Contact" />
+    <Seo title="Contact" />
     <PageTitle>Contact</PageTitle>
     <p>
       If you wish to contact me about a freelance project or just fancy a chat,

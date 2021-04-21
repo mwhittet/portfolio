@@ -2,14 +2,14 @@ import React from 'react';
 import * as Gatsby from 'gatsby';
 import '@testing-library/jest-dom';
 import { render, RenderResult, waitFor } from '@testing-library/react';
-import SEO from './SEO';
+import Seo from './Seo';
 import {
   author,
   description,
   siteDescription,
   siteTitle,
   title,
-} from './SEO.mocks';
+} from './Seo.mocks';
 
 const getMeta = (metaName: string) => {
   const metas = document.getElementsByTagName('meta');
@@ -38,9 +38,9 @@ useStaticQuery.mockImplementation(() => ({
 }));
 
 const renderComponent = (props?): RenderResult =>
-  render(<SEO title={title} {...props} />);
+  render(<Seo title={title} {...props} />);
 
-describe('<SEO /> component', () => {
+describe('<Seo /> component', () => {
   it('should render the title tag with the correct text', async () => {
     renderComponent();
     await waitFor(() =>

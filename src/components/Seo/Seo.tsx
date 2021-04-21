@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import { Props } from '.';
 
-const SEO = ({ description = '', lang = 'en', meta = [], title }: Props) => {
+const Seo = ({ description = '', lang = 'en', meta = [], title }: Props) => {
   const { siteMetadata } = useSiteMetadata();
   const metaDescription = description || siteMetadata.description;
 
@@ -53,4 +53,4 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }: Props) => {
   );
 };
 
-export default SEO;
+export default Seo;
