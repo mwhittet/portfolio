@@ -49,7 +49,7 @@ export const Textarea = styled.textarea`
 `;
 
 export const Button = styled.button`
-  background-color: ${colors.internationalOrange};
+  background-color: ${colors.codGray};
   border-radius: 0.25rem;
   border: 1px solid transparent;
   color: ${colors.white};
@@ -59,12 +59,12 @@ export const Button = styled.button`
   line-height: 1.5;
   margin-top: 15px;
   padding: 0.375rem 0.75rem;
-  transition: width 0.5s ease;
+  transition: background-color 0.5s ease-out;
   user-select: none;
   vertical-align: middle;
-  width: 50%;
+  width: 303px; // to match the recaptcha width
 
   &:hover {
-    width: 100%;
+    background-color: ${colors.internationalOrange};
   }
 `;
