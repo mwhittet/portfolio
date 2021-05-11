@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const NavWrapper = styled.nav`
   display: flex;
   justify-content: center;
-  padding: 0 0 20px;
+  padding: 0 0 15px;
 `;
 
 export const Link = styled.a`

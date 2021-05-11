@@ -34,6 +34,9 @@ module.exports = {
         theme_color: `#000000`,
         display: `standalone`,
         icon: `src/images/icon.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
     `gatsby-plugin-typescript`,

@@ -16,10 +16,3 @@
     <img src="https://api.netlify.com/api/v1/badges/1d43b7a7-9f5e-41f4-b323-de48d0268e1a/deploy-status" />
   </a>
 </p>
-
-## Future ideas
-
-- Auto day/night cycle & toggle button for changing
-- Full test integration
-- Accessibility testing
-- more to come...

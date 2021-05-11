@@ -1,5 +1,61 @@
 [
   {
+    "title": "Which?",
+    "slug": "which",
+    "intro": "I initially started out in a team that were working on a headless Which? CMS solution to replace an old third party CMS that Which? we’re using. I also worked extensively on the new design system that used a collection of flexible components and styles that could be used across all the different products. Currently I am leading the Front End Development within a new squad.",
+    "skills": [
+      "HTML 5",
+      "CSS 3",
+      "JavaScript",
+      "JSON",
+      "XML",
+      "React",
+      "GraphQL",
+      "Babel",
+      "ESLint",
+      "TypeScript",
+      "Webpack",
+      "styled-components",
+      "CSS Modules",
+      "SASS",
+      "Storybook",
+      "Jest",
+      "React Testing library",
+      "Cypress",
+      "Git",
+      "CircleCI",
+      "Jira",
+      "RWD",
+      "AWS"
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "name": "Which? | Category example",
+        "url": "https://www.which.co.uk/technology",
+        "image": "../images/projects/which-category-example.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Which? | Listing example",
+        "url": "https://www.which.co.uk/reviews/food-and-drink/article/guides",
+        "image": "../images/projects/which-listing-example.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Which? | Article example",
+        "url": "https://www.which.co.uk/reviews/online-shopping/article/online-shopping/online-shopping-top-tips-to-stay-safe-and-shop-smart-aMgbs0Q4k6U4",
+        "image": "../images/projects/which-article-example.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Which? | Help to Buy calculator",
+        "url": "https://www.which.co.uk/money/mortgages-and-property/mortgage-calculators/help-to-buy-calculator-akj3c0y9b7u1",
+        "image": "../images/projects/which-help-to-buy.jpg"
+      }
+    ]
+  },
+  {
     "title": "Royal Opera House",
     "slug": "royal-opera-house",
     "intro": "A very unique & interesting place to work, I was the first Front End Developer to join the digital development team and was involved in all aspects of the website redesign project.",

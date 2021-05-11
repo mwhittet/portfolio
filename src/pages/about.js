@@ -11,17 +11,17 @@ const About = () => (
     <PageTitle>About</PageTitle>
     <p>
       I really love what I do and consider it a creative passion. It's helped me
-      build a good set of professional and personal skills such as having a very
-      good eye for detail (pixel perfect), can balance creative designs while
-      maintaining good user usability, managing my projects
+      build a great set of professional and personal skills such as having a
+      very good eye for detail (pixel perfect), can balance creative designs
+      while maintaining good user usability, managing my projects
       accurately/efficiently and I'm also very easy to get along with.
     </p>
     <p>
-      I have also had the chance to work with many different types of companies
-      and teams such as start-ups, agencies and large enterprises. This has
-      allowed me to gain a deep familiarity with the full project life cycle
-      involving design, wireframes, POC's and MVP's to delivering
-      international/localised websites and applications.
+      I have had the chance to work with many different types of companies and
+      teams such as start-ups, agencies and larger enterprises. This has allowed
+      me to gain a deep familiarity with the full project life cycle involving
+      design, wireframes, POC's and MVP's to delivering international/localised
+      websites and applications.
     </p>
     <h2>
       <span>"</span>The very substance of the ambitious is merely the shadow of
@@ -35,16 +35,17 @@ const About = () => (
       meetings, attending events, sharing ideas and knowledge sharing.
     </p>
     <p>
-      I've recently been working on the redesign project at the{' '}
+      I'm currently working at{' '}
       <a
-        href="https://www.roh.org.uk/"
+        href="https://www.which.co.uk/"
         target="_blank"
         rel="noopener noreferrer"
       >
-        Royal Opera House
+        Which?
       </a>{' '}
-      and I've worked with other great companies in the past, which you can find{' '}
-      <Link to="/portfolio">examples of here</Link>.
+      leading front end development within my squad whilst also helping in other
+      projects and BAU tasks. I've also worked with other great companies in the
+      past, which you can find <Link to="/portfolio">examples of here</Link>.
     </p>
   </Layout>
 );

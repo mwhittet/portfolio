@@ -6,12 +6,12 @@ export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 20px;
   text-align: center;
 `;
 
 export const Intro = styled.h1`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 1.3;
   text-align: center;
 
   @media (min-width: 992px) {
@@ -20,6 +20,7 @@ export const Intro = styled.h1`
 `;
 
 export const Title = styled.div`
+  color: ${colors.emperor};
   font-size: 1.5rem;
   opacity: 1;
   padding: 10px 0;
@@ -70,6 +71,7 @@ export const Wrapper = styled.div`
     }
 
     ${Title} {
+      color: ${colors.internationalOrange};
       opacity: 1;
     }
   }
@@ -79,7 +81,7 @@ export const SkillList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 0;
 `;
 
@@ -89,7 +91,7 @@ export const Skill = styled.li`
   color: #fff;
   cursor: default;
   display: inline;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   margin: 0 10px 10px 0;
   padding: 7px;
   transition: color 1s ease-out, background 1s ease-out;
@@ -103,9 +105,9 @@ export const Skill = styled.li`
 export const StyledImg = styled(GatsbyImage)`
   border-radius: 50%;
   display: block;
-  height: 225px;
+  height: 200px;
   margin: 0 auto 20px;
-  width: 209px;
+  width: 200px;
 
   @media (min-width: 992px) {
     margin: 0 auto 50px;

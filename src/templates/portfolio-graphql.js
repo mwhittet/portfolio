@@ -7,7 +7,7 @@ import Seo from '../components/Seo';
 import PortfolioItem from '../components/PortfolioItem';
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     portfolioJson(slug: { eq: $slug }) {
       title
       intro
@@ -34,23 +34,33 @@ const portfolio = ({ data }) => {
       <Seo title={`Portfolio | ${portfolio.title}`} />
       <PageTitle>{portfolio.title}</PageTitle>
       <p>{portfolio.intro}</p>
-      <h3>Software, skills & technology I used</h3>
-      <SkillList>
-        {portfolio.skills.map((skill) => (
-          <Skill key={skill}>{skill}</Skill>
-        ))}
-      </SkillList>
-      <h3>What I worked on</h3>
-      <Container>
-        {portfolio.projects.map((project) => (
-          <PortfolioItem
-            key={project.id}
-            url={project.url}
-            name={project.name}
-            image={project.image}
-          />
-        ))}
-      </Container>
+
+      {portfolio.skills.length > 0 && (
+        <>
+          <h3>Software, skills & technology I used</h3>
+          <SkillList>
+            {portfolio.skills.map((skill) => (
+              <Skill key={skill}>{skill}</Skill>
+            ))}
+          </SkillList>
+        </>
+      )}
+
+      {portfolio.projects.length > 0 && (
+        <>
+          <h3>What I worked on</h3>
+          <Container>
+            {portfolio.projects.map((project) => (
+              <PortfolioItem
+                image={project.image}
+                key={project.id}
+                name={project.name}
+                url={project.url}
+              />
+            ))}
+          </Container>
+        </>
+      )}
     </Layout>
   );
 };

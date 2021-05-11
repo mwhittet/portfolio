@@ -32,12 +32,14 @@ export const MainWrapper = styled.main`
 
   p {
     color: ${colors.emperor};
-    font-size: 1.1rem;
-    margin-bottom: 15px;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
 
     a {
-      color: ${colors.internationalOrange};
+      color: ${colors.emperor};
+      font-weight: bold;
       text-decoration: underline;
+      text-decoration-color: ${colors.internationalOrange};
 
       &:hover {
         text-decoration: none;
