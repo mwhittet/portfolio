@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Marmelad', sans-serif;
     font-size: 16px;
-    line-height: 1.15;
+    line-height: 1.4;
     margin: 0;
   }
 
@@ -37,7 +37,7 @@ export const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 1.75rem;
-    margin: 40px 0;
+    margin: 20px 0 40px;
     padding: 0;
     text-align: center;
   }
@@ -46,7 +46,7 @@ export const GlobalStyle = createGlobalStyle`
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     color: ${colors.internationalOrange};
     font-size: 1.5rem;
-    margin: 30px 0 20px;
+    margin: 10px 0 20px;
     padding: 0 0 5px;
   }
 

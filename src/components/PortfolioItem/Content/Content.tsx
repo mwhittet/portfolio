@@ -5,7 +5,7 @@ import { ContentItem } from '../../../types';
 
 const Content = ({ image, name }: ContentItem): React.ReactElement => (
   <>
-    <GatsbyImage alt={name} image={getImage(image)} />
+    <GatsbyImage alt="" image={getImage(image)} />
     <Title>{name}</Title>
   </>
 );

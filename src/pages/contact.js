@@ -14,7 +14,7 @@ const Contact = () => (
     <p>
       If you wish to contact me about a freelance project or just fancy a chat,
       feel free to fill out the contact form below or reach out via one of the
-      social hubs found in the footer:
+      social hubs found in the footer.
     </p>
     <Form recaptcha={RECAPTCHA_KEY} />
     <h2>
