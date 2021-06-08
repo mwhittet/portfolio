@@ -5,7 +5,7 @@
 <h1 align="center">
   My Portfolio
 </h1>
-<p>
+<p align="center">
   Proudly built using React, Gatsby, GraphQL, TypeScript, styled-components and hosted on Netlify.
 </p>
 
