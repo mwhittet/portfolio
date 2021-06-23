@@ -12,7 +12,7 @@ describe('<Social /> component', () => {
 
   it('should render with three links', () => {
     renderComponent();
-    expect(screen.getByTestId('social').childElementCount).toBe(3);
+    expect(screen.getByTestId('social').childElementCount).toBe(2);
   });
 
   it('should render the Github link with the aria-label', () => {
@@ -44,22 +44,6 @@ describe('<Social /> component', () => {
     expect(screen.getByTestId('social-linkedin')).toHaveAttribute(
       'href',
       'https://www.linkedin.com/in/michaelwhittet'
-    );
-  });
-
-  it('should render the Twitter link with the aria-label', () => {
-    renderComponent();
-    expect(screen.getByTestId('social-twitter')).toHaveAttribute(
-      'aria-label',
-      'Visit my Twitter profile'
-    );
-  });
-
-  it('should render the Twitter link with the correct href', () => {
-    renderComponent();
-    expect(screen.getByTestId('social-twitter')).toHaveAttribute(
-      'href',
-      'https://twitter.com/michaelwhittet'
     );
   });
 });

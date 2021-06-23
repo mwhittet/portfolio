@@ -3,13 +3,7 @@ import * as Gatsby from 'gatsby';
 import '@testing-library/jest-dom';
 import { render, RenderResult, waitFor } from '@testing-library/react';
 import Seo from './Seo';
-import {
-  author,
-  description,
-  siteDescription,
-  siteTitle,
-  title,
-} from './Seo.mocks';
+import { description, siteDescription, siteTitle, title } from './Seo.mocks';
 
 const getMeta = (metaName: string) => {
   const metas = document.getElementsByTagName('meta');
@@ -30,7 +24,6 @@ const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
 useStaticQuery.mockImplementation(() => ({
   site: {
     siteMetadata: {
-      author,
       description: siteDescription,
       title: siteTitle,
     },
@@ -87,11 +80,6 @@ describe('<Seo /> component', () => {
   it('should render the twitter:card tag with the correct text', async () => {
     renderComponent();
     await waitFor(() => expect(getMeta('twitter:card')).toEqual('summary'));
-  });
-
-  it('should render the twitter:creator tag with the correct text', async () => {
-    renderComponent();
-    await waitFor(() => expect(getMeta('twitter:creator')).toEqual(author));
   });
 
   it('should render the twitter:description tag with the correct text', async () => {
