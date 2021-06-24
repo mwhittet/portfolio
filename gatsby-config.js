@@ -9,7 +9,6 @@ module.exports = {
   siteMetadata: {
     title: `Michael Whittet`,
     description: `Portfolio of Michael Whittet, a Front End Developer based just outside of London in Essex`,
-    author: `@michaelwhittet`,
     siteUrl: `https://www.michaelwhittet.co.uk`,
   },
   plugins: [

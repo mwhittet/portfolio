@@ -35,10 +35,6 @@ const Seo = ({ description = '', lang = 'en', meta = [], title }: Props) => {
           content: `summary`,
         },
         {
-          name: `twitter:creator`,
-          content: siteMetadata.author,
-        },
-        {
           name: `twitter:description`,
           content: metaDescription,
         },
