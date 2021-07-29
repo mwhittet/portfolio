@@ -27,7 +27,7 @@ const NotFoundPage = ({ data }) => {
       <p>
         Go back to the <Link to="/">home</Link> page?
       </p>
-      <StyledImg alt="404 facepalm" image={image} />
+      <StyledImg alt="404 facepalm" image={image} height="200" width="200" />
     </Layout>
   );
 };

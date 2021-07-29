@@ -23,7 +23,7 @@ const IndexPage = ({ data }) => {
     <Layout className="home">
       <Seo title="Front End Developer" />
       <HomeWrapper>
-        <StyledImg alt="" image={image} />
+        <StyledImg alt="" image={image} height="200" width="200" />
         <Intro>
           <span>Hello!</span> I'm <span>Michael Whittet</span> aka Mike, Bruce,
           Buzz, Spike, Goo, Whittet (those are some of my nicknames!) &amp; I am
