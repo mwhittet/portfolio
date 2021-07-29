@@ -105,9 +105,7 @@ export const Skill = styled.li`
 export const StyledImg = styled(GatsbyImage)`
   border-radius: 50%;
   display: block;
-  height: 200px;
   margin: 0 auto 20px;
-  width: 200px;
 
   @media (min-width: 992px) {
     margin: 0 auto 50px;
