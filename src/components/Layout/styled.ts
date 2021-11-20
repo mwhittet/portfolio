@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colors } from '../../styles';
+import { breakpoints, colors } from '../../styles';
 
 export const Container = styled.div`
   display: flex;
@@ -16,14 +16,14 @@ export const MainWrapper = styled.main`
   position: relative;
   width: 95%;
 
-  @media (min-width: 992px) {
+  ${breakpoints.md} {
     margin: 50px auto;
     padding: 0;
     width: 960px;
   }
 
-  @media (min-width: 1432px) {
-    width: 1400px;
+  ${breakpoints.lg} {
+    width: 1200px;
   }
 
   &.home {

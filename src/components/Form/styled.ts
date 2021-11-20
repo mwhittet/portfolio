@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
-import colors from '../../styles/colors';
+import { breakpoints, colors } from '../../styles';
 
 export const FormWrapper = styled.form`
   margin: 10px auto 0;
   width: 100%;
 
-  @media (min-width: 992px) {
+  ${breakpoints.md} {
     width: 50%;
   }
 
