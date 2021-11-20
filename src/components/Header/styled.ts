@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'gatsby';
-import { colors } from '../../styles';
+import { breakpoints, colors } from '../../styles';
 
 const shake = keyframes`
   10%, 90% {
@@ -24,10 +24,10 @@ export const HeaderWrapper = styled.header`
   color: ${colors.mercury};
   display: flex;
   justify-content: space-between;
-  padding: 5px 5% 5px 3%;
+  padding: 10px 5% 10px 3%;
 
-  @media (min-width: 992px) {
-    padding: 5px 50px;
+  ${breakpoints.md} {
+    padding: 10px 50px;
   }
 `;
 
@@ -37,6 +37,10 @@ export const Title = styled(Link)`
     backface-visibility: hidden;
     perspective: 1000px;
     transform: translate3d(0, 0, 0);
+  }
+
+  svg {
+    display: block;
   }
 `;
 
@@ -48,9 +52,9 @@ export const LinkWrapper = styled.span`
   a {
     font-size: 1.15rem;
     position: relative;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
 
-    @media (min-width: 992px) {
+    ${breakpoints.md} {
       font-size: 1.25rem;
     }
 
@@ -75,7 +79,7 @@ export const LinkWrapper = styled.span`
       opacity: 0;
       position: absolute;
       transition-duration: 0.5s;
-      transition: all 0.2s ease-in-out;
+      transition: all 0.5s ease-in-out;
       width: 0;
     }
   }

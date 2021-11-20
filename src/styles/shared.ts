@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { colors } from '.';
+import { breakpoints, colors } from '.';
 
 export const Container = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export const Intro = styled.h1`
   line-height: 1.3;
   text-align: center;
 
-  @media (min-width: 992px) {
+  ${breakpoints.md} {
     font-size: 2rem;
   }
 `;
@@ -26,7 +26,7 @@ export const Title = styled.div`
   padding: 10px 0;
   transition: 0.3s ease-in-out;
 
-  @media (min-width: 992px) {
+  ${breakpoints.md} {
     opacity: 0;
   }
 `;
@@ -51,7 +51,7 @@ export const Wrapper = styled.div`
   position: relative;
   width: 95%;
 
-  @media (min-width: 992px) {
+  ${breakpoints.md} {
     padding: 0;
     width: 48%;
   }
@@ -60,7 +60,7 @@ export const Wrapper = styled.div`
     transform: none;
     transition: 0.3s ease-in-out;
 
-    @media (min-width: 992px) {
+    ${breakpoints.md} {
       transform: rotate(15deg) scale(1.4);
     }
   }
@@ -107,7 +107,7 @@ export const StyledImg = styled(GatsbyImage)`
   display: block;
   margin: 0 auto 20px;
 
-  @media (min-width: 992px) {
+  ${breakpoints.md} {
     margin: 0 auto 50px;
   }
 `;
