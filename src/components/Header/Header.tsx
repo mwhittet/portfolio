@@ -10,7 +10,7 @@ const Header = ({ siteTitle }: Props): React.ReactElement => (
       <Logo data-testid="header-logo" height="48" width="48" />
     </Title>
 
-    <Navigation data-testid="header-nav">
+    <Navigation aria-label="main navigation" data-testid="header-nav">
       <LinkWrapper>
         <Link
           activeClassName="active"
