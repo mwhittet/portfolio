@@ -17,7 +17,7 @@
     "gatsby-plugin-sitemap": "^5.19.0",
     "gatsby-plugin-styled-components": "^5.19.0",
     "gatsby-plugin-svgr-loader": "^0.1.0",
-    "gatsby-plugin-typescript": "^4.19.0",
+    "gatsby-plugin-typescript": "^4.24.0",
     "gatsby-plugin-webfonts": "^2.2.2",
     "gatsby-source-filesystem": "^4.19.0",
     "gatsby-transformer-json": "^4.19.0",
