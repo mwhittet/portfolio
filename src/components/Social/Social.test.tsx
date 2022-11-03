@@ -27,7 +27,7 @@ describe('<Social /> component', () => {
     renderComponent();
     expect(screen.getByTestId('social-github')).toHaveAttribute(
       'href',
-      'https://github.com/mwhittet'
+      'https://github.com/mwhittet/'
     );
   });
 
@@ -43,7 +43,7 @@ describe('<Social /> component', () => {
     renderComponent();
     expect(screen.getByTestId('social-linkedin')).toHaveAttribute(
       'href',
-      'https://www.linkedin.com/in/michaelwhittet'
+      'https://www.linkedin.com/in/mike-w-b8756168/'
     );
   });
 });

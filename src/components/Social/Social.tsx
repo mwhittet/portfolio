@@ -9,7 +9,7 @@ const Social = (): React.ReactElement => (
       <Link
         aria-label="Visit my Github profile"
         data-testid="social-github"
-        href="https://github.com/mwhittet"
+        href="https://github.com/mwhittet/"
         rel="nofollow noreferrer"
         target="_blank"
       >
@@ -18,7 +18,7 @@ const Social = (): React.ReactElement => (
       <Link
         aria-label="Visit my LinkedIn profile"
         data-testid="social-linkedin"
-        href="https://www.linkedin.com/in/michaelwhittet"
+        href="https://www.linkedin.com/in/mike-w-b8756168/"
         rel="nofollow noreferrer"
         target="_blank"
       >

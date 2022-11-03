@@ -37,7 +37,7 @@ const portfolio = ({ data }) => {
 
       {portfolio.skills.length > 0 && (
         <>
-          <h3>Software, skills & technology I used</h3>
+          <h3>Software, skills & technology used</h3>
           <SkillList>
             {portfolio.skills.map((skill) => (
               <Skill key={skill}>{skill}</Skill>
