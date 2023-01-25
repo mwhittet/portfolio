@@ -34,7 +34,7 @@ const About = () => (
       collaborating and managing both the business and development requirements
       whilst ensuring smooth user journeys and interfaces. I also enjoy
       mentoring and developing more junior developers through code reviews, tech
-      meetings, attending events, sharing ideas and knowledge sharing.
+      meetings and knowledge/idea sharing.
     </p>
     <p>
       I'm currently working at{' '}
@@ -45,9 +45,9 @@ const About = () => (
       >
         Which?
       </a>{' '}
-      leading front end development within my squad whilst also helping in other
-      projects and BAU tasks. I've also worked with other great companies in the
-      past, which you can find <Link to="/portfolio">examples of here</Link>.
+      within a squad working on various projects and tasks. I've also worked
+      with some other great companies in the past, you can find some{' '}
+      <Link to="/portfolio">examples here</Link>.
     </p>
   </Layout>
 );
