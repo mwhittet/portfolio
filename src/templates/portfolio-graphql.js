@@ -37,7 +37,7 @@ const portfolio = ({ data }) => {
 
       {portfolio.skills.length > 0 && (
         <>
-          <h3>Software, skills & technology used</h3>
+          <h2>Software, skills & technology used</h2>
           <SkillList>
             {portfolio.skills.map((skill) => (
               <Skill key={skill}>{skill}</Skill>
@@ -48,7 +48,7 @@ const portfolio = ({ data }) => {
 
       {portfolio.projects.length > 0 && (
         <>
-          <h3>What I worked on</h3>
+          <h2>What I worked on</h2>
           <Container>
             {portfolio.projects.map((project) => (
               <PortfolioItem

@@ -1,7 +1,14 @@
 import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Props } from '.';
-import { Button, FormWrapper, Input, Label, Textarea } from './styled';
+import {
+  Button,
+  FormField,
+  FormWrapper,
+  Input,
+  Label,
+  Textarea,
+} from './styled';
 
 const Form = ({ recaptcha }: Props): React.ReactElement => (
   <FormWrapper
@@ -25,7 +32,7 @@ const Form = ({ recaptcha }: Props): React.ReactElement => (
       name="bot-field"
       type="hidden"
     />
-    <p>
+    <FormField>
       <Label htmlFor="name">Your Name:</Label>
       <Input
         autoComplete="nickname"
@@ -35,8 +42,8 @@ const Form = ({ recaptcha }: Props): React.ReactElement => (
         required
         type="text"
       />
-    </p>
-    <p>
+    </FormField>
+    <FormField>
       <Label htmlFor="email">Your Email:</Label>
       <Input
         autoComplete="email"
@@ -46,8 +53,8 @@ const Form = ({ recaptcha }: Props): React.ReactElement => (
         required
         type="email"
       />
-    </p>
-    <p>
+    </FormField>
+    <FormField>
       <Label htmlFor="message">Message:</Label>
       <Textarea
         data-testid="textarea-message"
@@ -55,11 +62,15 @@ const Form = ({ recaptcha }: Props): React.ReactElement => (
         name="message"
         required
       />
-    </p>
-    {recaptcha && <ReCAPTCHA data-testid="recaptcha" sitekey={recaptcha} />}
-    <p>
-      <Button type="submit">Send message</Button>
-    </p>
+    </FormField>
+    {recaptcha && (
+      <ReCAPTCHA
+        className="recaptcha"
+        data-testid="recaptcha"
+        sitekey={recaptcha}
+      />
+    )}
+    <Button type="submit">Send message</Button>
   </FormWrapper>
 );
 
