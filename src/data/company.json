@@ -19,32 +19,8 @@
   },
   {
     "id": 4,
-    "image": "../images/portfolio/schawk-and-anthem.jpg",
-    "name": "Schawk! & Anthem",
-    "url": "/portfolio/schawk-and-anthem"
-  },
-  {
-    "id": 5,
-    "image": "../images/portfolio/powa.jpg",
-    "name": "Powa Technologies",
-    "url": "/portfolio/powa-technologies"
-  },
-  {
-    "id": 6,
     "image": "../images/portfolio/virgin.jpg",
     "name": "Virgin Media",
     "url": "/portfolio/virgin-media"
-  },
-  {
-    "id": 7,
-    "image": "../images/portfolio/gforces.jpg",
-    "name": "GForces",
-    "url": "/portfolio/gforces"
-  },
-  {
-    "id": 8,
-    "image": "../images/portfolio/xanda.jpg",
-    "name": "Xanda",
-    "url": "/portfolio/xanda"
   }
 ]

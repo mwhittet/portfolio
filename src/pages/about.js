@@ -23,10 +23,12 @@ const About = () => (
       design, wireframes, POC's and MVP's to delivering international/localised
       websites and applications.
     </p>
-    <h2>
-      <span>"</span>The very substance of the ambitious is merely the shadow of
-      a dream.<span>"</span> - <span>William Shakespear</span>
-    </h2>
+    <figure>
+      <blockquote>
+        The very substance of the ambitious is merely the shadow of a dream.
+      </blockquote>
+      <figcaption> — William Shakespear</figcaption>
+    </figure>
     <p>
       My experience so far has enabled me to lead front end teams by
       collaborating and managing both the business and development requirements

@@ -33,7 +33,9 @@ bower_components
 build/Release
 
 # Dependency directories
-.yarn
+/.yarn/*
+!/.yarn/plugins
+!/.yarn/releases
 node_modules/
 jspm_packages/
 

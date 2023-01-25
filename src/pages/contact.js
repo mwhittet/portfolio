@@ -17,10 +17,10 @@ const Contact = () => (
       social hubs found in the footer.
     </p>
     <Form recaptcha={RECAPTCHA_KEY} />
-    <h2>
-      <span>"</span>Creativity is contagious. Pass it on.<span>"</span> -{' '}
-      <span>Albert Einstein</span>
-    </h2>
+    <figure>
+      <blockquote>Creativity is contagious. Pass it on.</blockquote>
+      <figcaption> — Albert Einstein</figcaption>
+    </figure>
   </Layout>
 );
 

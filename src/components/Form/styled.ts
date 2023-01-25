@@ -12,12 +12,17 @@ export const FormWrapper = styled.form`
   .hidden {
     display: none;
   }
+
+  .recaptcha {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const InputTextarea = css`
   background-clip: padding-box;
   border-radius: 0.25rem;
-  border: 1px solid ${colors.mercury};
+  border: 2px solid ${colors.dustyGray};
   display: block;
   font-size: 1rem;
   font-weight: 400;
@@ -32,6 +37,10 @@ export const InputTextarea = css`
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     outline: 0;
   }
+`;
+
+export const FormField = styled.div`
+  margin-bottom: 15px;
 `;
 
 export const Label = styled.label`
@@ -57,12 +66,12 @@ export const Button = styled.button`
   font-size: 1rem;
   height: 2.5rem;
   line-height: 1.5;
-  margin-top: 15px;
+  margin: 15px 0 70px;
   padding: 0.375rem 0.75rem;
   transition: background-color 0.5s ease-out;
   user-select: none;
   vertical-align: middle;
-  width: 303px; // to match the recaptcha width
+  width: 100%;
 
   &:hover {
     background-color: ${colors.internationalOrange};
