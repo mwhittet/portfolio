@@ -3,10 +3,14 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { breakpoints, colors } from '.';
 
 export const Container = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr;
   text-align: center;
+
+  ${breakpoints.md} {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 export const Intro = styled.h1`
@@ -45,16 +49,8 @@ export const HomeWrapper = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  margin-bottom: 4%;
   overflow: hidden;
-  padding: 5% 2.5%;
   position: relative;
-  width: 95%;
-
-  ${breakpoints.md} {
-    padding: 0;
-    width: 48%;
-  }
 
   .gatsby-image-wrapper {
     transform: none;

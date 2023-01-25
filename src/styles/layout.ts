@@ -24,25 +24,16 @@ export const GlobalStyle = createGlobalStyle`
     display: block;
   }
 
-  h1,
-  h2 {
+  h1 {
     color: ${colors.emperor};
     margin: 0;
-  }
 
-  h1 span,
-  h2 span {
-    color: ${colors.internationalOrange};
+    span {
+      color: ${colors.internationalOrange};
+    }
   }
 
   h2 {
-    font-size: 1.75rem;
-    margin: 20px 0 40px;
-    padding: 0;
-    text-align: center;
-  }
-
-  h3 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     color: ${colors.internationalOrange};
     font-size: 1.5rem;
@@ -56,11 +47,11 @@ export const GlobalStyle = createGlobalStyle`
     fill: ${colors.mercury};
     text-decoration: none;
     transition: color 0.5s ease-out, fill 0.5s ease-out;
-  }
 
-  a:hover {
-    color: ${colors.internationalOrange};
-    fill: ${colors.internationalOrange};
+    &:hover {
+      color: ${colors.internationalOrange};
+      fill: ${colors.internationalOrange};
+    }
   }
 
   p {
@@ -74,5 +65,22 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     border-style: none;
+  }
+
+  blockquote {
+    margin: 0 0 20px;
+  }
+
+  figure {
+    color: ${colors.emperor};
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0 0 20px;
+    padding: 0;
+    text-align: center;
+
+    figcaption {
+      color: ${colors.internationalOrange};
+    }
   }
 `;
