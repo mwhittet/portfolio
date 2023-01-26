@@ -56,7 +56,7 @@ export const Input = styled.input`
 
 export const Textarea = styled.textarea`
   ${InputTextarea}
-  height: 10rem;
+  height: 6rem;
 `;
 
 export const Button = styled.button`
@@ -68,16 +68,12 @@ export const Button = styled.button`
   font-size: 1.125rem;
   height: 2.5rem;
   line-height: 1.5;
-  margin: 20px 0 35px;
+  margin: 20px 0 0;
   padding: 0.375rem 0.75rem;
   transition: background-color 0.5s ease-out;
   user-select: none;
   vertical-align: middle;
   width: 100%;
-
-  ${breakpoints.md} {
-    margin: 20px 0 70px;
-  }
 
   &:hover {
     background-color: ${colors.internationalOrange};

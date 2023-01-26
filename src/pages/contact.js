@@ -11,16 +11,23 @@ const Contact = () => (
   <Layout>
     <Seo title="Contact" />
     <PageTitle>Contact</PageTitle>
-    <p>
-      If you wish to contact me about a freelance project or just fancy a chat,
-      feel free to fill out the contact form below or reach out via one of the
-      social hubs found in the footer.
-    </p>
-    <Form recaptcha={RECAPTCHA_KEY} />
     <figure>
       <blockquote>Creativity is contagious. Pass it on.</blockquote>
       <figcaption> — Albert Einstein</figcaption>
     </figure>
+    <p>
+      If you wish to contact me about a freelance project or just fancy a chat,
+      please feel free to fill out the contact form below or reach out to me via{' '}
+      <a
+        href="https://www.linkedin.com/in/mike-w-b8756168/"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        LinkedIn
+      </a>
+      .
+    </p>
+    <Form recaptcha={RECAPTCHA_KEY} />
   </Layout>
 );
 
