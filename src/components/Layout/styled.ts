@@ -11,10 +11,8 @@ export const MainWrapper = styled.main`
   display: flex;
   flex: 1;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 5% 2.5%;
+  padding: 15px;
   position: relative;
-  width: 95%;
 
   ${breakpoints.md} {
     margin: 50px auto;

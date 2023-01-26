@@ -2,10 +2,8 @@ import styled, { css } from 'styled-components';
 import { breakpoints, colors } from '../../styles';
 
 export const FormWrapper = styled.form`
-  margin: 10px auto 0;
-  width: 100%;
-
   ${breakpoints.md} {
+    margin: 0 auto;
     width: 50%;
   }
 
@@ -23,8 +21,10 @@ export const InputTextarea = css`
   background-clip: padding-box;
   border-radius: 0.25rem;
   border: 2px solid ${colors.dustyGray};
+  color: ${colors.emperor};
   display: block;
-  font-size: 1rem;
+  font-family: 'Marmelad', sans-serif;
+  font-size: 1.125rem;
   font-weight: 400;
   height: 2.5rem;
   line-height: 1.5;
@@ -40,11 +40,13 @@ export const InputTextarea = css`
 `;
 
 export const FormField = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 `;
 
 export const Label = styled.label`
+  color: ${colors.emperor};
   display: inline-block;
+  font-size: 1.125rem;
   margin-bottom: 0.5rem;
 `;
 
@@ -63,15 +65,19 @@ export const Button = styled.button`
   border: 1px solid transparent;
   color: ${colors.white};
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.125rem;
   height: 2.5rem;
   line-height: 1.5;
-  margin: 15px 0 70px;
+  margin: 20px 0 35px;
   padding: 0.375rem 0.75rem;
   transition: background-color 0.5s ease-out;
   user-select: none;
   vertical-align: middle;
   width: 100%;
+
+  ${breakpoints.md} {
+    margin: 20px 0 70px;
+  }
 
   &:hover {
     background-color: ${colors.internationalOrange};

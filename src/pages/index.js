@@ -10,7 +10,7 @@ export const query = graphql`
   {
     file(relativePath: { eq: "me.png" }) {
       childImageSharp {
-        gatsbyImageData(placeholder: TRACED_SVG, quality: 100)
+        gatsbyImageData(placeholder: NONE, quality: 100)
       }
     }
   }

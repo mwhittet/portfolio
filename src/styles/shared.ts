@@ -25,7 +25,7 @@ export const Intro = styled.h1`
 
 export const Title = styled.div`
   color: ${colors.emperor};
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   opacity: 1;
   padding: 10px 0;
   transition: 0.3s ease-in-out;
@@ -38,8 +38,13 @@ export const Title = styled.div`
 export const PageTitle = styled.h1`
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   color: ${colors.internationalOrange};
+  font-size: 1.4rem;
   margin-bottom: 20px;
   padding-bottom: 5px;
+
+  ${breakpoints.md} {
+    font-size: 2rem;
+  }
 `;
 
 export const HomeWrapper = styled.div`
