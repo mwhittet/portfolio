@@ -40,8 +40,8 @@ const About = () => (
       I'm currently working at{' '}
       <a
         href="https://www.which.co.uk/"
-        target="_blank"
         rel="noopener noreferrer"
+        target="_blank"
       >
         Which?
       </a>{' '}

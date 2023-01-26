@@ -72,7 +72,6 @@ export const Wrapper = styled.div`
     }
 
     ${Title} {
-      color: ${colors.internationalOrange};
       opacity: 1;
     }
   }
@@ -87,19 +86,16 @@ export const SkillList = styled.ul`
 `;
 
 export const Skill = styled.li`
-  background: #141414;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-  color: #fff;
+  color: ${colors.emperor};
   cursor: default;
   display: inline;
   font-size: 1.125rem;
   margin: 0 10px 10px 0;
   padding: 7px;
-  transition: color 1s ease-out, background 1s ease-out;
 
   &:hover {
-    background: none;
-    color: #555;
+    box-shadow: 4px 4px 8px rgba(255, 84, 0, 1);
   }
 `;
 
