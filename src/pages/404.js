@@ -10,7 +10,7 @@ export const query = graphql`
   {
     file(relativePath: { eq: "404.jpg" }) {
       childImageSharp {
-        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+        gatsbyImageData(placeholder: NONE)
       }
     }
   }
@@ -27,7 +27,7 @@ const NotFoundPage = ({ data }) => {
       <p>
         Go back to the <Link to="/">home</Link> page?
       </p>
-      <StyledImg alt="404 facepalm" image={image} height="200" width="200" />
+      <StyledImg alt="404 facepalm" image={image} height="275" width="275" />
     </Layout>
   );
 };
