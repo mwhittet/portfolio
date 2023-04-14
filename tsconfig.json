@@ -9,6 +9,7 @@
     "noImplicitAny": true,
     "pretty": true,
     "skipLibCheck": true,
+    "strict": true,
     "strictNullChecks": true,
     "target": "esnext"
   },

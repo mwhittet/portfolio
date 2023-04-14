@@ -6,7 +6,6 @@ import Seo from '../components/Seo';
 
 const Success = () => (
   <Layout>
-    <Seo title="Success" />
     <PageTitle>Message recieved!</PageTitle>
     <p>
       Thank you for taking the time to contact me and I will be in touch
@@ -16,3 +15,5 @@ const Success = () => (
 );
 
 export default Success;
+
+export const Head = () => <Seo title="Michael Whittet | Success" />;

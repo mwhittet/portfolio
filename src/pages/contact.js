@@ -9,12 +9,7 @@ const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
 
 const Contact = () => (
   <Layout>
-    <Seo title="Contact" />
     <PageTitle>Contact</PageTitle>
-    <figure>
-      <blockquote>Creativity is contagious. Pass it on.</blockquote>
-      <figcaption> — Albert Einstein</figcaption>
-    </figure>
     <p>
       If you wish to contact me about a freelance project or just fancy a chat,
       please feel free to fill out the contact form below or reach out to me via{' '}
@@ -27,8 +22,16 @@ const Contact = () => (
       </a>
       .
     </p>
+
     <Form recaptcha={RECAPTCHA_KEY} />
+
+    <figure>
+      <blockquote>Creativity is contagious. Pass it on.</blockquote>
+      <figcaption> — Albert Einstein</figcaption>
+    </figure>
   </Layout>
 );
 
 export default Contact;
+
+export const Head = () => <Seo title="Michael Whittet | Contact" />;

@@ -28,9 +28,11 @@ export const query = graphql`
 
 const Portfolio = ({ data }) => (
   <Layout>
-    <Seo title="Portfolio" />
     <PageTitle>Portfolio</PageTitle>
-    <p>I've worked with various companies from small start-ups, agencies and enterprises, here are some examples:</p>
+    <p>
+      I've worked with various companies from small start-ups, agencies and
+      enterprises, here are some examples:
+    </p>
     <Container>
       {data.allCompanyJson.edges.map(({ node }) => (
         <PortfolioItem
@@ -45,3 +47,5 @@ const Portfolio = ({ data }) => (
 );
 
 export default Portfolio;
+
+export const Head = () => <Seo title="Michael Whittet | Portfolio" />;
