@@ -22,7 +22,12 @@ const IndexPage = ({ data }) => {
   return (
     <Layout className="home">
       <HomeWrapper>
-        <StyledImg alt="" image={image} height="200" width="200" />
+        <StyledImg
+          alt="Picture of Michael Whittet"
+          image={image}
+          height="200"
+          width="200"
+        />
         <Intro>
           <span>Hello!</span> I'm <span>Michael Whittet</span> aka Mike, Bruce,
           Buzz, Spike, Goo, Whittet (those are some of my nicknames!) &amp; I am
