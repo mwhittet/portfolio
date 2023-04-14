@@ -21,8 +21,7 @@ const NotFoundPage = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title="404: Not found" />
-      <PageTitle>404: Not found</PageTitle>
+      <PageTitle>404</PageTitle>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       <p>
         Go back to the <Link to="/">home</Link> page?
@@ -33,3 +32,5 @@ const NotFoundPage = ({ data }) => {
 };
 
 export default NotFoundPage;
+
+export const Head = () => <Seo title="Michael Whittet | 404" />;

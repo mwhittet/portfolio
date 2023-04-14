@@ -31,7 +31,6 @@ const portfolio = ({ data }) => {
 
   return (
     <Layout>
-      <Seo title={`Portfolio | ${portfolio.title}`} />
       <PageTitle>{portfolio.title}</PageTitle>
       <p>{portfolio.intro}</p>
 
@@ -66,3 +65,7 @@ const portfolio = ({ data }) => {
 };
 
 export default portfolio;
+
+export const Head = ({ data }) => (
+  <Seo title={`Michael Whittet | ${data.portfolioJson.title}`} />
+);

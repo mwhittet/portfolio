@@ -21,7 +21,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout className="home">
-      <Seo title="Front End Developer" />
       <HomeWrapper>
         <StyledImg alt="" image={image} height="200" width="200" />
         <Intro>
@@ -36,3 +35,5 @@ const IndexPage = ({ data }) => {
 };
 
 export default IndexPage;
+
+export const Head = () => <Seo title="Michael Whittet | Front End Developer" />;

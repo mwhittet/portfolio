@@ -7,7 +7,6 @@ import Seo from '../components/Seo';
 
 const About = () => (
   <Layout>
-    <Seo title="About" />
     <PageTitle>About</PageTitle>
     <p>
       I really love what I do and consider it a creative passion. It's helped me
@@ -45,7 +44,7 @@ const About = () => (
       >
         Which?
       </a>{' '}
-      within a squad working on various projects and tasks. I've also worked
+      within a squad completing various projects and tasks. I've also worked
       with some other great companies in the past, you can find some{' '}
       <Link to="/portfolio">examples here</Link>.
     </p>
@@ -53,3 +52,5 @@ const About = () => (
 );
 
 export default About;
+
+export const Head = () => <Seo title="Michael Whittet | About" />;

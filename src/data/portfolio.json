@@ -2,7 +2,7 @@
   {
     "title": "Which?",
     "slug": "which",
-    "intro": "The initial team I joined were working on a headless CMS solution to replace an old third party CMS that was being used. I extensively worked on the new design system to create a collection of flexible and reusable components that could be used across all of the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in two squads, the acquisition and content experience. Within the content experience squad, we look after a number of areas such as the global navigation, WCD (CMS/templates that deliver content to users), homepage, static tools and a component library rebuild that uses Emotion.",
+    "intro": "I extensively worked on the new design system to create a collection of flexible and reusable components that could be used across all of the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in two squads, the acquisition and content experience. Within the content experience squad, we look after a number of areas such as the global navigation, WCD (CMS/templates that deliver content to users), the homepage, static tools and a component library we are currently rebuilding using Emotion.",
     "skills": [
       "React",
       "GraphQL",

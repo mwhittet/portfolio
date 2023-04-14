@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Gatsby from 'gatsby';
 import '@testing-library/jest-dom';
-import { render, RenderResult, waitFor } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import Seo from './Seo';
 import { description, siteDescription, siteTitle, title } from './Seo.mocks';
 
@@ -9,10 +9,7 @@ const getMeta = (metaName: string) => {
   const metas = document.getElementsByTagName('meta');
 
   for (let value of metas) {
-    if (
-      value.getAttribute('name') === metaName ||
-      value.getAttribute('property') === metaName
-    ) {
+    if (value.getAttribute('name') === metaName) {
       return value.getAttribute('content');
     }
   }
@@ -30,74 +27,39 @@ useStaticQuery.mockImplementation(() => ({
   },
 }));
 
-const renderComponent = (props?): RenderResult =>
-  render(<Seo title={title} {...props} />);
-
 describe('<Seo /> component', () => {
-  it('should render the title tag with the correct text', async () => {
-    renderComponent();
-    await waitFor(() =>
-      expect(document.querySelector('title')).toHaveTextContent(
-        `${siteTitle} | ${title}`
-      )
-    );
+  // This error is expected and is caused by the <html lang="en" /> tag
+  // It is only an issue in testing
+  beforeEach(() => {
+    jest.spyOn(console, 'error').mockImplementation(() => {});
   });
 
-  it('should render the description tag with the correct text', async () => {
-    renderComponent({ description });
-    await waitFor(() => expect(getMeta('description')).toEqual(description));
+  it('renders the meta tags with default values', () => {
+    render(<Seo description={description} title={title} />);
+
+    expect(document.querySelector('title')).toHaveTextContent(title);
+    expect(getMeta('description')).toEqual(description);
+    expect(getMeta('og:description')).toEqual(description);
+    expect(getMeta('og:title')).toEqual(title);
+    expect(getMeta('og:type')).toEqual('website');
+    expect(getMeta('twitter:card')).toEqual('summary');
+    expect(getMeta('twitter:description')).toEqual(description);
+    expect(getMeta('twitter:title')).toEqual(title);
   });
 
-  it('should render the description tag with the default text', async () => {
-    renderComponent({ description: '' });
-    await waitFor(() =>
-      expect(getMeta('description')).toEqual(siteDescription)
-    );
+  it('renders the title tag with the default text', () => {
+    render(<Seo description={description} title="" />);
+
+    expect(document.querySelector('title')).toHaveTextContent(siteTitle);
+    expect(getMeta('og:title')).toEqual(siteTitle);
+    expect(getMeta('twitter:title')).toEqual(siteTitle);
   });
 
-  it('should render the og:description tag with the correct text', async () => {
-    renderComponent({ description });
-    await waitFor(() => expect(getMeta('og:description')).toEqual(description));
-  });
+  it('renders the description tags with the default text', () => {
+    render(<Seo description="" title={title} />);
 
-  it('should render the og:description tag with the default text', async () => {
-    renderComponent({ description: '' });
-    await waitFor(() =>
-      expect(getMeta('og:description')).toEqual(siteDescription)
-    );
-  });
-
-  it('should render the og:title tag with the correct text', async () => {
-    renderComponent();
-    await waitFor(() => expect(getMeta('og:title')).toEqual(title));
-  });
-
-  it('should render the og:type tag with the correct text', async () => {
-    renderComponent();
-    await waitFor(() => expect(getMeta('og:type')).toEqual('website'));
-  });
-
-  it('should render the twitter:card tag with the correct text', async () => {
-    renderComponent();
-    await waitFor(() => expect(getMeta('twitter:card')).toEqual('summary'));
-  });
-
-  it('should render the twitter:description tag with the correct text', async () => {
-    renderComponent({ description });
-    await waitFor(() =>
-      expect(getMeta('twitter:description')).toEqual(description)
-    );
-  });
-
-  it('should render the twitter:description tag with the default text', async () => {
-    renderComponent({ description: '' });
-    await waitFor(() =>
-      expect(getMeta('twitter:description')).toEqual(siteDescription)
-    );
-  });
-
-  it('should render the twitter:title tag with the correct text', async () => {
-    renderComponent();
-    await waitFor(() => expect(getMeta('twitter:title')).toEqual(title));
+    expect(getMeta('description')).toEqual(siteDescription);
+    expect(getMeta('og:description')).toEqual(siteDescription);
+    expect(getMeta('twitter:description')).toEqual(siteDescription);
   });
 });

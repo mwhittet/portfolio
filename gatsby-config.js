@@ -12,7 +12,6 @@ module.exports = {
     siteUrl: `https://www.michaelwhittet.co.uk`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {

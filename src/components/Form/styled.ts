@@ -2,8 +2,10 @@ import styled, { css } from 'styled-components';
 import { breakpoints, colors } from '../../styles';
 
 export const FormWrapper = styled.form`
+  margin-bottom: 35px;
+
   ${breakpoints.md} {
-    margin: 0 auto;
+    margin: 0 auto 40px;
     width: 50%;
   }
 
