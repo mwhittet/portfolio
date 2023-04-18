@@ -7,9 +7,9 @@ module.exports = {
     DEV_SSR: false,
   },
   siteMetadata: {
-    title: `Michael Whittet`,
     description: `Portfolio of Michael Whittet, a Front End Developer based just outside of London in Essex`,
     siteUrl: `https://www.michaelwhittet.co.uk`,
+    title: `Michael Whittet`,
   },
   plugins: [
     {
@@ -39,16 +39,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        background_color: `#000000`,
+        description: `Portfolio of Michael Whittet, a Front End Developer based just outside of London in Essex`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
         name: `Michael Whittet's Portfolio`,
         short_name: `MW's Portfolio`,
         start_url: `/`,
-        background_color: `#000000`,
         theme_color: `#000000`,
-        display: `standalone`,
-        icon: `src/images/icon.png`,
-        icon_options: {
-          purpose: `any maskable`,
-        },
       },
     },
     `gatsby-plugin-typescript`,
@@ -79,8 +77,8 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.michaelwhittet.co.uk/',
-        sitemap: 'https://www.michaelwhittet.co.uk/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/', disallow: '/static' }],
+        sitemap: 'https://www.michaelwhittet.co.uk/sitemap.xml',
       },
     },
     `gatsby-plugin-offline`,
