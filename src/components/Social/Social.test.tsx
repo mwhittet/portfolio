@@ -1,47 +1,30 @@
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Social from './Social';
 
-const renderComponent = (): RenderResult => render(<Social />);
-
 describe('<Social /> component', () => {
-  it('should render', () => {
-    renderComponent();
-    expect(screen.getByTestId('social')).toBeInTheDocument();
+  beforeEach(() => {
+    render(<Social />);
   });
 
-  it('should render with three links', () => {
-    renderComponent();
-    expect(screen.getByTestId('social').childElementCount).toBe(2);
+  it('renders', () => {
+    const social = screen.getByTestId('social');
+    expect(social).toBeInTheDocument();
+    expect(social.childElementCount).toBe(2);
   });
 
-  it('should render the Github link with the aria-label', () => {
-    renderComponent();
-    expect(screen.getByTestId('social-github')).toHaveAttribute(
-      'aria-label',
-      'Visit my Github profile'
-    );
+  it('renders the Github link', () => {
+    const github = screen.getByTestId('social-github');
+
+    expect(github).toHaveAttribute('aria-label', 'Visit my Github profile');
+    expect(github).toHaveAttribute('href', 'https://github.com/mwhittet/');
   });
 
-  it('should render the Github link with the correct href', () => {
-    renderComponent();
-    expect(screen.getByTestId('social-github')).toHaveAttribute(
-      'href',
-      'https://github.com/mwhittet/'
-    );
-  });
+  it('renders the LinkedIn link', () => {
+    const linkedin = screen.getByTestId('social-linkedin');
 
-  it('should render the LinkedIn link with the aria-label', () => {
-    renderComponent();
-    expect(screen.getByTestId('social-linkedin')).toHaveAttribute(
-      'aria-label',
-      'Visit my LinkedIn profile'
-    );
-  });
-
-  it('should render the LinkedIn link with the correct href', () => {
-    renderComponent();
-    expect(screen.getByTestId('social-linkedin')).toHaveAttribute(
+    expect(linkedin).toHaveAttribute('aria-label', 'Visit my LinkedIn profile');
+    expect(linkedin).toHaveAttribute(
       'href',
       'https://www.linkedin.com/in/mike-w-b8756168/'
     );

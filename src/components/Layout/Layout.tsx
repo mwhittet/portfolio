@@ -22,7 +22,17 @@ const Layout = ({ children, className }: Props): React.ReactElement => {
     <Container data-testid="layout">
       <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <MainWrapper className={className}>{children}</MainWrapper>
+      <MainWrapper
+        animate={{ opacity: 1 }}
+        className={className}
+        exit={{ opacity: 0 }}
+        initial={{ opacity: 0 }}
+        transition={{
+          duration: 0.3,
+        }}
+      >
+        {children}
+      </MainWrapper>
       <Footer />
     </Container>
   );

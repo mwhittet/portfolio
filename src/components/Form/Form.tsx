@@ -33,7 +33,7 @@ const Form = ({ recaptcha }: Props): React.ReactElement => (
       type="hidden"
     />
     <FormField>
-      <Label htmlFor="name">Your Name:</Label>
+      <Label htmlFor="name">Name:</Label>
       <Input
         autoComplete="nickname"
         data-testid="input-name"
@@ -44,7 +44,7 @@ const Form = ({ recaptcha }: Props): React.ReactElement => (
       />
     </FormField>
     <FormField>
-      <Label htmlFor="email">Your Email:</Label>
+      <Label htmlFor="email">Email address:</Label>
       <Input
         autoComplete="email"
         data-testid="input-email"
