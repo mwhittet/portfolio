@@ -47,6 +47,11 @@
     "prettier": "^2.8.7",
     "typescript": "^5.0.4"
   },
+  "resolutions": {
+    "loader-utils": "^2.0.4",
+    "minimatch": "^3.0.5",
+    "nth-check": "^2.0.1"
+  },
   "keywords": [
     "gatsby"
   ],
