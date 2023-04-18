@@ -34,7 +34,7 @@ describe('<Seo /> component', () => {
     jest.spyOn(console, 'error').mockImplementation(() => {});
   });
 
-  it('renders the meta tags with default values', () => {
+  it('renders the meta tags with the default values', () => {
     render(<Seo description={description} title={title} />);
 
     expect(document.querySelector('title')).toHaveTextContent(title);

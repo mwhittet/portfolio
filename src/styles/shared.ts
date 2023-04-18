@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { motion } from 'framer-motion';
 import { breakpoints, colors } from '.';
 
 export const Container = styled.div`
@@ -13,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Intro = styled.h1`
+export const Intro = styled(motion.h1)`
   font-size: 1.4rem;
   line-height: 1.3;
   text-align: center;
@@ -47,7 +48,7 @@ export const PageTitle = styled.h1`
   }
 `;
 
-export const HomeWrapper = styled.div`
+export const HomeWrapper = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;

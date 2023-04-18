@@ -1,108 +1,53 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, RenderResult, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Header from './Header';
 
-const defaultProps = {
-  siteTitle: 'Michael Whittet',
-};
-
-const renderComponent = (): RenderResult =>
-  render(<Header {...defaultProps} />);
-
 describe('<Header /> component', () => {
-  it('should render', () => {
-    renderComponent();
+  beforeEach(() => {
+    render(<Header siteTitle="Michael Whittet" />);
+  });
+
+  it('renders', () => {
     expect(screen.getByTestId('header')).toBeInTheDocument();
   });
 
-  it('should render the title link with the correct href', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-title')).toHaveAttribute('href', '/');
+  it('renders the title link', () => {
+    const title = screen.getByTestId('header-title');
+
+    expect(title).toHaveAttribute('href', '/');
+    expect(title).toHaveAttribute('title', 'Michael Whittet');
+    expect(title).toContainElement(screen.getByTestId('header-logo'));
   });
 
-  it('should render the title link with the correct text', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-title')).toHaveAttribute(
-      'title',
-      defaultProps.siteTitle
-    );
+  it('renders the navigation element', () => {
+    const headerNav = screen.getByTestId('header-nav');
+
+    expect(headerNav).toBeInTheDocument();
+    expect(headerNav.childElementCount).toBe(3);
   });
 
-  it('should render the title with a logo', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-title')).toContainElement(
-      screen.getByTestId('header-logo')
-    );
+  it('renders the about page link', () => {
+    const about = screen.getByTestId('header-nav-about');
+
+    expect(about).toHaveAttribute('href', '/about');
+    expect(about).toHaveTextContent('About');
+    expect(about).not.toHaveClass('active');
   });
 
-  it('should render the navigation element', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav')).toBeInTheDocument();
+  it('renders the portfolio page link', () => {
+    const portfolio = screen.getByTestId('header-nav-portfolio');
+
+    expect(portfolio).toHaveAttribute('href', '/portfolio');
+    expect(portfolio).toHaveTextContent('Portfolio');
+    expect(portfolio).not.toHaveClass('active');
   });
 
-  it('should render the navigation element with three links', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav').childElementCount).toBe(3);
-  });
+  it('renders the contact page link', () => {
+    const contact = screen.getByTestId('header-nav-contact');
 
-  it('should render the About page link with the correct href', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-about')).toHaveAttribute(
-      'href',
-      '/about'
-    );
-  });
-
-  it('should render the About page link with the correct text', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-about')).toHaveTextContent('About');
-  });
-
-  it('should render the About page link without the active class', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-about')).not.toHaveClass('active');
-  });
-
-  it('should render the Portfolio page link with the correct href', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-portfolio')).toHaveAttribute(
-      'href',
-      '/portfolio'
-    );
-  });
-
-  it('should render the Portfolio page link with the correct text', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-portfolio')).toHaveTextContent(
-      'Portfolio'
-    );
-  });
-
-  it('should render the Portfolio page link without the active class', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-portfolio')).not.toHaveClass(
-      'active'
-    );
-  });
-
-  it('should render the Contact page link with the correct href', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-contact')).toHaveAttribute(
-      'href',
-      '/contact'
-    );
-  });
-
-  it('should render the Contact page link with the correct text', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-contact')).toHaveTextContent(
-      'Contact'
-    );
-  });
-
-  it('should render the Contact page link without the active class', () => {
-    renderComponent();
-    expect(screen.getByTestId('header-nav-contact')).not.toHaveClass('active');
+    expect(contact).toHaveAttribute('href', '/contact');
+    expect(contact).toHaveTextContent('Contact');
+    expect(contact).not.toHaveClass('active');
   });
 });

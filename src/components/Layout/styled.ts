@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { breakpoints, colors } from '../../styles';
 
 export const Container = styled.div`
@@ -7,7 +8,7 @@ export const Container = styled.div`
   min-height: 100vh;
 `;
 
-export const MainWrapper = styled.main`
+export const MainWrapper = styled(motion.main)`
   display: flex;
   flex: 1;
   flex-direction: column;

@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Michael Whittet",
   "dependencies": {
+    "framer-motion": "^10.12.2",
     "gatsby": "^5.8.1",
     "gatsby-cli": "^5.8.0",
     "gatsby-plugin-image": "^3.8.0",

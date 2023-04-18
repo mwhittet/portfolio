@@ -1,53 +1,25 @@
 import React from 'react';
-import { screen, render, RenderResult } from '@testing-library/react';
+import { screen, render } from '@testing-library/react';
 import Form from './Form';
 
-const renderComponent = (props?): RenderResult => render(<Form {...props} />);
-
 describe('<Form /> component', () => {
-  it('should render', () => {
-    renderComponent();
-    expect(screen.getByRole('form')).toBeInTheDocument();
+  beforeEach(() => {
+    render(<Form recaptcha="key" />);
   });
 
-  it('should render the form element with the correct action', () => {
-    renderComponent();
-    expect(screen.getByRole('form')).toHaveAttribute('action', '/success');
+  it('renders with the correct attributes', () => {
+    const form = screen.getByRole('form');
+
+    expect(form).toBeInTheDocument();
+    expect(form).toHaveAttribute('action', '/success');
+    expect(form).toHaveAttribute('data-netlify', 'true');
+    expect(form).toHaveAttribute('data-netlify-honeypot', 'bot-field');
+    expect(form).toHaveAttribute('data-netlify-recaptcha', 'true');
+    expect(form).toHaveAttribute('method', 'post');
+    expect(form).toHaveAttribute('name', 'contact');
   });
 
-  it('should render the form element with the data-netlify attribute', () => {
-    renderComponent();
-    expect(screen.getByRole('form')).toHaveAttribute('data-netlify', 'true');
-  });
-
-  it('should render the form element with the data-netlify-honeypot attribute', () => {
-    renderComponent();
-    expect(screen.getByRole('form')).toHaveAttribute(
-      'data-netlify-honeypot',
-      'bot-field'
-    );
-  });
-
-  it('should render the form element with the data-netlify-recaptcha attribute', () => {
-    renderComponent();
-    expect(screen.getByRole('form')).toHaveAttribute(
-      'data-netlify-recaptcha',
-      'true'
-    );
-  });
-
-  it('should render the form element with the correct method', () => {
-    renderComponent();
-    expect(screen.getByRole('form')).toHaveAttribute('method', 'post');
-  });
-
-  it('should render the form element with the correct name', () => {
-    renderComponent();
-    expect(screen.getByRole('form')).toHaveAttribute('name', 'contact');
-  });
-
-  it('should render the hidden netlify input', () => {
-    renderComponent();
+  it('renders with the hidden netlify input', () => {
     expect(screen.getByTestId('input-form-name')).toHaveClass('hidden');
     expect(screen.getByTestId('input-form-name')).toHaveAttribute(
       'name',
@@ -63,8 +35,7 @@ describe('<Form /> component', () => {
     );
   });
 
-  it('should render the hidden netlify bot input', () => {
-    renderComponent();
+  it('renders with the hidden netlify bot input', () => {
     expect(screen.getByTestId('input-bot-field')).toHaveClass('hidden');
     expect(screen.getByTestId('input-bot-field')).toHaveAttribute(
       'name',
@@ -76,9 +47,8 @@ describe('<Form /> component', () => {
     );
   });
 
-  it('should render the correct name label and input elements', () => {
-    renderComponent();
-    expect(screen.getByText('Your Name:')).toBeInTheDocument();
+  it('renders with the name label and input elements', () => {
+    expect(screen.getByText('Name:')).toBeInTheDocument();
     expect(screen.getByTestId('input-name')).toHaveAttribute(
       'autoComplete',
       'nickname'
@@ -87,9 +57,8 @@ describe('<Form /> component', () => {
     expect(screen.getByTestId('input-name')).toHaveAttribute('type', 'text');
   });
 
-  it('should render the correct email label and input elements', () => {
-    renderComponent();
-    expect(screen.getByText('Your Email:')).toBeInTheDocument();
+  it('renders with the email label and input elements', () => {
+    expect(screen.getByText('Email address:')).toBeInTheDocument();
     expect(screen.getByTestId('input-email')).toHaveAttribute(
       'autoComplete',
       'email'
@@ -98,8 +67,7 @@ describe('<Form /> component', () => {
     expect(screen.getByTestId('input-email')).toHaveAttribute('type', 'email');
   });
 
-  it('should render the correct message label and textarea elements', () => {
-    renderComponent();
+  it('renders with the message label and textarea elements', () => {
     expect(screen.getByText('Message:')).toBeInTheDocument();
     expect(screen.getByTestId('textarea-message')).toHaveAttribute(
       'name',
@@ -107,18 +75,11 @@ describe('<Form /> component', () => {
     );
   });
 
-  it('should not render the ReCAPTCHA component', () => {
-    renderComponent();
-    expect(screen.queryByTestId('recaptcha')).not.toBeInTheDocument();
-  });
-
-  it('should render the ReCAPTCHA component', () => {
-    renderComponent({ recaptcha: 'key' });
+  it('renders with the ReCAPTCHA component', () => {
     expect(screen.queryByTestId('recaptcha')).toBeInTheDocument();
   });
 
-  it('should render the form submit button', () => {
-    renderComponent();
+  it('renders with the submit button', () => {
     expect(screen.getByRole('button')).toHaveAttribute('type', 'submit');
     expect(screen.getByRole('button')).toHaveTextContent('Send message');
   });

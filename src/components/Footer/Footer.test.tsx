@@ -1,24 +1,22 @@
 import React from 'react';
-import { render, RenderResult, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Footer from './Footer';
 
 const mockYear = new Date().getFullYear();
 
-const renderComponent = (): RenderResult => render(<Footer />);
-
 describe('<Footer /> component', () => {
-  it('should render', () => {
-    renderComponent();
-    expect(screen.getByTestId('footer')).toBeInTheDocument();
+  beforeEach(() => {
+    render(<Footer />);
   });
 
-  it('should render with three elements', () => {
-    renderComponent();
-    expect(screen.getByTestId('footer').childElementCount).toBe(3);
+  it('renders', () => {
+    const footer = screen.getByTestId('footer');
+
+    expect(footer).toBeInTheDocument();
+    expect(footer.childElementCount).toBe(3);
   });
 
-  it('should render the first paragraph tag with the correct text', () => {
-    renderComponent();
+  it('renders the first paragraph tag', () => {
     expect(
       screen.getByText(
         'Proudly built using React, Gatsby, GraphQL, TypeScript, styled-components'
@@ -26,8 +24,7 @@ describe('<Footer /> component', () => {
     ).toBeInTheDocument();
   });
 
-  it('should render the second paragraph tag with the correct text', () => {
-    renderComponent();
+  it('renders the second paragraph tag', () => {
     expect(
       screen.getByText(`Copyright © ${mockYear}, Michael Whittet`)
     ).toBeInTheDocument();

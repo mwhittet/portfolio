@@ -1,6 +1,6 @@
-import { ContentItem } from '../../types';
+import { ContentItem, LinkBox } from '../../types';
 
-export const portfolioItemDefaultProps = {
+export const portfolioItemDefaultProps: LinkBox  = {
   image: {
     layout: 'fixed',
     images: {
