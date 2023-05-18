@@ -42,6 +42,7 @@ module.exports = {
         background_color: `#000000`,
         description: `Portfolio of Michael Whittet, a Front End Developer based just outside of London in Essex`,
         display: `standalone`,
+        icon: `src/images/icon.png`,
         icons: [
           {
             src: 'src/images/icon-48x48.png',
