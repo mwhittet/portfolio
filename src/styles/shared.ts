@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const Intro = styled(motion.h1)`
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1.3;
   text-align: center;
 
