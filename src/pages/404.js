@@ -24,7 +24,7 @@ const NotFoundPage = ({ data }) => {
       <PageTitle>404</PageTitle>
       <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
       <p>
-        Go back to the <Link to="/">home</Link> page?
+        Let's go back to the <Link to="/">home page</Link>...
       </p>
       <StyledImg alt="404 facepalm" image={image} height="275" width="275" />
     </Layout>

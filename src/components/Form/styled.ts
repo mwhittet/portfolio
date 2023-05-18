@@ -22,7 +22,7 @@ export const FormWrapper = styled.form`
 export const InputTextarea = css`
   background-clip: padding-box;
   border-radius: 0.25rem;
-  border: 2px solid ${colors.dustyGray};
+  border: 1px solid ${colors.dustyGray};
   color: ${colors.emperor};
   display: block;
   font-family: 'Marmelad', sans-serif;
