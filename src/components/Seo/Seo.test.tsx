@@ -1,6 +1,5 @@
 import React from 'react';
 import * as Gatsby from 'gatsby';
-import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 import Seo from './Seo';
 import { description, siteDescription, siteTitle, title } from './Seo.mocks';

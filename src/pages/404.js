@@ -22,7 +22,7 @@ const NotFoundPage = ({ data }) => {
   return (
     <Layout>
       <PageTitle>404</PageTitle>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <p>You just hit a route that doesn't exist... the sadness.</p>
       <p>
         Let's go back to the <Link to="/">home page</Link>...
       </p>
