@@ -45,7 +45,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "jest-environment-jsdom-global": "^4.0.0",
     "prettier": "^2.8.8",
-    "typescript": "^5.0.4"
+    "typescript": "^5.1.6"
   },
   "resolutions": {
     "loader-utils": "^2.0.4",
