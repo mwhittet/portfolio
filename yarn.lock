@@ -9983,6 +9983,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.11.0":
+  version: 4.11.0
+  resolution: "gatsby-core-utils@npm:4.11.0"
+  dependencies:
+    "@babel/runtime": ^7.20.13
+    ci-info: 2.0.0
+    configstore: ^5.0.1
+    fastq: ^1.15.0
+    file-type: ^16.5.4
+    fs-extra: ^11.1.1
+    got: ^11.8.6
+    hash-wasm: ^4.9.0
+    import-from: ^4.0.0
+    lmdb: 2.5.3
+    lock: ^1.1.0
+    node-object-hash: ^2.3.10
+    proper-lockfile: ^4.1.2
+    resolve-from: ^5.0.0
+    tmp: ^0.2.1
+    xdg-basedir: ^4.0.0
+  checksum: b7119119c8726af7ec2fd6a03bf6edd93d8c43fd8b4441be1e5cc356ed6d21f762d7e21a535128652b48326427d66a444544af967a9769a003c614213c07747e
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.10.0":
   version: 3.10.0
   resolution: "gatsby-graphiql-explorer@npm:3.10.0"
@@ -10118,13 +10142,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^6.10.0":
-  version: 6.10.0
-  resolution: "gatsby-plugin-offline@npm:6.10.0"
+"gatsby-plugin-offline@npm:^6.11.0":
+  version: 6.11.0
+  resolution: "gatsby-plugin-offline@npm:6.11.0"
   dependencies:
     "@babel/runtime": ^7.20.13
     cheerio: ^1.0.0-rc.10
-    gatsby-core-utils: ^4.10.0
+    gatsby-core-utils: ^4.11.0
     glob: ^7.2.3
     idb-keyval: ^3.2.0
     lodash: ^4.17.21
@@ -10133,7 +10157,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: e0fb7ec253567f7876dde5a7350c3c798bf221702fde51b5661501073cf3ae31de3cedf5c3d2fcfd4e3f30ff83a1345f5da95dabe9b48d31c870710f55fdc4c2
+  checksum: b783421914f2a26e7571e0a2a344baf9c10a62da9c47e615e74c340cd87139c05ce41a1a456f7bd43957a4b209f6722c13c3bb0b88ede12a81a75475d79126fb
   languageName: node
   linkType: hard
 
@@ -14942,7 +14966,7 @@ __metadata:
     gatsby-plugin-image: ^3.10.0
     gatsby-plugin-manifest: ^5.10.0
     gatsby-plugin-netlify: ^5.1.0
-    gatsby-plugin-offline: ^6.10.0
+    gatsby-plugin-offline: ^6.11.0
     gatsby-plugin-robots-txt: ^1.8.0
     gatsby-plugin-sharp: ^5.10.0
     gatsby-plugin-sitemap: ^6.10.0
