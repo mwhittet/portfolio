@@ -30,15 +30,17 @@ export const MainWrapper = styled(motion.main)`
   }
 
   p {
-    color: ${colors.emperor};
     font-size: 1.125rem;
     margin-bottom: 20px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     a {
-      color: ${colors.emperor};
+      color: ${colors.mineShaft};
       font-weight: bold;
       text-decoration: underline;
-      text-decoration-color: ${colors.internationalOrange};
 
       &:hover {
         text-decoration: none;

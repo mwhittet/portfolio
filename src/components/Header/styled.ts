@@ -19,9 +19,7 @@ const shake = keyframes`
 
 export const HeaderWrapper = styled.header`
   align-items: center;
-  background-color: ${colors.codGray};
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-  color: ${colors.mercury};
+  color: ${colors.mineShaft};
   display: flex;
   justify-content: space-between;
   padding: 10px 5% 10px 3%;
@@ -51,16 +49,15 @@ export const LinkWrapper = styled.span`
 
   a {
     font-size: 1.15rem;
+    font-weight: bold;
     position: relative;
     transition: all 0.5s ease-in-out;
 
     ${breakpoints.md} {
-      font-size: 1.25rem;
+      font-size: 1.4rem;
     }
 
     &.active {
-      color: ${colors.internationalOrange};
-
       &:before,
       &:after {
         opacity: 1;
@@ -86,6 +83,8 @@ export const LinkWrapper = styled.span`
 
   &:hover {
     a {
+      color: ${colors.mineShaft};
+
       &:before,
       &:after {
         opacity: 1;

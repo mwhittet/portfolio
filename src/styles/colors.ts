@@ -1,10 +1,10 @@
 const colors = {
-  black: '#000',
-  codGray: '#141414',
+  bone: '#e2d1c3',
   dustyGray: '#d3d3d3',
-  emperor: '#555',
   internationalOrange: '#ff5400',
-  mercury: '#e1e1e1',
+  malibu: '#80bdff',
+  mineShaft: '#222',
+  springWood: '#fdfcfb',
   white: '#fff',
 };
 

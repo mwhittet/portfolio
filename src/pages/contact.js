@@ -25,7 +25,7 @@ const Contact = () => (
 
     <Form recaptcha={RECAPTCHA_KEY} />
 
-    <figure>
+    <figure className="no-margin">
       <blockquote>Creativity is contagious. Pass it on.</blockquote>
       <figcaption> — Albert Einstein</figcaption>
     </figure>
