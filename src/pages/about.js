@@ -55,7 +55,7 @@ const About = () => (
       </a>{' '}
       completing various projects and tasks. I've also worked with some other
       great companies in the past, you can find some examples of what I worked
-      on <Link to="/portfolio">here</Link>.
+      on in my <Link to="/portfolio">portfolio</Link>.
     </p>
   </Layout>
 );

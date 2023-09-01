@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { colors } from '.';
+import { breakpoints, colors } from '.';
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -13,7 +13,9 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
+    background-image: linear-gradient(135deg, ${colors.springWood} 0%, ${colors.bone} 100%);
     box-sizing: border-box;
+    color: ${colors.mineShaft};
     font-family: 'Marmelad', sans-serif;
     font-size: 16px;
     line-height: 1.4;
@@ -25,7 +27,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    color: ${colors.emperor};
     margin: 0;
 
     span {
@@ -34,17 +35,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h2 {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    color: ${colors.internationalOrange};
     font-size: 1.5rem;
-    margin: 10px 0 20px;
-    padding: 0 0 5px;
+    margin: 10px 0 25px;
   }
 
   a {
-    background-color: transparent;
-    color: ${colors.mercury};
-    fill: ${colors.mercury};
+    color: ${colors.mineShaft};
     text-decoration: none;
     transition: color 0.5s ease-out, fill 0.5s ease-out;
 
@@ -72,15 +68,23 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   figure {
-    color: ${colors.emperor};
     font-size: 1.75rem;
     font-weight: bold;
-    margin: 0 0 20px;
+    margin: 10px auto 30px;
     padding: 0;
     text-align: center;
+    width: 75%;
+
+    &.no-margin {
+      margin: 0 auto;
+    }
 
     figcaption {
       color: ${colors.internationalOrange};
+    }
+
+    ${breakpoints.md} {
+      width: 50%;
     }
   }
 `;

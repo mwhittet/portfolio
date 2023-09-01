@@ -23,7 +23,6 @@ export const InputTextarea = css`
   background-clip: padding-box;
   border-radius: 0.25rem;
   border: 1px solid ${colors.dustyGray};
-  color: ${colors.emperor};
   display: block;
   font-family: 'Marmelad', sans-serif;
   font-size: 1.125rem;
@@ -31,11 +30,13 @@ export const InputTextarea = css`
   height: 2.5rem;
   line-height: 1.5;
   padding: 0.375rem 0.75rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
   width: 100%;
 
   &:focus {
-    border-color: #80bdff;
+    border-color: ${colors.malibu};
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     outline: 0;
   }
@@ -46,7 +47,6 @@ export const FormField = styled.div`
 `;
 
 export const Label = styled.label`
-  color: ${colors.emperor};
   display: inline-block;
   font-size: 1.125rem;
   margin-bottom: 0.5rem;
@@ -62,7 +62,7 @@ export const Textarea = styled.textarea`
 `;
 
 export const Button = styled.button`
-  background-color: ${colors.codGray};
+  background-color: ${colors.mineShaft};
   border-radius: 0.25rem;
   border: 1px solid transparent;
   color: ${colors.white};
@@ -74,7 +74,6 @@ export const Button = styled.button`
   padding: 0.375rem 0.75rem;
   transition: background-color 0.5s ease-out;
   user-select: none;
-  vertical-align: middle;
   width: 100%;
 
   &:hover {

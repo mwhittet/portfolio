@@ -25,7 +25,6 @@ export const Intro = styled(motion.h1)`
 `;
 
 export const Title = styled.div`
-  color: ${colors.emperor};
   font-size: 1.4rem;
   opacity: 1;
   padding: 10px 0;
@@ -37,11 +36,11 @@ export const Title = styled.div`
 `;
 
 export const PageTitle = styled.h1`
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  color: ${colors.internationalOrange};
   font-size: 1.4rem;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
+  margin-bottom: 25px;
+  text-decoration: underline;
+  text-decoration-color: ${colors.internationalOrange};
+  text-underline-offset: 10px;
 
   ${breakpoints.md} {
     font-size: 2rem;
@@ -88,7 +87,6 @@ export const SkillList = styled.ul`
 
 export const Skill = styled.li`
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-  color: ${colors.emperor};
   cursor: default;
   display: inline;
   font-size: 1.125rem;
