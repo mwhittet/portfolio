@@ -98,6 +98,11 @@ export const Skill = styled.li`
   }
 `;
 
+export const OfficeImg = styled(GatsbyImage)`
+  display: block;
+  margin: 20px auto 40px;
+`;
+
 export const StyledImg = styled(GatsbyImage)`
   border-radius: 50%;
   display: block;
