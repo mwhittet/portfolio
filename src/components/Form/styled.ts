@@ -4,9 +4,9 @@ import { breakpoints, colors } from '../../styles';
 export const FormWrapper = styled.form`
   margin-bottom: 35px;
 
-  ${breakpoints.md} {
+  ${breakpoints.sm} {
     margin: 0 auto 40px;
-    width: 50%;
+    width: 480px;
   }
 
   .hidden {
@@ -16,6 +16,11 @@ export const FormWrapper = styled.form`
   .recaptcha {
     display: flex;
     justify-content: center;
+    transform: scale(0.85);
+
+    ${breakpoints.sm} {
+      transform: scale(1);
+    }
   }
 `;
 
@@ -75,6 +80,12 @@ export const Button = styled.button`
   transition: background-color 0.5s ease-out;
   user-select: none;
   width: 100%;
+
+  ${breakpoints.sm} {
+    display: block;
+    margin: 20px auto 0;
+    width: 300px;
+  }
 
   &:hover {
     background-color: ${colors.internationalOrange};
