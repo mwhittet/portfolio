@@ -7,18 +7,22 @@ import { checkLinkType } from '../../helpers/checkLinkType';
 
 import Content from './Content';
 
-const PortfolioItem = ({ image, name, url }: LinkBox): React.ReactElement => (
-  <Wrapper>
-    {checkLinkType(url) ? (
-      <a href={url} rel="noopener noreferrer" target="_blank">
-        <Content image={getImage(image)} name={name} />
-      </a>
-    ) : (
-      <Link to={url}>
-        <Content image={getImage(image)} name={name} />
-      </Link>
-    )}
-  </Wrapper>
-);
+const PortfolioItem = ({ image, name, url }: LinkBox): React.ReactElement => {
+  const contentImage = getImage(image);
+
+  return (
+    <Wrapper>
+      {checkLinkType(url) ? (
+        <a href={url} rel="noopener noreferrer" target="_blank">
+          {contentImage && <Content image={contentImage} name={name} />}
+        </a>
+      ) : (
+        <Link to={url}>
+          {contentImage && <Content image={contentImage} name={name} />}
+        </Link>
+      )}
+    </Wrapper>
+  );
+};
 
 export default PortfolioItem;

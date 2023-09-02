@@ -3,8 +3,8 @@ import { breakpoints, colors } from '.';
 
 export const GlobalStyle = createGlobalStyle`
   *,
-  *:before,
-  *:after {
+  *::before,
+  *::after {
     box-sizing: inherit;
   }
 
@@ -36,7 +36,7 @@ export const GlobalStyle = createGlobalStyle`
 
   h2 {
     font-size: 1.5rem;
-    margin: 10px 0 25px;
+    margin: 0 0 30px;
   }
 
   a {
@@ -64,13 +64,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   blockquote {
-    margin: 0 0 20px;
+    margin: 0 0 30px;
   }
 
   figure {
     font-size: 1.75rem;
     font-weight: bold;
-    margin: 10px auto 30px;
+    margin: 0 auto 30px;
     padding: 0;
     text-align: center;
     width: 75%;

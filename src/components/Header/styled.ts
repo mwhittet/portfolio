@@ -22,10 +22,10 @@ export const HeaderWrapper = styled.header`
   color: ${colors.mineShaft};
   display: flex;
   justify-content: space-between;
-  padding: 10px 5% 10px 3%;
+  padding: 15px;
 
-  ${breakpoints.md} {
-    padding: 10px 50px;
+  ${breakpoints.lg} {
+    padding: 15px 50px;
   }
 `;
 
@@ -42,8 +42,6 @@ export const Title = styled(Link)`
   }
 `;
 
-export const Navigation = styled.nav``;
-
 export const LinkWrapper = styled.span`
   margin-right: 20px;
 
@@ -58,15 +56,15 @@ export const LinkWrapper = styled.span`
     }
 
     &.active {
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         opacity: 1;
         width: 100%;
       }
     }
 
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       background-color: ${colors.internationalOrange};
       bottom: -5px;
       content: '';
@@ -85,8 +83,8 @@ export const LinkWrapper = styled.span`
     a {
       color: ${colors.mineShaft};
 
-      &:before,
-      &:after {
+      &::before,
+      &::after {
         opacity: 1;
         width: 100%;
       }

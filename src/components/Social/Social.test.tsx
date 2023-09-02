@@ -9,6 +9,7 @@ describe('<Social /> component', () => {
 
   it('renders', () => {
     const social = screen.getByTestId('social');
+
     expect(social).toBeInTheDocument();
     expect(social.childElementCount).toBe(2);
   });

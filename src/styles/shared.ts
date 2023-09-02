@@ -1,11 +1,16 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 import { breakpoints, colors } from '.';
 
+const defaultImgStyling = css`
+  display: block;
+  margin: 0 auto 30px;
+`;
+
 export const Container = styled.div`
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 30px;
   grid-template-columns: 1fr;
   text-align: center;
 
@@ -27,7 +32,7 @@ export const Intro = styled(motion.h1)`
 export const Title = styled.div`
   font-size: 1.4rem;
   opacity: 1;
-  padding: 10px 0;
+  padding-top: 10px;
   transition: 0.3s ease-in-out;
 
   ${breakpoints.md} {
@@ -37,7 +42,7 @@ export const Title = styled.div`
 
 export const PageTitle = styled.h1`
   font-size: 1.4rem;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   text-decoration: underline;
   text-decoration-color: ${colors.internationalOrange};
   text-underline-offset: 10px;
@@ -81,11 +86,16 @@ export const SkillList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 0 20px;
+  margin: 0 0 30px;
   padding: 0;
 `;
 
 export const Skill = styled.li`
+  background-image: linear-gradient(
+    180deg,
+    ${colors.springWood} 0%,
+    ${colors.bone} 100%
+  );
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
   cursor: default;
   display: inline;
@@ -99,16 +109,10 @@ export const Skill = styled.li`
 `;
 
 export const OfficeImg = styled(GatsbyImage)`
-  display: block;
-  margin: 20px auto 40px;
+  ${defaultImgStyling}
 `;
 
 export const StyledImg = styled(GatsbyImage)`
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 20px;
-
-  ${breakpoints.md} {
-    margin: 0 auto 50px;
-  }
+  ${defaultImgStyling}
+  margin: 0 auto 30px;
 `;

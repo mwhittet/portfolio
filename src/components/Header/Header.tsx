@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { Props } from '.';
 import Logo from '../../images/logo.svg';
-import { HeaderWrapper, LinkWrapper, Navigation, Title } from './styled';
+import { HeaderWrapper, LinkWrapper, Title } from './styled';
 
 const Header = ({ siteTitle }: Props): React.ReactElement => (
   <HeaderWrapper data-testid="header">
     <Title data-testid="header-title" title={siteTitle} to="/">
-      <Logo data-testid="header-logo" height="48" width="48" />
+      <Logo data-testid="header-logo" height="48" width="36" />
     </Title>
 
-    <Navigation aria-label="main navigation" data-testid="header-nav">
+    <nav aria-label="main navigation" data-testid="header-nav">
       <LinkWrapper>
         <Link
           activeClassName="active"
@@ -39,7 +39,7 @@ const Header = ({ siteTitle }: Props): React.ReactElement => (
           Contact
         </Link>
       </LinkWrapper>
-    </Navigation>
+    </nav>
   </HeaderWrapper>
 );
 

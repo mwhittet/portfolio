@@ -31,7 +31,7 @@ export const MainWrapper = styled(motion.main)`
 
   p {
     font-size: 1.125rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     &:last-child {
       margin-bottom: 0;

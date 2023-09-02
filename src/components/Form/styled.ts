@@ -1,30 +1,7 @@
 import styled, { css } from 'styled-components';
 import { breakpoints, colors } from '../../styles';
 
-export const FormWrapper = styled.form`
-  margin-bottom: 35px;
-
-  ${breakpoints.sm} {
-    margin: 0 auto 40px;
-    width: 480px;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .recaptcha {
-    display: flex;
-    justify-content: center;
-    transform: scale(0.85);
-
-    ${breakpoints.sm} {
-      transform: scale(1);
-    }
-  }
-`;
-
-export const InputTextarea = css`
+const InputTextarea = css`
   background-clip: padding-box;
   border-radius: 0.25rem;
   border: 1px solid ${colors.dustyGray};
@@ -47,8 +24,32 @@ export const InputTextarea = css`
   }
 `;
 
+export const FormWrapper = styled.form`
+  margin: 10px 0 30px;
+
+  ${breakpoints.sm} {
+    margin: 0 auto 30px;
+    width: 480px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .recaptcha {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    transform: scale(0.85);
+
+    ${breakpoints.sm} {
+      transform: scale(1);
+    }
+  }
+`;
+
 export const FormField = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 `;
 
 export const Label = styled.label`
@@ -75,7 +76,7 @@ export const Button = styled.button`
   font-size: 1.125rem;
   height: 2.5rem;
   line-height: 1.5;
-  margin: 20px 0 0;
+  margin: 0;
   padding: 0.375rem 0.75rem;
   transition: background-color 0.5s ease-out;
   user-select: none;
@@ -83,7 +84,7 @@ export const Button = styled.button`
 
   ${breakpoints.sm} {
     display: block;
-    margin: 20px auto 0;
+    margin: 0 auto;
     width: 300px;
   }
 
