@@ -2961,15 +2961,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.16.7":
-  version: 7.22.11
-  resolution: "@babel/runtime@npm:7.22.11"
-  dependencies:
-    regenerator-runtime: ^0.14.0
-  checksum: a5cd6683a8fcdb8065cb1677f221e22f6c67ec8f15ad1d273b180b93ab3bd86c66da2c48f500d4e72d8d2cfa85ff4872a3f350e5aa3855630036af5da765c001
-  languageName: node
-  linkType: hard
-
 "@babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.20.7":
   version: 7.20.13
   resolution: "@babel/runtime@npm:7.20.13"
@@ -7234,7 +7225,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0, chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -8465,17 +8456,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deepmerge@npm:^4.0, deepmerge@npm:^4.3.1":
-  version: 4.3.1
-  resolution: "deepmerge@npm:4.3.1"
-  checksum: 2024c6a980a1b7128084170c4cf56b0fd58a63f2da1660dcfe977415f27b17dbe5888668b59d0b063753f3220719d5e400b7f113609489c90160bb9a5518d052
-  languageName: node
-  linkType: hard
-
 "deepmerge@npm:^4.2.2":
   version: 4.2.2
   resolution: "deepmerge@npm:4.2.2"
   checksum: a8c43a1ed8d6d1ed2b5bf569fa4c8eb9f0924034baf75d5d406e47e157a451075c4db353efea7b6bcc56ec48116a8ce72fccf867b6e078e7c561904b5897530b
+  languageName: node
+  linkType: hard
+
+"deepmerge@npm:^4.3.1":
+  version: 4.3.1
+  resolution: "deepmerge@npm:4.3.1"
+  checksum: 2024c6a980a1b7128084170c4cf56b0fd58a63f2da1660dcfe977415f27b17dbe5888668b59d0b063753f3220719d5e400b7f113609489c90160bb9a5518d052
   languageName: node
   linkType: hard
 
@@ -10149,17 +10140,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^10.0.0":
-  version: 10.1.0
-  resolution: "fs-extra@npm:10.1.0"
-  dependencies:
-    graceful-fs: ^4.2.0
-    jsonfile: ^6.0.1
-    universalify: ^2.0.0
-  checksum: dc94ab37096f813cc3ca12f0f1b5ad6744dfed9ed21e953d72530d103cea193c2f81584a39e9dee1bea36de5ee66805678c0dddc048e8af1427ac19c00fffc50
-  languageName: node
-  linkType: hard
-
 "fs-extra@npm:^11.1.0":
   version: 11.1.0
   resolution: "fs-extra@npm:11.1.0"
@@ -10338,7 +10318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^4.0.0, gatsby-core-utils@npm:^4.12.0":
+"gatsby-core-utils@npm:^4.12.0":
   version: 4.12.0
   resolution: "gatsby-core-utils@npm:4.12.0"
   dependencies:
@@ -10478,22 +10458,6 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: 6c8459995bde0b33cb8ea8473990d95be968ef37d931eb5e2840cbbd6258dbb57da4e93f9057982c0620b1fa159c131033c792efddafbd801b09c610aa0b6953
-  languageName: node
-  linkType: hard
-
-"gatsby-plugin-netlify@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "gatsby-plugin-netlify@npm:5.1.0"
-  dependencies:
-    "@babel/runtime": ^7.16.7
-    fs-extra: ^10.0.0
-    gatsby-core-utils: ^4.0.0
-    kebab-hash: ^0.1.2
-    lodash.mergewith: ^4.6.2
-    webpack-assets-manifest: ^5.0.6
-  peerDependencies:
-    gatsby: ^4.0.0 || ^5.0.0
-  checksum: 7b2dabf72f875f013ebc81af829cf33e72c5ad474b76e8425c98b210462f13598fa77938a34d6498bb58be1e5042579347eb4154178cac34303f08a90649805c
   languageName: node
   linkType: hard
 
@@ -13195,15 +13159,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"kebab-hash@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "kebab-hash@npm:0.1.2"
-  dependencies:
-    lodash.kebabcase: ^4.1.1
-  checksum: d3e3ecd949a751929b400afb0582c6ea69b75872046695720eb4026bef3cd43d9e4dbe4afca07054a54d3ff013a8481f1c46921c32ad898b678c2db05499aa49
-  languageName: node
-  linkType: hard
-
 "keyv@npm:^4.0.0":
   version: 4.2.8
   resolution: "keyv@npm:4.2.8"
@@ -13468,15 +13423,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lockfile@npm:^1.0":
-  version: 1.0.4
-  resolution: "lockfile@npm:1.0.4"
-  dependencies:
-    signal-exit: ^3.0.2
-  checksum: 8de35aace8acbe883cbca3cc3959e88904d57c79dccd4afffc64aea8f9cf7b4c63598d08b8add66fbf381f8fb3ce4fd4c518cd231c797c266b6c790eb7b33abc
-  languageName: node
-  linkType: hard
-
 "lodash._reinterpolate@npm:^3.0.0":
   version: 3.0.0
   resolution: "lodash._reinterpolate@npm:3.0.0"
@@ -13526,31 +13472,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.get@npm:^4.0":
-  version: 4.4.2
-  resolution: "lodash.get@npm:4.4.2"
-  checksum: e403047ddb03181c9d0e92df9556570e2b67e0f0a930fcbbbd779370972368f5568e914f913e93f3b08f6d492abc71e14d4e9b7a18916c31fa04bd2306efe545
-  languageName: node
-  linkType: hard
-
-"lodash.has@npm:^4.0":
-  version: 4.5.2
-  resolution: "lodash.has@npm:4.5.2"
-  checksum: b3ec829a86852331d48b3730ff06088a283d128a3965aa521ffd942bcf5c82e06bed3164ff7a7751d11e768d88f0d7bab316192091489caf20f452d42f7055d5
-  languageName: node
-  linkType: hard
-
 "lodash.isempty@npm:^4.4.0":
   version: 4.4.0
   resolution: "lodash.isempty@npm:4.4.0"
   checksum: a8118f23f7ed72a1dbd176bf27f297d1e71aa1926288449cb8f7cef99ba1bc7527eab52fe7899ab080fa1dc150aba6e4a6367bf49fa4e0b78da1ecc095f8d8c5
-  languageName: node
-  linkType: hard
-
-"lodash.kebabcase@npm:^4.1.1":
-  version: 4.1.1
-  resolution: "lodash.kebabcase@npm:4.1.1"
-  checksum: 5a6c59161914e1bae23438a298c7433e83d935e0f59853fa862e691164696bc07f6dfa4c313d499fbf41ba8d53314e9850416502376705a357d24ee6ca33af78
   languageName: node
   linkType: hard
 
@@ -13579,13 +13504,6 @@ __metadata:
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
   checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
-  languageName: node
-  linkType: hard
-
-"lodash.mergewith@npm:^4.6.2":
-  version: 4.6.2
-  resolution: "lodash.mergewith@npm:4.6.2"
-  checksum: a6db2a9339752411f21b956908c404ec1e088e783a65c8b29e30ae5b3b6384f82517662d6f425cc97c2070b546cc2c7daaa8d33f78db7b6e9be06cd834abdeb8
   languageName: node
   linkType: hard
 
@@ -15322,7 +15240,6 @@ __metadata:
     gatsby-cli: ^5.12.0
     gatsby-plugin-image: ^3.12.0
     gatsby-plugin-manifest: ^5.12.0
-    gatsby-plugin-netlify: ^5.1.0
     gatsby-plugin-offline: ^6.12.0
     gatsby-plugin-robots-txt: ^1.8.0
     gatsby-plugin-sharp: ^5.12.0
@@ -16571,13 +16488,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regenerator-runtime@npm:^0.14.0":
-  version: 0.14.0
-  resolution: "regenerator-runtime@npm:0.14.0"
-  checksum: 1c977ad82a82a4412e4f639d65d22be376d3ebdd30da2c003eeafdaaacd03fc00c2320f18120007ee700900979284fc78a9f00da7fb593f6e6eeebc673fba9a3
-  languageName: node
-  linkType: hard
-
 "regenerator-transform@npm:^0.15.0":
   version: 0.15.0
   resolution: "regenerator-transform@npm:0.15.0"
@@ -17052,17 +16962,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^3.0, schema-utils@npm:^3.2.0":
-  version: 3.3.0
-  resolution: "schema-utils@npm:3.3.0"
-  dependencies:
-    "@types/json-schema": ^7.0.8
-    ajv: ^6.12.5
-    ajv-keywords: ^3.5.2
-  checksum: ea56971926fac2487f0757da939a871388891bc87c6a82220d125d587b388f1704788f3706e7f63a7b70e49fc2db974c41343528caea60444afd5ce0fe4b85c0
-  languageName: node
-  linkType: hard
-
 "schema-utils@npm:^3.0.0, schema-utils@npm:^3.1.1":
   version: 3.1.1
   resolution: "schema-utils@npm:3.1.1"
@@ -17071,6 +16970,17 @@ __metadata:
     ajv: ^6.12.5
     ajv-keywords: ^3.5.2
   checksum: fb73f3d759d43ba033c877628fe9751620a26879f6301d3dbeeb48cf2a65baec5cdf99da65d1bf3b4ff5444b2e59cbe4f81c2456b5e0d2ba7d7fd4aed5da29ce
+  languageName: node
+  linkType: hard
+
+"schema-utils@npm:^3.2.0":
+  version: 3.3.0
+  resolution: "schema-utils@npm:3.3.0"
+  dependencies:
+    "@types/json-schema": ^7.0.8
+    ajv: ^6.12.5
+    ajv-keywords: ^3.5.2
+  checksum: ea56971926fac2487f0757da939a871388891bc87c6a82220d125d587b388f1704788f3706e7f63a7b70e49fc2db974c41343528caea60444afd5ce0fe4b85c0
   languageName: node
   linkType: hard
 
@@ -18121,7 +18031,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tapable@npm:^2.0, tapable@npm:^2.1.1, tapable@npm:^2.2.0":
+"tapable@npm:^2.1.1, tapable@npm:^2.2.0":
   version: 2.2.1
   resolution: "tapable@npm:2.2.1"
   checksum: 3b7a1b4d86fa940aad46d9e73d1e8739335efd4c48322cb37d073eb6f80f5281889bf0320c6d8ffcfa1a0dd5bfdbd0f9d037e252ef972aca595330538aac4d51
@@ -18922,23 +18832,6 @@ __metadata:
   version: 7.0.0
   resolution: "webidl-conversions@npm:7.0.0"
   checksum: f05588567a2a76428515333eff87200fae6c83c3948a7482ebb109562971e77ef6dc49749afa58abb993391227c5697b3ecca52018793e0cb4620a48f10bd21b
-  languageName: node
-  linkType: hard
-
-"webpack-assets-manifest@npm:^5.0.6":
-  version: 5.1.0
-  resolution: "webpack-assets-manifest@npm:5.1.0"
-  dependencies:
-    chalk: ^4.0
-    deepmerge: ^4.0
-    lockfile: ^1.0
-    lodash.get: ^4.0
-    lodash.has: ^4.0
-    schema-utils: ^3.0
-    tapable: ^2.0
-  peerDependencies:
-    webpack: ^5.2.0
-  checksum: 30b0929f6a81900801d075f81236181a9034a89e2871a214d9f4c905fcc2ae35464e7722b4f2ac6f9993ac24432e5209d805681181502a19a27dcc455a7d16ca
   languageName: node
   linkType: hard
 
