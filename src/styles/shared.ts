@@ -3,11 +3,6 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 import { breakpoints, colors } from '.';
 
-const defaultImgStyling = css`
-  display: block;
-  margin: 0 auto 30px;
-`;
-
 export const Container = styled.div`
   display: grid;
   grid-gap: 30px;
@@ -37,18 +32,6 @@ export const Title = styled.div`
 
   ${breakpoints.md} {
     opacity: 0;
-  }
-`;
-
-export const PageTitle = styled.h1`
-  font-size: 1.4rem;
-  margin-bottom: 30px;
-  text-decoration: underline;
-  text-decoration-color: ${colors.internationalOrange};
-  text-underline-offset: 10px;
-
-  ${breakpoints.md} {
-    font-size: 2rem;
   }
 `;
 
@@ -108,11 +91,7 @@ export const Skill = styled.li`
   }
 `;
 
-export const OfficeImg = styled(GatsbyImage)`
-  ${defaultImgStyling}
-`;
-
 export const StyledImg = styled(GatsbyImage)`
-  ${defaultImgStyling}
+  display: block;
   margin: 0 auto 30px;
 `;

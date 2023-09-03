@@ -48,3 +48,15 @@ export const MainWrapper = styled(motion.main)`
     }
   }
 `;
+
+export const PageTitle = styled.h1`
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-decoration-color: ${colors.internationalOrange};
+  text-underline-offset: 10px;
+
+  ${breakpoints.md} {
+    font-size: 2rem;
+  }
+`;

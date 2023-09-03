@@ -1,12 +1,10 @@
 import React from 'react';
-import { PageTitle } from '../styles/shared';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
 const Success = () => (
-  <Layout>
-    <PageTitle>Message received!</PageTitle>
+  <Layout pageTitle='Message received!'>
     <p>
       Thank you for taking the time to contact me and I will be in touch
       shortly!

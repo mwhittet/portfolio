@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { PageTitle, StyledImg } from '../styles/shared';
+import { StyledImg } from '../styles/shared';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -20,8 +20,7 @@ const NotFoundPage = ({ data }) => {
   const image = getImage(data.file);
 
   return (
-    <Layout>
-      <PageTitle>404</PageTitle>
+    <Layout pageTitle="404">
       <p>You just hit a route that doesn't exist... the sadness.</p>
       <p>
         Let's go back to the <Link to="/">home page</Link>...

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Container, PageTitle } from '../styles/shared';
+import { Container } from '../styles/shared';
 
 import Layout from '../components/Layout';
 import PortfolioItem from '../components/PortfolioItem';
@@ -27,8 +27,7 @@ export const query = graphql`
 `;
 
 const Portfolio = ({ data }) => (
-  <Layout>
-    <PageTitle>Portfolio</PageTitle>
+  <Layout pageTitle='Portfolio'>
     <p>
       I've worked with various companies from small start-ups, agencies and
       enterprises, here are some examples:
