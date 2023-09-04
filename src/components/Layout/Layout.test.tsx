@@ -1,7 +1,8 @@
 import React from 'react';
 import * as Gatsby from 'gatsby';
 import { render, screen } from '@testing-library/react';
-import Layout from './Layout';
+
+import Layout from './';
 
 const useStaticQuery = jest.spyOn(Gatsby, 'useStaticQuery');
 
@@ -14,23 +15,21 @@ useStaticQuery.mockImplementation(() => ({
 }));
 
 describe('<Layout /> component', () => {
-  beforeEach(() => {
-    render(<Layout>Render child here</Layout>);
-  });
-
   it('renders', () => {
-    expect(screen.getByTestId('layout')).toBeInTheDocument();
-  });
+    render(<Layout>Rendered child text</Layout>);
 
-  it('renders with the header component', () => {
     expect(screen.getByTestId('layout')).toContainElement(
       screen.getByTestId('header')
     );
-  });
-
-  it('renders with the footer component', () => {
+    expect(screen.getByText(/rendered child text/i)).toBeInTheDocument();
     expect(screen.getByTestId('layout')).toContainElement(
       screen.getByTestId('footer')
     );
+  });
+
+  it('renders with a page title', () => {
+    render(<Layout pageTitle="Title">Rendered child text</Layout>);
+
+    expect(screen.getByText(/title/i)).toBeInTheDocument();
   });
 });

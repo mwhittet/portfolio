@@ -22,10 +22,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  main {
-    display: block;
-  }
-
   h1 {
     margin: 0;
 
@@ -52,11 +48,6 @@ export const GlobalStyle = createGlobalStyle`
 
   p {
     margin: 0;
-  }
-
-  b,
-  strong {
-    font-weight: bolder;
   }
 
   img {

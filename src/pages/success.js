@@ -1,10 +1,9 @@
 import React from 'react';
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import { Layout, Seo } from '../components';
 
 const Success = () => (
-  <Layout pageTitle='Message received!'>
+  <Layout pageTitle="Message received!">
     <p>
       Thank you for taking the time to contact me and I will be in touch
       shortly!

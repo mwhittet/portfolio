@@ -1,10 +1,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Container, PageTitle, SkillList, Skill } from '../styles/shared';
+import { Container, SkillList, Skill } from '../styles/shared';
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
-import PortfolioItem from '../components/PortfolioItem';
+import { Layout, PortfolioItem, Seo } from '../components';
 
 export const query = graphql`
   query ($slug: String!) {
@@ -30,8 +28,7 @@ const portfolio = ({ data }) => {
   const portfolio = data.portfolioJson;
 
   return (
-    <Layout>
-      <PageTitle>{portfolio.title}</PageTitle>
+    <Layout pageTitle={portfolio.title}>
       <p>{portfolio.intro}</p>
 
       {portfolio.skills.length > 0 && (

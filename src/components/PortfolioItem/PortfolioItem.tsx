@@ -5,7 +5,7 @@ import { Wrapper } from '../../styles/shared';
 import { LinkBox } from '../../types';
 import { checkLinkType } from '../../helpers/checkLinkType';
 
-import Content from './Content';
+import { Content } from '../../components';
 
 const PortfolioItem = ({ image, name, url }: LinkBox): React.ReactElement => {
   const contentImage = getImage(image);

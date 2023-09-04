@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Social from './Social';
+
+import Social from './';
 
 describe('<Social /> component', () => {
   beforeEach(() => {
@@ -10,7 +11,6 @@ describe('<Social /> component', () => {
   it('renders', () => {
     const social = screen.getByTestId('social');
 
-    expect(social).toBeInTheDocument();
     expect(social.childElementCount).toBe(2);
   });
 

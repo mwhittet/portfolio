@@ -1,7 +1,8 @@
 import React from 'react';
 import * as Gatsby from 'gatsby';
 import { render } from '@testing-library/react';
-import Seo from './Seo';
+
+import Seo from './';
 import { description, siteDescription, siteTitle, title } from './Seo.mocks';
 
 const getMeta = (metaName: string) => {

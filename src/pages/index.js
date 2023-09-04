@@ -4,8 +4,7 @@ import { getImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 import { HomeWrapper, Intro, StyledImg } from '../styles/shared';
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import { Layout, Seo } from '../components';
 
 export const query = graphql`
   {

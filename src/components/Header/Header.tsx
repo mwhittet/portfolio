@@ -10,32 +10,19 @@ const Header = ({ siteTitle }: Props): React.ReactElement => (
       <Logo data-testid="header-logo" height="48" width="36" />
     </Title>
 
-    <nav aria-label="main navigation" data-testid="header-nav">
+    <nav aria-label="main navigation">
       <LinkWrapper>
-        <Link
-          activeClassName="active"
-          data-testid="header-nav-about"
-          to="/about"
-        >
+        <Link activeClassName="active" to="/about">
           About
         </Link>
       </LinkWrapper>
       <LinkWrapper>
-        <Link
-          activeClassName="active"
-          data-testid="header-nav-portfolio"
-          partiallyActive={true}
-          to="/portfolio"
-        >
+        <Link activeClassName="active" partiallyActive={true} to="/portfolio">
           Portfolio
         </Link>
       </LinkWrapper>
       <LinkWrapper>
-        <Link
-          activeClassName="active"
-          data-testid="header-nav-contact"
-          to="/contact"
-        >
+        <Link activeClassName="active" to="/contact">
           Contact
         </Link>
       </LinkWrapper>

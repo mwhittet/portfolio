@@ -14,5 +14,5 @@
     "target": "esnext",
     "types": ["@testing-library/jest-dom"]
   },
-  "include": ["custom.d.ts", "src/**/*.ts"],
+  "include": ["custom.d.ts", "src/**/*"],
 }

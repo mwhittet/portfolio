@@ -4,8 +4,7 @@ import { Container, MainWrapper, PageTitle } from './styled';
 import { GlobalStyle } from '../../styles/layout';
 import { Props } from '.';
 
-import Header from '../Header';
-import Footer from '../Footer';
+import { Footer, Header } from '../../components';
 
 const Layout = ({
   children,

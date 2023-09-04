@@ -3,8 +3,7 @@ import { graphql, Link } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { StyledImg } from '../styles/shared';
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import { Layout, Seo } from '../components';
 
 export const query = graphql`
   {

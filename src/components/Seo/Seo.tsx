@@ -1,12 +1,8 @@
 import React from 'react';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
+import { Props } from '.';
 
-type SEO = {
-  description: string;
-  title: string;
-};
-
-const Seo = ({ description, title }: SEO) => {
+const Seo = ({ description, title }: Props) => {
   const { siteMetadata } = useSiteMetadata();
   const seoDescription = description || siteMetadata.description;
   const seoTitle = title || siteMetadata.title;

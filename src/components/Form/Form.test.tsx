@@ -1,6 +1,7 @@
 import React from 'react';
 import { screen, render } from '@testing-library/react';
-import Form from './Form';
+
+import Form from './';
 
 describe('<Form /> component', () => {
   beforeEach(() => {
@@ -10,7 +11,6 @@ describe('<Form /> component', () => {
   it('renders with the correct attributes', () => {
     const form = screen.getByRole('form');
 
-    expect(form).toBeInTheDocument();
     expect(form).toHaveAttribute('action', '/success');
     expect(form).toHaveAttribute('data-netlify', 'true');
     expect(form).toHaveAttribute('data-netlify-honeypot', 'bot-field');
@@ -48,31 +48,33 @@ describe('<Form /> component', () => {
   });
 
   it('renders with the name label and input elements', () => {
-    expect(screen.getByText('Name:')).toBeInTheDocument();
-    expect(screen.getByTestId('input-name')).toHaveAttribute(
-      'autoComplete',
-      'nickname'
-    );
-    expect(screen.getByTestId('input-name')).toHaveAttribute('name', 'name');
-    expect(screen.getByTestId('input-name')).toHaveAttribute('type', 'text');
+    const label = screen.getByText(/name:/i);
+    const input = screen.getByRole('textbox', {
+      name: /name:/i,
+    });
+
+    expect(label).toBeInTheDocument();
+    expect(input).toHaveAttribute('autoComplete', 'nickname');
+    expect(input).toHaveAttribute('name', 'name');
+    expect(input).toHaveAttribute('type', 'text');
   });
 
   it('renders with the email label and input elements', () => {
-    expect(screen.getByText('Email address:')).toBeInTheDocument();
-    expect(screen.getByTestId('input-email')).toHaveAttribute(
-      'autoComplete',
-      'email'
-    );
-    expect(screen.getByTestId('input-email')).toHaveAttribute('name', 'email');
-    expect(screen.getByTestId('input-email')).toHaveAttribute('type', 'email');
+    const label = screen.getByText(/email address:/i);
+    const input = screen.getByRole('textbox', { name: /email address:/i });
+
+    expect(label).toBeInTheDocument();
+    expect(input).toHaveAttribute('autoComplete', 'email');
+    expect(input).toHaveAttribute('name', 'email');
+    expect(input).toHaveAttribute('type', 'email');
   });
 
   it('renders with the message label and textarea elements', () => {
-    expect(screen.getByText('Message:')).toBeInTheDocument();
-    expect(screen.getByTestId('textarea-message')).toHaveAttribute(
-      'name',
-      'message'
-    );
+    const label = screen.getByText(/message:/i);
+    const input = screen.getByRole('textbox', { name: /message:/i });
+
+    expect(label).toBeInTheDocument();
+    expect(input).toHaveAttribute('name', 'message');
   });
 
   it('renders with the ReCAPTCHA component', () => {

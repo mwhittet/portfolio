@@ -1,13 +1,11 @@
 import React from 'react';
 
-import Form from '../components/Form';
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import { Form, Layout, Seo } from '../components';
 
 const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
 
 const Contact = () => (
-  <Layout pageTitle='Contact'>
+  <Layout pageTitle="Contact">
     <p>
       If you wish to contact me about a freelance project or just fancy a chat,
       please feel free to fill out the contact form below or reach out to me via{' '}

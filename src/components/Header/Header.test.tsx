@@ -1,14 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Header from './Header';
+
+import Header from './';
 
 describe('<Header /> component', () => {
   beforeEach(() => {
     render(<Header siteTitle="Michael Whittet" />);
-  });
-
-  it('renders', () => {
-    expect(screen.getByTestId('header')).toBeInTheDocument();
   });
 
   it('renders the title link', () => {
@@ -19,34 +16,30 @@ describe('<Header /> component', () => {
     expect(title).toContainElement(screen.getByTestId('header-logo'));
   });
 
-  it('renders the navigation element', () => {
-    const headerNav = screen.getByTestId('header-nav');
-
-    expect(headerNav).toBeInTheDocument();
-    expect(headerNav.childElementCount).toBe(3);
-  });
-
   it('renders the about page link', () => {
-    const about = screen.getByTestId('header-nav-about');
+    const about = screen.getByRole('link', {
+      name: /about/i,
+    });
 
     expect(about).toHaveAttribute('href', '/about');
-    expect(about).toHaveTextContent('About');
     expect(about).not.toHaveClass('active');
   });
 
   it('renders the portfolio page link', () => {
-    const portfolio = screen.getByTestId('header-nav-portfolio');
+    const portfolio = screen.getByRole('link', {
+      name: /portfolio/i,
+    });
 
     expect(portfolio).toHaveAttribute('href', '/portfolio');
-    expect(portfolio).toHaveTextContent('Portfolio');
     expect(portfolio).not.toHaveClass('active');
   });
 
   it('renders the contact page link', () => {
-    const contact = screen.getByTestId('header-nav-contact');
+    const contact = screen.getByRole('link', {
+      name: /contact/i,
+    });
 
     expect(contact).toHaveAttribute('href', '/contact');
-    expect(contact).toHaveTextContent('Contact');
     expect(contact).not.toHaveClass('active');
   });
 });
