@@ -4901,9 +4901,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^6.1.2":
-  version: 6.1.2
-  resolution: "@testing-library/jest-dom@npm:6.1.2"
+"@testing-library/jest-dom@npm:^6.1.3":
+  version: 6.1.3
+  resolution: "@testing-library/jest-dom@npm:6.1.3"
   dependencies:
     "@adobe/css-tools": ^4.3.0
     "@babel/runtime": ^7.9.2
@@ -4927,7 +4927,7 @@ __metadata:
       optional: true
     vitest:
       optional: true
-  checksum: de6b7f98d1b42887192eb70fd917b2b98d92aab22a86801718de75e0ca4964589335efeb650b0f7b9859609446b20d2bd81bfc5755f1655885d5664d1c093a70
+  checksum: 5bd14ba31fd3d64cff8ca55cccd335bedadf1db1119643954ca8cd30af835defe6f3a21e7d7617d20205b07abba1b2e668be1b9d6743504800f17fdc4344db75
   languageName: node
   linkType: hard
 
@@ -10098,9 +10098,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^10.16.2":
-  version: 10.16.2
-  resolution: "framer-motion@npm:10.16.2"
+"framer-motion@npm:^10.16.4":
+  version: 10.16.4
+  resolution: "framer-motion@npm:10.16.4"
   dependencies:
     "@emotion/is-prop-valid": ^0.8.2
     tslib: ^2.4.0
@@ -10115,7 +10115,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 341de9ed9ad26e67306d6467a17f5260ce0e8a034f936f2af22f03a7fe4087de487a8aebcbc396ab591de7fe181926d0cd6a79ec1dca6172e85f7fdf5103484f
+  checksum: 57eb252f25a2c4ee14b024295c6a1162a53a05e0321bdb9c8a22ec266fbe777832823eaa0309e42854170fcde16c42915c6c5d0208b628fd000d6fab013c501f
   languageName: node
   linkType: hard
 
@@ -10267,9 +10267,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-cli@npm:^5.12.0":
-  version: 5.12.0
-  resolution: "gatsby-cli@npm:5.12.0"
+"gatsby-cli@npm:^5.12.1":
+  version: 5.12.1
+  resolution: "gatsby-cli@npm:5.12.1"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -10314,7 +10314,7 @@ __metadata:
     yurnalist: ^2.1.0
   bin:
     gatsby: cli.js
-  checksum: 1c00854b4d89f0a7a54dd1883b355b6475f99673d24ed679cb864dc6d2b898ac9802296e03dc1c00d533e71f8bcdc26ff016b0e376e7d360151047e04556ff01
+  checksum: 0171035815a99f9d0006f96635edac530ff397d2d58ce622fda081bd045cca5513ab7227f2d309374aaea6859d7b6fd1f4040fbf9cbeb4bf43c26d32af2ccc49
   languageName: node
   linkType: hard
 
@@ -10745,9 +10745,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby@npm:^5.12.3":
-  version: 5.12.3
-  resolution: "gatsby@npm:5.12.3"
+"gatsby@npm:^5.12.4":
+  version: 5.12.4
+  resolution: "gatsby@npm:5.12.4"
   dependencies:
     "@babel/code-frame": ^7.18.6
     "@babel/core": ^7.20.12
@@ -10830,7 +10830,7 @@ __metadata:
     find-cache-dir: ^3.3.2
     fs-exists-cached: 1.0.0
     fs-extra: ^11.1.1
-    gatsby-cli: ^5.12.0
+    gatsby-cli: ^5.12.1
     gatsby-core-utils: ^4.12.0
     gatsby-graphiql-explorer: ^3.12.0
     gatsby-legacy-polyfills: ^3.12.0
@@ -10924,7 +10924,7 @@ __metadata:
       optional: true
   bin:
     gatsby: ./cli.js
-  checksum: 3d8ca07f53d2e8613b249360b339e4f9bc096dd1e08deea7635c506a3ab20df2576063adec6725d0c44c59eac4587bbcdc503a57fbd54567a345535344796191
+  checksum: 7c4b27b6c1f4306854c85f62d7f9af4ee81ec98fa2a4063cd6bb1fc3cb8be7547277cf1fb06dc09c14ab3ccb247233bc42aa2a43a5848b89b8840445115d8407
   languageName: node
   linkType: hard
 
@@ -15224,7 +15224,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
   dependencies:
-    "@testing-library/jest-dom": ^6.1.2
+    "@testing-library/jest-dom": ^6.1.3
     "@testing-library/react": ^14.0.0
     "@types/jest": ^29.5.4
     "@types/node": ^20.5.9
@@ -15235,9 +15235,9 @@ __metadata:
     babel-jest: ^29.6.4
     babel-plugin-styled-components: ^2.1.4
     babel-preset-gatsby: ^3.12.0
-    framer-motion: ^10.16.2
-    gatsby: ^5.12.3
-    gatsby-cli: ^5.12.0
+    framer-motion: ^10.16.4
+    gatsby: ^5.12.4
+    gatsby-cli: ^5.12.1
     gatsby-plugin-image: ^3.12.0
     gatsby-plugin-manifest: ^5.12.0
     gatsby-plugin-offline: ^6.12.0
@@ -15259,7 +15259,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-google-recaptcha: ^3.1.0
-    react-icons: ^4.10.1
+    react-icons: ^4.11.0
     styled-components: ^6.0.7
     typescript: ^5.2.2
   languageName: unknown
@@ -16269,12 +16269,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-icons@npm:^4.10.1":
-  version: 4.10.1
-  resolution: "react-icons@npm:4.10.1"
+"react-icons@npm:^4.11.0":
+  version: 4.11.0
+  resolution: "react-icons@npm:4.11.0"
   peerDependencies:
     react: "*"
-  checksum: b6c8d4fe482b112e1041515d93ef7670a0af128855c926052a076b64d0b991cdd4391394b26467100f8da3859db1ebd8f9c6b7614fa5969fde83de45c71031a3
+  checksum: 7b8b80bbe2dabcc54b6c2129b7761a04b19caebe24389adc7683478ef41212b9ca0b53c63abcc06b3c01b94c84855ec5142b4c357e19c4aaaad9a4db23a3c485
   languageName: node
   linkType: hard
 
