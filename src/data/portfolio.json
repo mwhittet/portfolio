@@ -45,13 +45,13 @@
       {
         "id": 3,
         "name": "Which? | Article example",
-        "url": "https://www.which.co.uk/reviews/online-shopping/article/online-shopping/online-shopping-top-tips-to-stay-safe-and-shop-smart-aMgbs0Q4k6U4",
+        "url": "https://www.which.co.uk/reviews/food-and-drink/article/best-buy-food-and-drink-aCHpy6l9oPzX",
         "image": "../images/projects/which-article-example.jpg"
       },
       {
         "id": 4,
-        "name": "Which? | Help to Buy calculator",
-        "url": "https://www.which.co.uk/money/mortgages-and-property/mortgage-calculators/help-to-buy-calculator-akj3c0y9b7u1",
+        "name": "Which? | Mortgage repayments calculator",
+        "url": "https://www.which.co.uk/money/mortgages-and-property/mortgage-calculators/mortgage-repayment-calculator-aaq242x4qttl",
         "image": "../images/projects/which-help-to-buy.jpg"
       }
     ]
