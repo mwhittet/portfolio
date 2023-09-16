@@ -2,7 +2,7 @@
   {
     "title": "Which?",
     "slug": "which",
-    "intro": "I have extensively worked on the new design system to create a collection of flexible and reusable components that could be used across all of the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in two squads, the acquisition and content experience. Within the content experience squad, we look after a number of areas such as the global navigation, WCD (CMS/templates that deliver content to users), the homepage, static tools and a component library we are currently rebuilding using Emotion.",
+    "intro": "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in three different squads, the acquisition, content experience & discovery and now the content experience squad (the previous squad was split into two). Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within my current squad, we look after several areas such as Glide, the article templates, news and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools and CSS which I believe is quite a achievement.",
     "skills": [
       "React",
       "GraphQL",
@@ -27,7 +27,10 @@
       "CircleCI",
       "Jira",
       "RWD",
-      "AWS"
+      "AWS",
+      "Airbrake",
+      "Calibre",
+      "Lighthouse"
     ],
     "projects": [
       {
