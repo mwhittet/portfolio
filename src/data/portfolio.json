@@ -3,6 +3,10 @@
     "title": "Which?",
     "slug": "which",
     "intro": "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in three different squads, the acquisition, content experience & discovery and now the content experience squad (the previous squad was split into two). Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within my current squad, we look after several areas such as Glide, the article templates, news and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools and CSS which I believe is quite a achievement.",
+    "achievements": [
+      "Completely rebuilt the Mortgage deposit calculator",
+      "Provided all the responsive styling and tracking for the new global navigation menu"
+    ],
     "skills": [
       "React",
       "GraphQL",
@@ -35,24 +39,30 @@
     "projects": [
       {
         "id": 1,
+        "name": "Which? | Global navigation",
+        "url": "https://www.which.co.uk",
+        "image": "../images/projects/which-global-navigation.jpg"
+      },
+      {
+        "id": 2,
         "name": "Which? | Category example",
         "url": "https://www.which.co.uk/technology",
         "image": "../images/projects/which-category-example.jpg"
       },
       {
-        "id": 2,
+        "id": 3,
         "name": "Which? | Listing example",
         "url": "https://www.which.co.uk/reviews/food-and-drink/article/guides",
         "image": "../images/projects/which-listing-example.jpg"
       },
       {
-        "id": 3,
+        "id": 4,
         "name": "Which? | Article example",
         "url": "https://www.which.co.uk/reviews/food-and-drink/article/best-buy-food-and-drink-aCHpy6l9oPzX",
         "image": "../images/projects/which-article-example.jpg"
       },
       {
-        "id": 4,
+        "id": 5,
         "name": "Which? | Mortgage repayments calculator",
         "url": "https://www.which.co.uk/money/mortgages-and-property/mortgage-calculators/mortgage-repayment-calculator-aaq242x4qttl",
         "image": "../images/projects/which-help-to-buy.jpg"
@@ -63,6 +73,7 @@
     "title": "Royal Opera House",
     "slug": "royal-opera-house",
     "intro": "A very unique & interesting place to work, I was the first Front End Developer to join the digital development team and was involved in all aspects of the website redesign project.",
+    "achievements": [],
     "skills": [
       "HTML 5",
       "CSS 3",
@@ -123,6 +134,7 @@
     "title": "French Connection",
     "slug": "french-connection",
     "intro": "Responsible for all development projects for the French Connection group which included several websites for FCUK, FCUS, FCCA and Great Plains. I mentored a few junior front end developers whilst working there and worked very closely with the content, design and SEO teams.",
+    "achievements": [],
     "skills": [
       "CSS 3",
       "HTML 5",
@@ -167,6 +179,7 @@
     "title": "Virgin Media",
     "slug": "virgin-media",
     "intro": "In the heart of Covent Garden, I started working on the Virgin Media and Mobile websites. I developed new features and pages whilst maintaining existing content and I also became the lead Maxymiser developer that implemented AB/MVT tests across the two sites.",
+    "achievements": [],
     "skills": [
       "CSS",
       "SASS",

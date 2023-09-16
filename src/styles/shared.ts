@@ -69,7 +69,6 @@ export const SkillList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0 0 30px;
   padding: 0;
 `;
 
