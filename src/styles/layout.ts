@@ -46,6 +46,10 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  ul {
+    margin: 0 0 30px;
+  }
+
   p {
     margin: 0;
   }

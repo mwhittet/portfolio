@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { Layout, Seo } from '../components';
 
 const About = () => (
-  <Layout pageTitle='About'>
+  <Layout pageTitle="About">
     <p>
       I really love what I do and consider it a creative passion. It's helped me
       build a great set of professional and personal skills such as having a
