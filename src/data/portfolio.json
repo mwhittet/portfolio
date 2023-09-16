@@ -73,6 +73,7 @@
     "title": "Royal Opera House",
     "slug": "royal-opera-house",
     "intro": "A very unique & interesting place to work, I was the first Front End Developer to join the digital development team and was involved in all aspects of the website redesign project.",
+    "achievements": [],
     "skills": [
       "HTML 5",
       "CSS 3",
@@ -133,6 +134,7 @@
     "title": "French Connection",
     "slug": "french-connection",
     "intro": "Responsible for all development projects for the French Connection group which included several websites for FCUK, FCUS, FCCA and Great Plains. I mentored a few junior front end developers whilst working there and worked very closely with the content, design and SEO teams.",
+    "achievements": [],
     "skills": [
       "CSS 3",
       "HTML 5",
@@ -177,6 +179,7 @@
     "title": "Virgin Media",
     "slug": "virgin-media",
     "intro": "In the heart of Covent Garden, I started working on the Virgin Media and Mobile websites. I developed new features and pages whilst maintaining existing content and I also became the lead Maxymiser developer that implemented AB/MVT tests across the two sites.",
+    "achievements": [],
     "skills": [
       "CSS",
       "SASS",
