@@ -2,7 +2,10 @@
   {
     "title": "Which?",
     "slug": "which",
-    "intro": "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in three different squads, the acquisition, content experience & discovery and now the content experience squad (the previous squad was split into two). Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within my current squad, we look after several areas such as Glide, the article templates, news and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools and CSS which I believe is quite a achievement.",
+    "intro": [
+      "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in three different squads, the acquisition, content experience & discovery and now the content experience squad (the previous squad was split into two).",
+      "Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within my current squad, we look after several areas such as Glide, the article templates, news and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools and CSS which I believe is quite a achievement."
+    ],
     "achievements": [
       "Completely rebuilt the Mortgage deposit calculator",
       "Provided all the responsive styling and tracking for the new global navigation menu"
@@ -72,7 +75,9 @@
   {
     "title": "Royal Opera House",
     "slug": "royal-opera-house",
-    "intro": "A very unique & interesting place to work, I was the first Front End Developer to join the digital development team and was involved in all aspects of the website redesign project.",
+    "intro": [
+      "A very unique & interesting place to work, I was the first Front End Developer to join the digital development team and was involved in all aspects of the website redesign project."
+    ],
     "achievements": [],
     "skills": [
       "HTML 5",
@@ -133,7 +138,9 @@
   {
     "title": "French Connection",
     "slug": "french-connection",
-    "intro": "Responsible for all development projects for the French Connection group which included several websites for FCUK, FCUS, FCCA and Great Plains. I mentored a few junior front end developers whilst working there and worked very closely with the content, design and SEO teams.",
+    "intro": [
+      "Responsible for all development projects for the French Connection group which included several websites for FCUK, FCUS, FCCA and Great Plains. I mentored a few junior front end developers whilst working there and worked very closely with the content, design and SEO teams."
+    ],
     "achievements": [],
     "skills": [
       "CSS 3",
@@ -178,7 +185,9 @@
   {
     "title": "Virgin Media",
     "slug": "virgin-media",
-    "intro": "In the heart of Covent Garden, I started working on the Virgin Media and Mobile websites. I developed new features and pages whilst maintaining existing content and I also became the lead Maxymiser developer that implemented AB/MVT tests across the two sites.",
+    "intro": [
+      "In the heart of Covent Garden, I started working on the Virgin Media and Mobile websites. I developed new features and pages whilst maintaining existing content and I also became the lead Maxymiser developer that implemented AB/MVT tests across the two sites."
+    ],
     "achievements": [],
     "skills": [
       "CSS",

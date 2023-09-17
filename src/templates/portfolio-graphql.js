@@ -31,7 +31,8 @@ const portfolio = ({ data }) => {
 
   return (
     <Layout pageTitle={title}>
-      <p>{intro}</p>
+      {intro.length > 0 &&
+        intro.map((skill, index) => <p key={index}>{skill}</p>)}
 
       {skills.length > 0 && (
         <>
