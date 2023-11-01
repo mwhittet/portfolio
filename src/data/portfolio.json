@@ -1,5 +1,34 @@
 [
   {
+    "title": "Thoughts, conversations and to do lists",
+    "slug": "thoughts-conversations-and-to-do-lists",
+    "intro": [
+      "A small side project for a podcast series and album launch by Fiona Ross, it's built using Gatsby which also uses the Netlify CMS to easily add new episodes to it. It was built against a very tight deadline as the album launch had a set date but everything was ready a week before with the client very happy with the end result."
+    ],
+    "achievements": [],
+    "skills": [
+      "React",
+      "Gatsby",
+      "GraphQL",
+      "CSS 3",
+      "Netlify CMS"
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "name": "Thoughts, conversations and to do lists | Episodes",
+        "url": "https://thoughtsconversationsandtodolists.com/episodes/",
+        "image": "../images/projects/thoughts-episodes.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Thoughts, conversations and to do lists | About",
+        "url": "https://thoughtsconversationsandtodolists.com/about/",
+        "image": "../images/projects/thoughts-about.jpg"
+      }
+    ]
+  },
+  {
     "title": "Which?",
     "slug": "which",
     "intro": [
