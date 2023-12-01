@@ -5033,12 +5033,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-google-recaptcha@npm:^2.1.7":
-  version: 2.1.7
-  resolution: "@types/react-google-recaptcha@npm:2.1.7"
+"@types/react-google-recaptcha@npm:^2.1.8":
+  version: 2.1.8
+  resolution: "@types/react-google-recaptcha@npm:2.1.8"
   dependencies:
     "@types/react": "*"
-  checksum: 58c3a628da1d4c7ebcda700c2851e6fb6ac6cf202c8922b5352a13b5dd9945cd242eeed01bea809d227f597250efffc83ae2b26fb5b577bec295681b49b5d489
+  checksum: 9a19eceea432929588e0b9e3392905fcba92bdb6c9da66d4f54d66eefd0efca2d619371b6143b62462e3a96f8cfd74b9c8ef8dc13f2ac84dcab91ea5f04a3786
   languageName: node
   linkType: hard
 
@@ -14874,7 +14874,7 @@ __metadata:
     "@types/node": ^20.8.10
     "@types/react": ^18.2.33
     "@types/react-dom": ^18.2.14
-    "@types/react-google-recaptcha": ^2.1.7
+    "@types/react-google-recaptcha": ^2.1.8
     "@types/styled-components": ^5.1.29
     babel-jest: ^29.7.0
     babel-plugin-styled-components: ^2.1.4
