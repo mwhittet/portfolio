@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  My Portfolio
+  My Portfolio (currently being rebuilt)
 </h1>
 <p align="center">
   Proudly built using React, Gatsby, GraphQL, TypeScript, styled-components and hosted on Netlify.
