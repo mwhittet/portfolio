@@ -74,5 +74,5 @@
   "bugs": {
     "url": "https://github.com/mwhittet/portfolio/issues"
   },
-  "packageManager": "yarn@3.3.1"
+  "packageManager": "yarn@4.0.2"
 }
