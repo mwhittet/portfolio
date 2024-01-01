@@ -10043,6 +10043,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-core-utils@npm:^4.13.0":
+  version: 4.13.0
+  resolution: "gatsby-core-utils@npm:4.13.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    ci-info: "npm:2.0.0"
+    configstore: "npm:^5.0.1"
+    fastq: "npm:^1.15.0"
+    file-type: "npm:^16.5.4"
+    fs-extra: "npm:^11.1.1"
+    got: "npm:^11.8.6"
+    hash-wasm: "npm:^4.9.0"
+    import-from: "npm:^4.0.0"
+    lmdb: "npm:2.5.3"
+    lock: "npm:^1.1.0"
+    node-object-hash: "npm:^2.3.10"
+    proper-lockfile: "npm:^4.1.2"
+    resolve-from: "npm:^5.0.0"
+    tmp: "npm:^0.2.1"
+    xdg-basedir: "npm:^4.0.0"
+  checksum: 981415d1cf9fdf1a9817cc7652258a1205587a06cb3e4bddc8bb39e74dddde27cf3570dc7cc60336679f8e0b1f435ec92af5f2b7c71c187af2b907cf6ea22714
+  languageName: node
+  linkType: hard
+
 "gatsby-graphiql-explorer@npm:^3.12.1":
   version: 3.12.1
   resolution: "gatsby-graphiql-explorer@npm:3.12.1"
@@ -10162,13 +10186,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-offline@npm:^6.12.3":
-  version: 6.12.3
-  resolution: "gatsby-plugin-offline@npm:6.12.3"
+"gatsby-plugin-offline@npm:^6.13.0":
+  version: 6.13.0
+  resolution: "gatsby-plugin-offline@npm:6.13.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     cheerio: "npm:^1.0.0-rc.10"
-    gatsby-core-utils: "npm:^4.12.1"
+    gatsby-core-utils: "npm:^4.13.0"
     glob: "npm:^7.2.3"
     idb-keyval: "npm:^3.2.0"
     lodash: "npm:^4.17.21"
@@ -10177,7 +10201,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: a48247165414f13403016c37c66fa9ee5e794f0b5f19438400d39af31eacb473845a82d54d6bc20300f17edd8dee9e2e2ab8b6b6fd2e96474b74dd7dacd4a250
+  checksum: 5d742fd1ba822e32f16b9ceb67ffe5705272c794d919016157bcdd59af7274ded926b6f9dcf2cdfcfe7ddc9832b2f516ed35c641faaf9eb0cd8c7fe5f896afb2
   languageName: node
   linkType: hard
 
@@ -14914,7 +14938,7 @@ __metadata:
     gatsby-cli: "npm:^5.12.4"
     gatsby-plugin-image: "npm:^3.12.3"
     gatsby-plugin-manifest: "npm:^5.12.3"
-    gatsby-plugin-offline: "npm:^6.12.3"
+    gatsby-plugin-offline: "npm:^6.13.0"
     gatsby-plugin-robots-txt: "npm:^1.8.0"
     gatsby-plugin-sharp: "npm:^5.12.3"
     gatsby-plugin-sitemap: "npm:^6.12.3"
