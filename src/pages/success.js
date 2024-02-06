@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Layout, Seo } from '../components';
 
 const Success = () => (

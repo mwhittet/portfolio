@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 import { breakpoints, colors } from '.';

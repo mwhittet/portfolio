@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, colors } from '../../styles';
+import { colors } from '../../styles';
 
 export const FooterWrapper = styled.footer`
   color: ${colors.mineShaft};

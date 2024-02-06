@@ -1,4 +1,3 @@
-import React from 'react';
 import { IconContext } from 'react-icons';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link, NavWrapper } from './styled';

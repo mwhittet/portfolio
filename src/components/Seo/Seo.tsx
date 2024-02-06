@@ -1,4 +1,3 @@
-import React from 'react';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import { Props } from '.';
 
