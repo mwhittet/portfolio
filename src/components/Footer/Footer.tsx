@@ -1,6 +1,4 @@
-import React from 'react';
 import { FooterWrapper } from './styled';
-
 import { Social } from '../../components';
 
 const Footer = (): React.ReactElement => {

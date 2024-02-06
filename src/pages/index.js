@@ -1,9 +1,7 @@
-import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { motion } from 'framer-motion';
 import { HomeWrapper, Intro, StyledImg } from '../styles/shared';
-
 import { Layout, Seo } from '../components';
 
 export const query = graphql`

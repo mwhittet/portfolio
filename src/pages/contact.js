@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Form, Layout, Seo } from '../components';
 
 const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;

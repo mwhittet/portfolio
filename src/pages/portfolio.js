@@ -1,8 +1,6 @@
-import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { Container } from '../styles/shared';
-
 import { Layout, PortfolioItem, Seo } from '../components';
 
 export const query = graphql`

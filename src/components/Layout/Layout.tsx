@@ -1,9 +1,7 @@
-import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Container, MainWrapper, PageTitle } from './styled';
 import { GlobalStyle } from '../../styles/layout';
 import { Props } from '.';
-
 import { Footer, Header } from '../../components';
 
 const Layout = ({

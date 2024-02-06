@@ -1,6 +1,4 @@
-import React from 'react';
 import { screen, render } from '@testing-library/react';
-
 import Form from './';
 
 describe('<Form /> component', () => {

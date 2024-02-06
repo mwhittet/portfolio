@@ -1,7 +1,5 @@
-import React from 'react';
 import { graphql } from 'gatsby';
 import { Container, SkillList, Skill } from '../styles/shared';
-
 import { Layout, PortfolioItem, Seo } from '../components';
 
 export const query = graphql`

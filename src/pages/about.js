@@ -1,6 +1,4 @@
-import React from 'react';
 import { Link } from 'gatsby';
-
 import { Layout, Seo } from '../components';
 
 const About = () => (

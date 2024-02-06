@@ -1,4 +1,3 @@
-import React from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Props } from '.';
 import {
