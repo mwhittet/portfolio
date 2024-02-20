@@ -15,8 +15,8 @@ export const Container = styled.div`
 `;
 
 export const Intro = styled(motion.h1)`
-  font-size: 1.2rem;
-  line-height: 1.3;
+  font-size: 1.7rem;
+  line-height: 1.5;
   text-align: center;
 
   ${breakpoints.md} {
