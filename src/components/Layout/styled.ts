@@ -16,7 +16,7 @@ export const MainWrapper = styled(motion.main)`
   position: relative;
 
   ${breakpoints.md} {
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 0;
     width: 960px;
   }
@@ -50,13 +50,9 @@ export const MainWrapper = styled(motion.main)`
 `;
 
 export const PageTitle = styled.h1`
-  font-size: 1.4rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   margin-bottom: 30px;
   text-decoration: underline;
   text-decoration-color: ${colors.internationalOrange};
-  text-underline-offset: 10px;
-
-  ${breakpoints.md} {
-    font-size: 2rem;
-  }
+  text-underline-offset: 7px;
 `;

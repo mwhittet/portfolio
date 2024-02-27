@@ -15,13 +15,9 @@ export const Container = styled.div`
 `;
 
 export const Intro = styled(motion.h1)`
-  font-size: 1.7rem;
+  font-size: clamp(1.7rem, 2.5vw, 2rem);
   line-height: 1.5;
   text-align: center;
-
-  ${breakpoints.md} {
-    font-size: 2rem;
-  }
 `;
 
 export const Title = styled.div`
@@ -73,11 +69,7 @@ export const SkillList = styled.ul`
 `;
 
 export const Skill = styled.li`
-  background-image: linear-gradient(
-    180deg,
-    ${colors.springWood} 0%,
-    ${colors.bone} 100%
-  );
+  background: linear-gradient(180deg, ${colors.springWood}, ${colors.bone});
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
   cursor: default;
   display: inline;

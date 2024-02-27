@@ -39,7 +39,7 @@ export const FormWrapper = styled.form`
   .recaptcha {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     transform: scale(0.85);
 
     ${breakpoints.sm} {
@@ -49,7 +49,7 @@ export const FormWrapper = styled.form`
 `;
 
 export const FormField = styled.div`
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 `;
 
 export const Label = styled.label`
