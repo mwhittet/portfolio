@@ -46,14 +46,10 @@ export const LinkWrapper = styled.span`
   margin-right: 20px;
 
   a {
-    font-size: 1.15rem;
+    font-size: clamp(1.15rem, 2.5vw, 1.4rem);
     font-weight: bold;
     position: relative;
     transition: all 0.5s ease-in-out;
-
-    ${breakpoints.md} {
-      font-size: 1.4rem;
-    }
 
     &.active {
       &::before,

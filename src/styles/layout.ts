@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
-    background-image: linear-gradient(135deg, ${colors.springWood} 0%, ${colors.bone} 100%);
+    background: linear-gradient(135deg, ${colors.springWood}, ${colors.bone}, ${colors.akaroa});
     box-sizing: border-box;
     color: ${colors.mineShaft};
     font-family: 'Marmelad', sans-serif;
@@ -23,15 +23,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    margin: 0;
-
     span {
       color: ${colors.internationalOrange};
     }
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
     margin: 0 0 30px;
   }
 
@@ -50,16 +48,14 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 0 30px;
   }
 
-  p {
-    margin: 0;
-  }
-
   img {
     border-style: none;
   }
 
+  h1,
+  p,
   blockquote {
-    margin: 0 0 30px;
+    margin: 0;
   }
 
   figure {
