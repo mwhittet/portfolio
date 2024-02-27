@@ -5,7 +5,7 @@ import { breakpoints, colors } from '../../styles';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
 `;
 
 export const MainWrapper = styled(motion.main)`
