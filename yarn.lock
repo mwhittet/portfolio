@@ -8705,6 +8705,57 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-cli@npm:^5.13.3":
+  version: 5.13.3
+  resolution: "gatsby-cli@npm:5.13.3"
+  dependencies:
+    "@babel/code-frame": "npm:^7.18.6"
+    "@babel/core": "npm:^7.20.12"
+    "@babel/generator": "npm:^7.20.14"
+    "@babel/helper-plugin-utils": "npm:^7.20.2"
+    "@babel/preset-typescript": "npm:^7.18.6"
+    "@babel/runtime": "npm:^7.20.13"
+    "@babel/template": "npm:^7.20.7"
+    "@babel/types": "npm:^7.20.7"
+    "@jridgewell/trace-mapping": "npm:^0.3.18"
+    "@types/common-tags": "npm:^1.8.1"
+    better-opn: "npm:^2.1.1"
+    boxen: "npm:^5.1.2"
+    chalk: "npm:^4.1.2"
+    clipboardy: "npm:^4.0.0"
+    common-tags: "npm:^1.8.2"
+    convert-hrtime: "npm:^3.0.0"
+    create-gatsby: "npm:^3.13.1"
+    envinfo: "npm:^7.10.0"
+    execa: "npm:^5.1.1"
+    fs-exists-cached: "npm:^1.0.0"
+    fs-extra: "npm:^11.1.1"
+    gatsby-core-utils: "npm:^4.13.1"
+    gatsby-telemetry: "npm:^4.13.1"
+    hosted-git-info: "npm:^3.0.8"
+    is-valid-path: "npm:^0.1.1"
+    joi: "npm:^17.9.2"
+    lodash: "npm:^4.17.21"
+    node-fetch: "npm:^2.6.11"
+    opentracing: "npm:^0.14.7"
+    pretty-error: "npm:^2.1.2"
+    progress: "npm:^2.0.3"
+    prompts: "npm:^2.4.2"
+    redux: "npm:4.2.1"
+    resolve-cwd: "npm:^3.0.0"
+    semver: "npm:^7.5.3"
+    signal-exit: "npm:^3.0.7"
+    stack-trace: "npm:^0.0.10"
+    strip-ansi: "npm:^6.0.1"
+    yargs: "npm:^15.4.1"
+    yoga-layout-prebuilt: "npm:^1.10.0"
+    yurnalist: "npm:^2.1.0"
+  bin:
+    gatsby: cli.js
+  checksum: e9a79ab661e006d8683f2943de21d6f6a36333e22844c87e24a809e91fd2d0f7dedcb813bd27f45222467c0266922ef9ad43e2599a3654170b32a52aee6a3d33
+  languageName: node
+  linkType: hard
+
 "gatsby-core-utils@npm:^4.13.1":
   version: 4.13.1
   resolution: "gatsby-core-utils@npm:4.13.1"
@@ -13464,7 +13515,7 @@ __metadata:
     babel-preset-gatsby: "npm:^3.13.1"
     framer-motion: "npm:^11.0.24"
     gatsby: "npm:^5.13.3"
-    gatsby-cli: "npm:^5.13.2"
+    gatsby-cli: "npm:^5.13.3"
     gatsby-plugin-image: "npm:^3.13.1"
     gatsby-plugin-manifest: "npm:^5.13.1"
     gatsby-plugin-offline: "npm:^6.13.1"
