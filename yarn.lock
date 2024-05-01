@@ -5223,6 +5223,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-preset-gatsby@npm:^3.13.2":
+  version: 3.13.2
+  resolution: "babel-preset-gatsby@npm:3.13.2"
+  dependencies:
+    "@babel/plugin-proposal-class-properties": "npm:^7.18.6"
+    "@babel/plugin-proposal-nullish-coalescing-operator": "npm:^7.18.6"
+    "@babel/plugin-proposal-optional-chaining": "npm:^7.20.7"
+    "@babel/plugin-syntax-dynamic-import": "npm:^7.8.3"
+    "@babel/plugin-transform-classes": "npm:^7.20.7"
+    "@babel/plugin-transform-runtime": "npm:^7.19.6"
+    "@babel/plugin-transform-spread": "npm:^7.20.7"
+    "@babel/preset-env": "npm:^7.20.2"
+    "@babel/preset-react": "npm:^7.18.6"
+    "@babel/runtime": "npm:^7.20.13"
+    babel-plugin-dynamic-import-node: "npm:^2.3.3"
+    babel-plugin-macros: "npm:^3.1.0"
+    babel-plugin-transform-react-remove-prop-types: "npm:^0.4.24"
+    gatsby-core-utils: "npm:^4.13.1"
+    gatsby-legacy-polyfills: "npm:^3.13.1"
+  peerDependencies:
+    "@babel/core": ^7.11.6
+    core-js: ^3.0.0
+  checksum: 6bae256a8deddbd3dda464d9f947a0f6a2365f3f10c8b270333ba12f3ed31ad76f086c5ed104d5e502c24af258d62fa5f69f12344de62602effed4ae9dae3048
+  languageName: node
+  linkType: hard
+
 "babel-preset-jest@npm:^29.6.3":
   version: 29.6.3
   resolution: "babel-preset-jest@npm:29.6.3"
@@ -8743,6 +8769,16 @@ __metadata:
     "@babel/runtime": "npm:^7.20.13"
     core-js-compat: "npm:3.31.0"
   checksum: ea82fee10cffb90765b43f86231dbf7c697b266058837f543fa543c61c96cf26b24c89393063cd47f18e2e4507d03271e56e8c2b680faea5ac88dac4ee1c9990
+  languageName: node
+  linkType: hard
+
+"gatsby-legacy-polyfills@npm:^3.13.1":
+  version: 3.13.1
+  resolution: "gatsby-legacy-polyfills@npm:3.13.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    core-js-compat: "npm:3.31.0"
+  checksum: 54c62dbb3c732b54627da1c4a08d93c8f9158c95baf53b6e9cd343ad886e3af33c787bf47901f168d40f1ede83dbffd19ebf04efbcf3274f9bb339773eb2e643
   languageName: node
   linkType: hard
 
@@ -13461,7 +13497,7 @@ __metadata:
     "@types/styled-components": "npm:^5.1.34"
     babel-jest: "npm:^29.7.0"
     babel-plugin-styled-components: "npm:^2.1.4"
-    babel-preset-gatsby: "npm:^3.13.1"
+    babel-preset-gatsby: "npm:^3.13.2"
     framer-motion: "npm:^11.0.24"
     gatsby: "npm:^5.13.3"
     gatsby-cli: "npm:^5.13.2"
