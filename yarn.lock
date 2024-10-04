@@ -3804,12 +3804,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^22.5.5":
-  version: 22.5.5
-  resolution: "@types/node@npm:22.5.5"
+"@types/node@npm:^22.7.4":
+  version: 22.7.4
+  resolution: "@types/node@npm:22.7.4"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 172d02c8e6d921699edcf559c28b3805616bd6481af1b3cb0299f89ad9a6f33b71050434c06ce7b503166054a26275344187c443f99f745d0b12601372452f19
+  checksum: 19ddab80c4eba2253c855ed67c9bbc47417183049d01e59010a738bd80d47338bab79fd1f44ae51516bd63a1db4bf21ddb38b16bf6401a2e93252068ec52e88b
   languageName: node
   linkType: hard
 
@@ -3886,13 +3886,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.3.8":
-  version: 18.3.8
-  resolution: "@types/react@npm:18.3.8"
+"@types/react@npm:^18.3.11":
+  version: 18.3.11
+  resolution: "@types/react@npm:18.3.11"
   dependencies:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 75e64e7f481c28e6c8ce6dae12f49ccc3f36c7b10b82da3eb7728ad9c02bec58a2c967105603e38665902e8db9296962c7718bc2062e2cb64a16e92333bd1f4b
+  checksum: a36f0707fdfe9fe19cbe5892bcdab0f042ecadb501ea4e1c39519943f3e74cffbd31e892d3860f5c87cf33f5f223552b246a552bed0087b95954f2cb39d5cf65
   languageName: node
   linkType: hard
 
@@ -8385,9 +8385,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"framer-motion@npm:^11.5.6":
-  version: 11.5.6
-  resolution: "framer-motion@npm:11.5.6"
+"framer-motion@npm:^11.11.1":
+  version: 11.11.1
+  resolution: "framer-motion@npm:11.11.1"
   dependencies:
     tslib: "npm:^2.4.0"
   peerDependencies:
@@ -8401,7 +8401,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 8662b888f3665e947aef37e5609dce985ba32d4e264328bae0935829fba15b34704ef4d51c163b9c80e24ef8f202ae25a3f6aeb4d3161c23ff96592eb4a473d0
+  checksum: acf1219d4400e3d08ed37caabb601cb6f79512d1add4288e50359635723a454ad5b620a9feeba5137673d2f71e9b51c9b0bee796fe64533c73b82fa9ba76e254
   languageName: node
   linkType: hard
 
@@ -13315,15 +13315,15 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.5.0"
     "@testing-library/react": "npm:^16.0.1"
     "@types/jest": "npm:^29.5.13"
-    "@types/node": "npm:^22.5.5"
-    "@types/react": "npm:^18.3.8"
+    "@types/node": "npm:^22.7.4"
+    "@types/react": "npm:^18.3.11"
     "@types/react-dom": "npm:^18.3.0"
     "@types/react-google-recaptcha": "npm:^2.1.9"
     "@types/styled-components": "npm:^5.1.34"
     babel-jest: "npm:^29.7.0"
     babel-plugin-styled-components: "npm:^2.1.4"
     babel-preset-gatsby: "npm:^3.13.2"
-    framer-motion: "npm:^11.5.6"
+    framer-motion: "npm:^11.11.1"
     gatsby: "npm:^5.13.7"
     gatsby-cli: "npm:^5.13.3"
     gatsby-plugin-image: "npm:^3.13.1"
