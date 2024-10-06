@@ -6,13 +6,7 @@
       "A small side project for a podcast series and album launch by Fiona Ross, it's built using Gatsby which also uses the Netlify CMS to easily add new episodes to it. It was built against a very tight deadline as the album launch had a set date but everything was ready a week before with the client very happy with the end result."
     ],
     "achievements": [],
-    "skills": [
-      "React",
-      "Gatsby",
-      "GraphQL",
-      "CSS 3",
-      "Netlify CMS"
-    ],
+    "skills": ["React", "Gatsby", "GraphQL", "CSS 3", "Netlify CMS"],
     "projects": [
       {
         "id": 1,
@@ -32,12 +26,14 @@
     "title": "Which?",
     "slug": "which",
     "intro": [
-      "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in three different squads, the acquisition, content experience & discovery and now the content experience squad (the previous squad was split into two).",
-      "Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within my current squad, we look after several areas such as Glide, the article templates, news and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools and CSS which I believe is quite a achievement."
+      "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in four different squads, acquisition, content experience & discovery, content experience (the previous squad was split into two as it was very large) and now I am a Product Engineer in the Which? Core squad.",
+      "Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within my current squad (we absorbed quite a few areas from the previous two squads I was in), we look after several domains such as Glide, the article templates, news, global navigation, saved/favorites (this is as new domain that we have been working on) and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools and CSS which I believe is quite a achievement."
     ],
     "achievements": [
-      "Completely rebuilt the Mortgage deposit calculator",
-      "Provided all the responsive styling and tracking for the new global navigation menu"
+      "Decreased average page size by 50% via code-splitting, using responsive imagery, removing redundant code, updating/removing npm packages etc",
+      "Provided all the responsive styling and tracking for the new global navigation menu (also decreased the bundle size by 40% (CSS) and 30% (JS)",
+      "Interviewed and provided feedback to the engineering manager on multiple candidates",
+      "Completely rebuilt most of the mortgage calculators"
     ],
     "skills": [
       "React",
@@ -59,6 +55,7 @@
       "Jest",
       "React Testing library",
       "Cypress",
+      "Playwright",
       "Git",
       "CircleCI",
       "Jira",
@@ -107,7 +104,10 @@
     "intro": [
       "A very unique & interesting place to work, I was the first Front End Developer to join the digital development team and was involved in all aspects of the website redesign project."
     ],
-    "achievements": [],
+    "achievements": [
+      "Decreased the average page speed of the old site from roughly eight seconds plus to just over two with the use of the new components/pages",
+      "Took part in user observations and research which allowed us to tweak the new website components and pages"
+    ],
     "skills": [
       "HTML 5",
       "CSS 3",
@@ -170,7 +170,11 @@
     "intro": [
       "Responsible for all development projects for the French Connection group which included several websites for FCUK, FCUS, FCCA and Great Plains. I mentored a few junior front end developers whilst working there and worked very closely with the content, design and SEO teams."
     ],
-    "achievements": [],
+    "achievements": [
+      "Rebuilt the entire checkout flow which increased sales by 13%",
+      "Mentored juniors into great front end developers",
+      "Introduced Agile ways of working along with a ticketing system to increase productivity"
+    ],
     "skills": [
       "CSS 3",
       "HTML 5",
