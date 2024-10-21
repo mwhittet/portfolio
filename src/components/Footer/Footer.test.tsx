@@ -17,7 +17,7 @@ describe('<Footer /> component', () => {
   it('renders the first paragraph tag', () => {
     expect(
       screen.getByText(
-        /proudly built using react, gatsby, graphqL, typescript, styled\-components/i
+        /proudly built with Gatsby using GraphQL, TypeScript \& styled\-components\, hosted via Netlify/i
       )
     ).toBeInTheDocument();
   });

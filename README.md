@@ -6,7 +6,7 @@
   My Portfolio
 </h1>
 <p align="center">
-  Proudly built using React, Gatsby, GraphQL, TypeScript, styled-components and hosted on Netlify.
+  Proudly built with Gatsby using GraphQL, TypeScript & styled-components, hosted via Netlify.
 </p>
 
 <p align="center">

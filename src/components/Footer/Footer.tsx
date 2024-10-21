@@ -8,8 +8,8 @@ const Footer = (): React.ReactElement => {
     <FooterWrapper data-testid="footer">
       <Social />
       <p>
-        Proudly built using React, Gatsby, GraphQL, TypeScript,
-        styled-components
+        Proudly built with Gatsby using GraphQL, TypeScript & styled-components,
+        hosted via Netlify
       </p>
       <p>Copyright &copy; {year}, Michael Whittet</p>
     </FooterWrapper>
