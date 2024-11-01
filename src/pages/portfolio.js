@@ -22,28 +22,31 @@ export const query = graphql`
   }
 `;
 
-const Portfolio = ({ data }) => (
-  <Layout pageTitle="Portfolio">
-    <p>
-      I've worked with various companies from small start-ups, agencies and
-      enterprises, here are some examples:
-    </p>
-    <Container>
-      {data.allCompanyJson.edges.map(({ node }) => {
-        const { id, image, name, url } = node;
+const Portfolio = ({ data }) => {
+  const portfolioItems = (start, end) =>
+    data.allCompanyJson.edges.slice(start, end).map(({ node }) => {
+      const { id, image, name, url } = node;
 
-        return (
-          <PortfolioItem
-            image={getImage(image)}
-            key={id}
-            name={name}
-            url={url}
-          />
-        );
-      })}
-    </Container>
-  </Layout>
-);
+      return (
+        <PortfolioItem image={getImage(image)} key={id} name={name} url={url} />
+      );
+    });
+
+  return (
+    <Layout pageTitle="Portfolio">
+      <p>
+        I've worked at various sized companies from small start-ups, agencies
+        and enterprises but I also try and work on personal projects when I can
+        too, here are a few examples:
+      </p>
+      <h2>Personal projects:</h2>
+      <Container>{portfolioItems(0, 2)}</Container>
+
+      <h2>Professional experience:</h2>
+      <Container>{portfolioItems(2)}</Container>
+    </Layout>
+  );
+};
 
 export default Portfolio;
 
