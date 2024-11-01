@@ -25,11 +25,29 @@ export const query = graphql`
 const Portfolio = ({ data }) => (
   <Layout pageTitle="Portfolio">
     <p>
-      I've worked with various companies from small start-ups, agencies and
-      enterprises, here are some examples:
+      I've worked at various sized companies from small start-ups, agencies and
+      enterprises but I also try and work on personal projects when I can too,
+      here are a few examples:
     </p>
+    <h2>Personal projects:</h2>
     <Container>
-      {data.allCompanyJson.edges.map(({ node }) => {
+      {data.allCompanyJson.edges.slice(0, 2).map(({ node }) => {
+        const { id, image, name, url } = node;
+
+        return (
+          <PortfolioItem
+            image={getImage(image)}
+            key={id}
+            name={name}
+            url={url}
+          />
+        );
+      })}
+    </Container>
+
+    <h2>Professional experience:</h2>
+    <Container>
+      {data.allCompanyJson.edges.slice(2).map(({ node }) => {
         const { id, image, name, url } = node;
 
         return (

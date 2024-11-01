@@ -9,6 +9,10 @@ export const Container = styled.div`
   grid-template-columns: 1fr;
   text-align: center;
 
+  &:first-of-type {
+    margin-bottom: 30px;
+  }
+
   ${breakpoints.md} {
     grid-template-columns: 1fr 1fr;
   }

@@ -55,6 +55,7 @@ export const FormField = styled.div`
 export const Label = styled.label`
   display: inline-block;
   font-size: 1.125rem;
+  font-weight: bold;
   margin-bottom: 0.5rem;
 `;
 

@@ -12,7 +12,7 @@ const IndexPage = () => (
       <Intro
         variants={{
           hidden: { opacity: 0, y: -50 },
-          visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+          visible: { opacity: 1, y: 0, transition: { duration: 2 } },
         }}
       >
         <span>Hello!</span> I'm <span>Michael Whittet</span> aka Mike, Bruce,
