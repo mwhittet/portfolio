@@ -5108,6 +5108,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-remove-graphql-queries@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "babel-plugin-remove-graphql-queries@npm:5.14.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    "@babel/types": "npm:^7.20.7"
+    gatsby-core-utils: "npm:^4.14.0"
+  peerDependencies:
+    "@babel/core": ^7.0.0
+    gatsby: ^5.0.0-next
+  checksum: 10/510f470edb895c795f06685c0c6bd7130f8b39cefec71719dac5dc9d4ed56ac138274c49b29cb0c66d8bd35e6ec1cad046eeb1f8529e61fa1a39b82cc2c4cc6f
+  languageName: node
+  linkType: hard
+
 "babel-plugin-styled-components@npm:^2.1.4":
   version: 2.1.4
   resolution: "babel-plugin-styled-components@npm:2.1.4"
@@ -8534,7 +8548,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.1.0, fs-extra@npm:^11.1.1":
+"fs-extra@npm:^11.1.0, fs-extra@npm:^11.1.1, fs-extra@npm:^11.2.0":
   version: 11.2.0
   resolution: "fs-extra@npm:11.2.0"
   dependencies:
@@ -8724,6 +8738,30 @@ __metadata:
     tmp: "npm:^0.2.1"
     xdg-basedir: "npm:^4.0.0"
   checksum: 10/8fcc16205228406cfe9cf5454d1c9d18e29615d41242cef1b23cfffa6e423e93b6ce31ee4b4ebdc7e10890f330a6b3bd9c87f922e256370a63acc75ab8603280
+  languageName: node
+  linkType: hard
+
+"gatsby-core-utils@npm:^4.14.0":
+  version: 4.14.0
+  resolution: "gatsby-core-utils@npm:4.14.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.13"
+    ci-info: "npm:2.0.0"
+    configstore: "npm:^5.0.1"
+    fastq: "npm:^1.15.0"
+    file-type: "npm:^16.5.4"
+    fs-extra: "npm:^11.2.0"
+    got: "npm:^11.8.6"
+    hash-wasm: "npm:^4.11.0"
+    import-from: "npm:^4.0.0"
+    lmdb: "npm:2.5.3"
+    lock: "npm:^1.1.0"
+    node-object-hash: "npm:^2.3.10"
+    proper-lockfile: "npm:^4.1.2"
+    resolve-from: "npm:^5.0.0"
+    tmp: "npm:^0.2.1"
+    xdg-basedir: "npm:^4.0.0"
+  checksum: 10/cecabcf5a3ec509e177afd387cbc80759468cb0e87be4386773b73bd1e864bb27605938f6dec55f4758d76353f5b4dd9d5b94a87076d817d449bb7e85fbdecc4
   languageName: node
   linkType: hard
 
@@ -8975,6 +9013,23 @@ __metadata:
   peerDependencies:
     gatsby: ^5.0.0-next
   checksum: 10/ded09fc4e7e0d528c582a983d8f7d7f88e825c3f91d4af946361d44c15fd6b30a96367327d766586552b03347c234e83b7bef4e15fdf821fcd687cd6fbf1d4d6
+  languageName: node
+  linkType: hard
+
+"gatsby-plugin-typescript@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "gatsby-plugin-typescript@npm:5.14.0"
+  dependencies:
+    "@babel/core": "npm:^7.20.12"
+    "@babel/plugin-proposal-nullish-coalescing-operator": "npm:^7.18.6"
+    "@babel/plugin-proposal-numeric-separator": "npm:^7.18.6"
+    "@babel/plugin-proposal-optional-chaining": "npm:^7.20.7"
+    "@babel/preset-typescript": "npm:^7.18.6"
+    "@babel/runtime": "npm:^7.20.13"
+    babel-plugin-remove-graphql-queries: "npm:^5.14.0"
+  peerDependencies:
+    gatsby: ^5.0.0-next
+  checksum: 10/610bb82cf84d4ee7137be6dddcfa55dbf3ac7bddbe7529b71848c674254c8cdf4cb3e954cae877aafd3e99278331da1ff40915d93d24e00245074b4b2a227e26
   languageName: node
   linkType: hard
 
@@ -9727,6 +9782,13 @@ __metadata:
   dependencies:
     has-symbols: "npm:^1.0.3"
   checksum: 10/c74c5f5ceee3c8a5b8bc37719840dc3749f5b0306d818974141dda2471a1a2ca6c8e46b9d6ac222c5345df7a901c9b6f350b1e6d62763fec877e26609a401bfe
+  languageName: node
+  linkType: hard
+
+"hash-wasm@npm:^4.11.0":
+  version: 4.12.0
+  resolution: "hash-wasm@npm:4.12.0"
+  checksum: 10/529549f9565389b09310147a03cb6a5dd993f34f6742ed7fc84816e8881ce30036137aa995353bc2e8575883a6681299c3b2d181df56fcbe246f9cda82912084
   languageName: node
   linkType: hard
 
@@ -13455,7 +13517,7 @@ __metadata:
     gatsby-plugin-sitemap: "npm:^6.13.1"
     gatsby-plugin-styled-components: "npm:^6.13.1"
     gatsby-plugin-svgr-loader: "npm:^0.1.0"
-    gatsby-plugin-typescript: "npm:^5.13.1"
+    gatsby-plugin-typescript: "npm:^5.14.0"
     gatsby-plugin-webfonts: "npm:^2.3.2"
     gatsby-source-filesystem: "npm:^5.13.1"
     gatsby-transformer-json: "npm:^5.13.1"
