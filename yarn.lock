@@ -8921,9 +8921,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-sitemap@npm:^6.13.1":
-  version: 6.13.1
-  resolution: "gatsby-plugin-sitemap@npm:6.13.1"
+"gatsby-plugin-sitemap@npm:^6.14.0":
+  version: 6.14.0
+  resolution: "gatsby-plugin-sitemap@npm:6.14.0"
   dependencies:
     "@babel/runtime": "npm:^7.20.13"
     common-tags: "npm:^1.8.2"
@@ -8933,7 +8933,7 @@ __metadata:
     gatsby: ^5.0.0-next
     react: ^18.0.0 || ^0.0.0
     react-dom: ^18.0.0 || ^0.0.0
-  checksum: 10/80cb28ff6f2fdff1876ac20fd4e476f3990e45124741991197a7e33ddff5c00f6ad69d44630af4bfd06d63fb8a89ed01623bb71df788ac385e7e63ba16b4efb5
+  checksum: 10/3ae2c956363eff1a50ec50b8c08385821215f249bb2f06cf8cdf45852d4c0ffad2282c93c82cfd7ca7cadbb8a3eac31f03bf2c3fe6bcad3ec4879481f5791bd2
   languageName: node
   linkType: hard
 
@@ -13452,7 +13452,7 @@ __metadata:
     gatsby-plugin-offline: "npm:^6.13.3"
     gatsby-plugin-robots-txt: "npm:^1.8.0"
     gatsby-plugin-sharp: "npm:^5.13.1"
-    gatsby-plugin-sitemap: "npm:^6.13.1"
+    gatsby-plugin-sitemap: "npm:^6.14.0"
     gatsby-plugin-styled-components: "npm:^6.13.1"
     gatsby-plugin-svgr-loader: "npm:^0.1.0"
     gatsby-plugin-typescript: "npm:^5.13.1"
