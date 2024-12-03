@@ -2,7 +2,8 @@
 coverage
 
 # Dependency directories
-.yarn/
+/.yarn/*
+!/.yarn/releases
 node_modules/
 
 # dotenv environment variable files
