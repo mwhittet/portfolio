@@ -16,9 +16,29 @@ describe('<PortfolioItem /> component', () => {
     expect(link).toHaveAttribute('target', '_blank');
   });
 
-  it('renders external link', () => {
+  it('renders with a external link', () => {
+    render(
+      <PortfolioItem
+        {...portfolioItemDefaultProps}
+        url="https://www.google.co.uk/"
+      />
+    );
+
+    expect(screen.getByRole('link')).toHaveAttribute(
+      'href',
+      'https://www.google.co.uk/'
+    );
+  });
+
+  it('renders without a wrapping link', () => {
     render(<PortfolioItem {...portfolioItemDefaultProps} url="/" />);
 
-    expect(screen.getByRole('link')).toHaveAttribute('href', '/');
+    expect(screen.queryByRole('link')).not.toBeInTheDocument();
+  });
+
+  it('renders with a internal link', () => {
+    render(<PortfolioItem {...portfolioItemDefaultProps} url="/portfolio" />);
+
+    expect(screen.getByRole('link')).toHaveAttribute('href', '/portfolio');
   });
 });
