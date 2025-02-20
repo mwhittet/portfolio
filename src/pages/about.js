@@ -40,7 +40,7 @@ const About = () => (
       meetings and knowledge/idea sharing.
     </p>
     <p>
-      I'm currently working within a squad at{' '}
+      I previously worked within a squad at{' '}
       <a
         href="https://www.which.co.uk/"
         rel="noopener noreferrer"
@@ -49,8 +49,8 @@ const About = () => (
         Which?
       </a>{' '}
       completing various projects and tasks. I've also worked with some other
-      great companies in the past, you can find some previous examples of my
-      work in my <Link to="/portfolio">portfolio</Link>.
+      great companies in the past, you can find some examples of my work in my{' '}
+      <Link to="/portfolio">portfolio</Link>.
     </p>
   </Layout>
 );

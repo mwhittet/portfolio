@@ -7,20 +7,25 @@ import { Content } from '../../components';
 
 const PortfolioItem = ({ image, name, url }: LinkBox): React.ReactElement => {
   const contentImage = getImage(image);
-
-  return (
-    <Wrapper>
-      {checkLinkType(url) ? (
-        <a href={url} rel="noopener noreferrer" target="_blank">
-          {contentImage && <Content image={contentImage} name={name} />}
-        </a>
-      ) : (
-        <Link to={url}>
-          {contentImage && <Content image={contentImage} name={name} />}
-        </Link>
-      )}
-    </Wrapper>
+  const renderContentImage = contentImage && (
+    <Content image={contentImage} name={name} />
   );
+
+  const renderContent = () => {
+    if (checkLinkType(url)) {
+      return (
+        <a href={url} rel="noopener noreferrer" target="_blank">
+          {renderContentImage}
+        </a>
+      );
+    } else if (url === '/') {
+      return renderContentImage;
+    }
+
+    return <Link to={url}>{renderContentImage}</Link>;
+  };
+
+  return <Wrapper>{renderContent()}</Wrapper>;
 };
 
 export default PortfolioItem;
