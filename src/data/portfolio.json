@@ -3,7 +3,8 @@
     "title": "Barnes Code",
     "slug": "barnes-code",
     "intro": [
-      "A good friend of mine asked for some help with his company website as he couldn't find the time to dedicate to it. A design was provided but I was given free reign with the initial setup so I decided to use Next.js with SASS for the styling and React Testing Library for the unit testing (not much was needed, this was more of a nice to have so that it could be built upon) and Netlify is used for deploying. It's a great little website with some subtle animations I created using framer-motion, it has a very high accessability & speed score and it's visually stunning on all device sizes."
+      "A good friend of mine asked for some help with his company website as he couldn't find the time to dedicate to it. A design was provided but I was given free reign with the initial setup so I decided to use Next.js with SASS for the styling and React Testing Library for the unit testing (not much was needed, this was more of a nice to have so that it could be built upon) and Netlify is used for deploying. It's a great little website with some subtle animations I created using framer-motion, it has a very high accessability & speed score and it's visually stunning on all device sizes.",
+      "Unfortunately the website is no longer in service but a few screenshots can be seen below."
     ],
     "achievements": ["First live website built using Next.js"],
     "skills": [
@@ -17,13 +18,13 @@
       {
         "id": 1,
         "name": "Barnes Code | Mission",
-        "url": "https://barnescode.co.uk/",
+        "url": "/",
         "image": "../images/projects/barnescode-1.jpg"
       },
       {
         "id": 2,
         "name": "Barnes Code | Engineering",
-        "url": "https://barnescode.co.uk/",
+        "url": "/",
         "image": "../images/projects/barnescode-2.jpg"
       }
     ]
@@ -55,8 +56,8 @@
     "title": "Which?",
     "slug": "which",
     "intro": [
-      "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in four different squads, acquisition, content experience & discovery, content experience (the previous squad was split into two as it was very large) and now I am a Product Engineer in the Which? Core squad.",
-      "Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within my current squad (we absorbed quite a few areas from the previous two squads I was in), we look after over thirty different domains such as Glide, the article templates, news, global navigation, saved/favorites (this is as new domain that we have been working on) and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools, I believe this is quite a achievement as the math required to give the correct calculations can be quite complex especially with the finance and mortgage tools."
+      "When I first joined Which, I was in a team looking after the CMS system called Glide and I also extensively worked on a design system (using Storybook) to create a collection of flexible and reusable components that could be used across all the different areas of the business. The engineering team slowly adopted the squad model and I've been lucky to work in four different squads, acquisition, content experience & discovery, content experience (the previous squad was split into two as it was very large) and the Which? Core squad as a Product Engineer.",
+      "Within the acquisition squad, I was the sole developer, we investigated how we could gain & retain users and introduced improvements to the sign-up journey. Within the Core squad (we absorbed quite a few areas from the previous two squads I was in), we look after over thirty different domains such as Glide, the article templates, news, global navigation, saved/favorites (this is as new domain that we have been working on) and static tools. We also keep a keen eye on issues and performance monitoring by using several tools such as Airbrake, Calibre & Lighthouse to name a few. At Which I'm the go to person for static tools, I believe this is quite a achievement as the math required to give the correct calculations can be quite complex especially with the finance and mortgage tools."
     ],
     "achievements": [
       "Decreased average page size by 52% via code-splitting, using responsive imagery, removing redundant code, updating/removing npm packages etc",
