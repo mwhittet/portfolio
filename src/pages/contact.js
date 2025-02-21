@@ -1,7 +1,5 @@
 import { Form, Layout, Seo } from '../components';
 
-const RECAPTCHA_KEY = process.env.GATSBY_RECAPTCHA_KEY;
-
 const Contact = () => (
   <Layout pageTitle="Contact">
     <p>
@@ -17,7 +15,7 @@ const Contact = () => (
       .
     </p>
 
-    <Form recaptcha={RECAPTCHA_KEY} />
+    <Form />
 
     <figure className="no-margin">
       <blockquote>Creativity is contagious. Pass it on.</blockquote>
