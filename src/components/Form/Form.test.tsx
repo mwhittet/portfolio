@@ -3,7 +3,7 @@ import Form from './';
 
 describe('<Form /> component', () => {
   beforeEach(() => {
-    render(<Form recaptcha="key" />);
+    render(<Form />);
   });
 
   it('renders with the correct attributes', () => {
@@ -12,7 +12,6 @@ describe('<Form /> component', () => {
     expect(form).toHaveAttribute('action', '/success');
     expect(form).toHaveAttribute('data-netlify', 'true');
     expect(form).toHaveAttribute('data-netlify-honeypot', 'bot-field');
-    expect(form).toHaveAttribute('data-netlify-recaptcha', 'true');
     expect(form).toHaveAttribute('method', 'post');
     expect(form).toHaveAttribute('name', 'contact');
   });
@@ -73,10 +72,6 @@ describe('<Form /> component', () => {
 
     expect(label).toBeInTheDocument();
     expect(input).toHaveAttribute('name', 'message');
-  });
-
-  it('renders with the ReCAPTCHA component', () => {
-    expect(screen.queryByTestId('recaptcha')).toBeInTheDocument();
   });
 
   it('renders with the submit button', () => {

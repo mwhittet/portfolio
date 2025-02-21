@@ -35,17 +35,6 @@ export const FormWrapper = styled.form`
   .hidden {
     display: none;
   }
-
-  .recaptcha {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-    transform: scale(0.85);
-
-    ${breakpoints.sm} {
-      transform: scale(1);
-    }
-  }
 `;
 
 export const FormField = styled.div`

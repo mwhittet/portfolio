@@ -1,5 +1,3 @@
-import ReCAPTCHA from 'react-google-recaptcha';
-import { Props } from '.';
 import {
   Button,
   FormField,
@@ -9,12 +7,11 @@ import {
   Textarea,
 } from './styled';
 
-const Form = ({ recaptcha }: Props): React.ReactElement => (
+const Form = (): React.ReactElement => (
   <FormWrapper
     action="/success"
     data-netlify-honeypot="bot-field"
     data-netlify="true"
-    data-netlify-recaptcha="true"
     method="post"
     name="contact"
   >
@@ -62,13 +59,6 @@ const Form = ({ recaptcha }: Props): React.ReactElement => (
         required
       />
     </FormField>
-    {recaptcha && (
-      <ReCAPTCHA
-        className="recaptcha"
-        data-testid="recaptcha"
-        sitekey={recaptcha}
-      />
-    )}
     <Button type="submit">Send message</Button>
   </FormWrapper>
 );
